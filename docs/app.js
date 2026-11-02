@@ -292,10 +292,10 @@ const ownThr = () => S.data.stores.filter((s) => !s.destacada && s.thr != null &
 
 function hero() {
   const D = S.data;
-  const live = D.products.filter((p) => !gone(p));
+  const live = D.products.filter(inStock);      // solo lo que se puede comprar ahora
   const shops = D.stores.filter((s) => s.items > 0).length;
-  const maxPct = Math.max(0, ...live.filter(inStock).map((p) => p.pct || 0));
-  const half = live.filter((p) => inStock(p) && isHot(p)).length;
+  const maxPct = Math.max(0, ...live.map((p) => p.pct || 0));
+  const half = live.filter(isHot).length;
   const fresh = live.filter((p) => newKey(p) && Date.now() - new Date(newKey(p)).getTime() < 86400000).length;
   return `<section class="hero">
     <p class="eyebrow">Rebajas y outlet · mujer</p>
