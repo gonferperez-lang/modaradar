@@ -1,0 +1,461 @@
+{
+ "products": [
+  {
+   "id": 15741525557579,
+   "title": "Jersey cuello canalé botones",
+   "handle": "jersey-cuello-canale-botones",
+   "product_type": "JERSEY",
+   "tags": [
+    "new"
+   ],
+   "created_at": "2026-05-18T19:00:50+02:00",
+   "published_at": "2026-11-02T18:30:04+01:00",
+   "options": [
+    {
+     "name": "Color",
+     "position": 1,
+     "values": [
+      "Crudo"
+     ]
+    },
+    {
+     "name": "Size",
+     "position": 2,
+     "values": [
+      "XXS",
+      "XS-S",
+      "M-L"
+     ]
+    }
+   ],
+   "variants": [
+    {
+     "id": 57366144909643,
+     "title": "Crudo / XXS",
+     "option1": "Crudo",
+     "option2": "XXS",
+     "option3": null,
+     "price": "29.99",
+     "compare_at_price": "49.90",
+     "available": false
+    },
+    {
+     "id": 57366144942411,
+     "title": "Crudo / XS-S",
+     "option1": "Crudo",
+     "option2": "XS-S",
+     "option3": null,
+     "price": "29.99",
+     "compare_at_price": "49.90",
+     "available": false
+    },
+    {
+     "id": 57366144975179,
+     "title": "Crudo / M-L",
+     "option1": "Crudo",
+     "option2": "M-L",
+     "option3": null,
+     "price": "29.99",
+     "compare_at_price": "49.90",
+     "available": true
+    }
+   ],
+   "images": [
+    {
+     "id": 91543497113931,
+     "created_at": "2026-08-10T12:41:54+02:00",
+     "position": 1,
+     "updated_at": "2026-08-10T12:41:58+02:00",
+     "product_id": 15741525557579,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0914/6522/0427/files/W27-0782-002-103_843_WEB.jpg?v=1786358518",
+     "width": 2560,
+     "height": 3569
+    }
+   ]
+  },
+  {
+   "id": 15570121326923,
+   "title": "Gabardina larga capucha",
+   "handle": "gabardina-larga-reversible-con-capucha",
+   "product_type": "CHAQUETA",
+   "tags": [],
+   "created_at": "2026-03-06T16:12:46+01:00",
+   "published_at": "2026-11-02T18:30:04+01:00",
+   "options": [
+    {
+     "name": "Color",
+     "position": 1,
+     "values": [
+      "Beige"
+     ]
+    },
+    {
+     "name": "Size",
+     "position": 2,
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "L"
+     ]
+    }
+   ],
+   "variants": [
+    {
+     "id": 56711324500299,
+     "title": "Beige / XS",
+     "option1": "Beige",
+     "option2": "XS",
+     "option3": null,
+     "price": "79.99",
+     "compare_at_price": "119.90",
+     "available": false
+    },
+    {
+     "id": 56711324533067,
+     "title": "Beige / S",
+     "option1": "Beige",
+     "option2": "S",
+     "option3": null,
+     "price": "79.99",
+     "compare_at_price": "119.90",
+     "available": false
+    },
+    {
+     "id": 56711324565835,
+     "title": "Beige / M",
+     "option1": "Beige",
+     "option2": "M",
+     "option3": null,
+     "price": "79.99",
+     "compare_at_price": "119.90",
+     "available": true
+    },
+    {
+     "id": 56711324598603,
+     "title": "Beige / L",
+     "option1": "Beige",
+     "option2": "L",
+     "option3": null,
+     "price": "79.99",
+     "compare_at_price": "119.90",
+     "available": false
+    }
+   ],
+   "images": [
+    {
+     "id": 91457040810315,
+     "created_at": "2026-08-06T14:42:45+02:00",
+     "position": 1,
+     "updated_at": "2026-08-06T14:42:49+02:00",
+     "product_id": 15570121326923,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0914/6522/0427/files/W27-0423-005-705_1431_WEB.jpg?v=1786020169",
+     "width": 2560,
+     "height": 3569
+    }
+   ]
+  },
+  {
+   "id": 15570145804619,
+   "title": "Jeans tachas laterales",
+   "handle": "jeans-culotte-tachas",
+   "product_type": "TEJANO",
+   "tags": [],
+   "created_at": "2026-03-06T16:20:18+01:00",
+   "published_at": "2026-10-29T17:37:43+01:00",
+   "options": [
+    {
+     "name": "Color",
+     "position": 1,
+     "values": [
+      "Gris"
+     ]
+    },
+    {
+     "name": "Size",
+     "position": 2,
+     "values": [
+      "Petite (P)",
+      "32",
+      "34",
+      "36",
+      "38",
+      "40",
+      "42"
+     ]
+    }
+   ],
+   "variants": [
+    {
+     "id": 56711641694539,
+     "title": "Gris / Petite (P)",
+     "option1": "Gris",
+     "option2": "Petite (P)",
+     "option3": null,
+     "price": "49.99",
+     "compare_at_price": "69.90",
+     "available": false
+    },
+    {
+     "id": 56711641727307,
+     "title": "Gris / 32",
+     "option1": "Gris",
+     "option2": "32",
+     "option3": null,
+     "price": "49.99",
+     "compare_at_price": "69.90",
+     "available": false
+    },
+    {
+     "id": 56711641760075,
+     "title": "Gris / 34",
+     "option1": "Gris",
+     "option2": "34",
+     "option3": null,
+     "price": "49.99",
+     "compare_at_price": "69.90",
+     "available": false
+    },
+    {
+     "id": 56711641792843,
+     "title": "Gris / 36",
+     "option1": "Gris",
+     "option2": "36",
+     "option3": null,
+     "price": "49.99",
+     "compare_at_price": "69.90",
+     "available": false
+    },
+    {
+     "id": 56711641825611,
+     "title": "Gris / 38",
+     "option1": "Gris",
+     "option2": "38",
+     "option3": null,
+     "price": "49.99",
+     "compare_at_price": "69.90",
+     "available": false
+    },
+    {
+     "id": 56711641858379,
+     "title": "Gris / 40",
+     "option1": "Gris",
+     "option2": "40",
+     "option3": null,
+     "price": "49.99",
+     "compare_at_price": "69.90",
+     "available": false
+    },
+    {
+     "id": 56711641891147,
+     "title": "Gris / 42",
+     "option1": "Gris",
+     "option2": "42",
+     "option3": null,
+     "price": "49.99",
+     "compare_at_price": "69.90",
+     "available": true
+    }
+   ],
+   "images": [
+    {
+     "id": 90871036870987,
+     "created_at": "2026-07-07T14:13:30+02:00",
+     "position": 1,
+     "updated_at": "2026-07-07T14:13:33+02:00",
+     "product_id": 15570145804619,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0914/6522/0427/files/W27-0813-002-801-GRIS_001_WEB.jpg?v=1783426413",
+     "width": 2560,
+     "height": 3569
+    }
+   ]
+  },
+  {
+   "id": 15758264664395,
+   "title": "Sudadera oversized lavada y parche",
+   "handle": "sudadera-oversized-lavada-y-parche",
+   "product_type": "SUDADERA",
+   "tags": [
+    "new"
+   ],
+   "created_at": "2026-05-27T10:57:46+02:00",
+   "published_at": "2026-11-02T18:30:05+01:00",
+   "options": [
+    {
+     "name": "Color",
+     "position": 1,
+     "values": [
+      "Verde agua"
+     ]
+    },
+    {
+     "name": "Size",
+     "position": 2,
+     "values": [
+      "Petite (P)",
+      "XXS",
+      "XS-S",
+      "M-L"
+     ]
+    }
+   ],
+   "variants": [
+    {
+     "id": 57448536408395,
+     "title": "Verde agua / Petite (P)",
+     "option1": "Verde agua",
+     "option2": "Petite (P)",
+     "option3": null,
+     "price": "59.90",
+     "compare_at_price": "59.90",
+     "available": true
+    },
+    {
+     "id": 57448536441163,
+     "title": "Verde agua / XXS",
+     "option1": "Verde agua",
+     "option2": "XXS",
+     "option3": null,
+     "price": "59.90",
+     "compare_at_price": "59.90",
+     "available": true
+    },
+    {
+     "id": 57448536473931,
+     "title": "Verde agua / XS-S",
+     "option1": "Verde agua",
+     "option2": "XS-S",
+     "option3": null,
+     "price": "59.90",
+     "compare_at_price": "59.90",
+     "available": false
+    },
+    {
+     "id": 57448536506699,
+     "title": "Verde agua / M-L",
+     "option1": "Verde agua",
+     "option2": "M-L",
+     "option3": null,
+     "price": "59.90",
+     "compare_at_price": "59.90",
+     "available": false
+    }
+   ],
+   "images": [
+    {
+     "id": 90400541213003,
+     "created_at": "2026-06-12T09:23:02+02:00",
+     "position": 1,
+     "updated_at": "2026-06-12T09:23:06+02:00",
+     "product_id": 15758264664395,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0914/6522/0427/files/NOW27-0254-016-605-VERDE-AGUA_274_WEB.jpg?v=1781248986",
+     "width": 2560,
+     "height": 3569
+    }
+   ]
+  },
+  {
+   "id": 16037239456126,
+   "title": "Vestido corto de niña 100% algodón con estampado de cuadros negro y blanco",
+   "handle": "vestido-corto-de-nina-100-algodon-con-estampado-de-cuadros-negro-y-blanco",
+   "product_type": "Vestido corto",
+   "tags": [
+    "Colección",
+    "Mini",
+    "Nuevo",
+    "Vestidos Mini"
+   ],
+   "created_at": "2026-08-11T11:05:42+02:00",
+   "published_at": "2026-10-16T11:37:58+02:00",
+   "options": [
+    {
+     "name": "COLORES",
+     "position": 1,
+     "values": [
+      "ESTAMPADOS"
+     ]
+    },
+    {
+     "name": "Tallas 4/6/8/10/12",
+     "position": 2,
+     "values": [
+      "4-5Yrs",
+      "6-7Yrs",
+      "8-9Yrs",
+      "10-11Yrs",
+      "12-13Yrs"
+     ]
+    }
+   ],
+   "variants": [
+    {
+     "id": 57829103010174,
+     "title": "ESTAMPADOS / 4-5Yrs",
+     "option1": "ESTAMPADOS",
+     "option2": "4-5Yrs",
+     "option3": null,
+     "price": "34.95",
+     "compare_at_price": "104.85",
+     "available": false
+    },
+    {
+     "id": 57829103042942,
+     "title": "ESTAMPADOS / 6-7Yrs",
+     "option1": "ESTAMPADOS",
+     "option2": "6-7Yrs",
+     "option3": null,
+     "price": "34.95",
+     "compare_at_price": "104.85",
+     "available": false
+    },
+    {
+     "id": 57829103075710,
+     "title": "ESTAMPADOS / 8-9Yrs",
+     "option1": "ESTAMPADOS",
+     "option2": "8-9Yrs",
+     "option3": null,
+     "price": "34.95",
+     "compare_at_price": "104.85",
+     "available": true
+    },
+    {
+     "id": 57829103108478,
+     "title": "ESTAMPADOS / 10-11Yrs",
+     "option1": "ESTAMPADOS",
+     "option2": "10-11Yrs",
+     "option3": null,
+     "price": "34.95",
+     "compare_at_price": "104.85",
+     "available": false
+    },
+    {
+     "id": 57829103141246,
+     "title": "ESTAMPADOS / 12-13Yrs",
+     "option1": "ESTAMPADOS",
+     "option2": "12-13Yrs",
+     "option3": null,
+     "price": "34.95",
+     "compare_at_price": "104.85",
+     "available": false
+    }
+   ],
+   "images": [
+    {
+     "id": 85410401911166,
+     "created_at": "2026-08-11T11:05:47+02:00",
+     "position": 1,
+     "updated_at": "2026-08-11T11:05:47+02:00",
+     "product_id": 16037239456126,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0773/9070/9025/files/64M40453_01.webp?v=1786439147",
+     "width": 1920,
+     "height": 2880
+    }
+   ]
+  }
+ ]
+}

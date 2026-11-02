@@ -1,0 +1,221 @@
+# ─────────────────────────────────────────────────────────────────────────────
+#  ModaRadar · configuración
+#  Edita este archivo (también desde la app de GitHub en el móvil) para añadir
+#  tiendas, cambiar los descuentos que te avisan o poner tus tallas.
+# ─────────────────────────────────────────────────────────────────────────────
+
+[general]
+region = "ES"
+currency = "EUR"
+data_dir = "docs/data"             # la app (GitHub Pages) lee de aquí
+user_agent = "ModaRadar/1.0 (monitor personal de rebajas de moda)"
+request_delay_seconds = 2.0        # pausa mínima entre peticiones al mismo dominio
+respect_robots_txt = true          # nunca se desactiva para webs de tiendas
+min_store_pct = 20                 # solo se guardan prendas rebajadas al menos un 20 % (lo demás no es outlet)
+forget_after_days = 7              # prendas que ya no aparecen (agotadas o sin rebaja) se borran a los N días
+parallel_stores = 6                # tiendas consultadas a la vez (cada una con su pausa propia)
+blocked_pause_hours = 12           # si una tienda bloquea el acceso: pausa de 1 h, 2 h, 4 h… hasta N horas
+ratelimit_pause_hours = 3          # si pide bajar el ritmo (HTTP 429): pausa de 1 h, 2 h… hasta N horas
+
+[filters]
+# Palabras que descartan un producto en todas las tiendas (sin acentos ni mayúsculas).
+# Perfumes, velas, tarjetas regalo, ropa de hombre y de niña ya se descartan solos.
+exclude = ["tarjeta regalo", "gift card", "muestra gratuita", "packaging"]
+
+[notifications]
+min_discount_pct = 40              # avisar de prendas rebajadas al menos un 40 % («mucho más baratas»)
+destacadas_min_pct = 30            # en las marcas destacadas (Zara, Brownie, Zadig) basta con un 30 %
+chollo_pct = 50                    # 🔥 desde un 50 %: aviso prioritario (suena aunque tengas el móvil en silencio en ntfy)
+notify_new = true                  # 🆕 una prenda entra en rebajas/outlet
+notify_price_drop_pct = 10         # 💸 una prenda ya rebajada baja otro 10 % o más (0 = no avisar)
+notify_restock = true              # 🔁 vuelve a haber stock de una prenda rebajada (o tu talla)
+categories = ["ropa"]              # ropa · calzado · bolsos · accesorios
+# Tus tallas: solo te avisa si queda alguna (en las tiendas que publican las tallas; Zara no lo hace).
+# Ejemplos: ["S", "M"] · ["36", "38"] · ["S", "M", "38"]. Vacío = cualquier talla.
+mis_tallas = []
+# Palabras que SIEMPRE avisan con prioridad alta (aunque no estén en `categories`)
+watchlist = ["cachemir", "cashmere", "abrigo", "gabardina", "trench"]
+max_per_run = 6                    # más avisos que esto en una pasada → se agrupan en un resumen
+# Canales (se configuran con *secrets* de GitHub, nunca aquí):
+#   NTFY_TOPIC (obligatorio para los avisos push) · NTFY_SERVER (opcional, por defecto https://ntfy.sh)
+#   TELEGRAM_BOT_TOKEN + TELEGRAM_CHAT_ID (opcional)
+
+# ─────────────────────────────────────────────────────────────────────────────
+#  ⭐ MARCAS DESTACADAS
+#  `destacada = true`: pestaña propia en la app, se revisan en cada pasada (cada 15 min)
+#  y avisan con prioridad alta desde `destacadas_min_pct`.
+# ─────────────────────────────────────────────────────────────────────────────
+
+[[stores]]
+id = "zara"
+name = "Zara"
+short = "Zara"
+destacada = true
+platform = "zara"                  # catálogo JSON público de su web (secciones de rebajas de MUJER)
+url = "https://www.zara.com"
+locale = "/es/es"
+section = "MUJER"
+menu_hours = 6                     # cada cuántas horas mira si ha abierto secciones nuevas (REBAJAS, BLACK FRIDAY…)
+categories = [2419724]             # respaldo: «SPECIAL PRICES» de mujer, por si cambia el menú
+outlet_url = "https://www.zara.com/es/es/mujer-precios-especiales-l1314.html"
+note = "Todo el año tiene «Special prices» de mujer; cuando abre rebajas o Black Friday el radar añade esas secciones solo. Zara no publica las tallas en el listado: compruébalas en su web."
+
+[[stores]]
+id = "brownie"
+name = "Brownie"
+short = "Brownie"
+destacada = true
+platform = "shopify"
+url = "https://www.browniespain.com"
+locale = "/es-es"
+max_pages = 8                      # catálogo completo (unos 500 productos): cualquier rebaja se ve
+outlet_url = "https://www.browniespain.com/es-es/collections/see-all-sales"
+note = "Fuera de temporada casi no tiene rebajas: los avisos llegan en cuanto marca precios rebajados (Black Friday, rebajas de enero y de verano)."
+
+[[stores]]
+id = "zadig"
+name = "Zadig&Voltaire"
+short = "Zadig"
+destacada = true
+platform = "zadig"                 # API pública de catálogo de la marca (helios.zadig-et-voltaire.com)
+url = "https://zadig-et-voltaire.com/eu/es"
+store_code = "es_es"
+categories = [187]                 # Mujer › Ropa (entera): cualquier prenda que baje de precio
+# Rebajas, 2ª rebajas, Last chance, Outlet y Rebajas de temporada: vacías fuera de temporada, se llenan solas
+sale_categories = [526, 755, 660, 685, 739]
+country = "FR"
+outlet_url = "https://zadig-et-voltaire.com/eu/es/c/women-collection-see-everything-187"
+note = "Marca francesa con tienda en España. Las secciones de rebajas y outlet se vigilan aunque ahora estén vacías."
+
+# ─────────────────────────────────────────────────────────────────────────────
+#  OTRAS TIENDAS DE MODA MUJER CON OUTLET
+#  Todas publican su catálogo en Shopify (precio rebajado y precio original tachado).
+#  Para añadir otra: abre https://latienda.com/products.json; si ves "products", sirve.
+# ─────────────────────────────────────────────────────────────────────────────
+
+[[stores]]
+id = "lolacasademunt"
+name = "Lola Casademunt"
+platform = "shopify"
+url = "https://www.lolacasademunt.com"
+locale = "/es-es"
+max_pages = 8
+every_minutes = 30
+outlet_url = "https://www.lolacasademunt.com/es-es/collections/outlet"
+
+[[stores]]
+id = "companiafantastica"
+name = "Compañía Fantástica"
+platform = "shopify"
+url = "https://www.companiafantastica.com"
+max_pages = 8
+every_minutes = 30
+# su línea infantil («Mini») se descarta sola por las tallas (4-5 años, 6, 8…)
+outlet_url = "https://www.companiafantastica.com/collections/outlet"
+
+[[stores]]
+id = "laagam"
+name = "Laagam"
+platform = "shopify"
+url = "https://www.laagam.com"
+locale = "/es"
+max_pages = 4
+every_minutes = 30
+outlet_url = "https://www.laagam.com/es/collections/last-units"
+
+[[stores]]
+id = "rouje"
+name = "Rouje"
+platform = "shopify"
+url = "https://www.rouje.com"
+locale = "/es-es"
+max_pages = 4
+every_minutes = 30
+country = "FR"
+outlet_url = "https://www.rouje.com/es-es/collections/archives"
+note = "Marca francesa: envía a España desde la UE (sin aduanas). Revisa los gastos de envío."
+
+[[stores]]
+id = "pinko"
+name = "Pinko"
+platform = "shopify"
+url = "https://www.pinko.com"
+locale = "/es-es"
+max_pages = 8
+every_minutes = 30
+country = "IT"
+outlet_url = "https://www.pinko.com/es-es/collections/promo-mujer"
+note = "Marca italiana: envía a España desde la UE (sin aduanas). Revisa los gastos de envío."
+
+# ─────────────────────────────────────────────────────────────────────────────
+#  MARCAS QUE HAS PEDIDO Y DE LAS MÁS BUSCADAS EN ESPAÑA
+#  `women_terms`: estas marcas venden también ropa de hombre; solo cuenta lo que su tienda
+#  marca como de mujer. `min_discount_pct` en una tienda cambia su umbral de aviso.
+# ─────────────────────────────────────────────────────────────────────────────
+
+[[stores]]
+id = "poloclub"
+name = "Polo Club"
+platform = "shopify"
+url = "https://www.poloclub.com"
+max_pages = 0                      # no hace falta el catálogo entero (casi todo es de hombre):
+collections = ["mujer", "mujer-outlet"]   # su colección de mujer y su outlet de mujer
+collection_pages = 5
+women_terms = ["mujer"]
+min_discount_pct = 60              # la mayor parte de su catálogo está siempre rebajada (mucho al 40-60 %): avisa desde −60 %
+every_minutes = 30
+outlet_url = "https://www.poloclub.com/collections/mujer-outlet"
+note = "La mayor parte de su ropa de mujer está siempre rebajada (mucha entre un 40 y un 60 %), así que solo te avisa desde −60 %."
+
+[[stores]]
+id = "scuffers"
+name = "Scuffers"
+platform = "shopify"
+url = "https://www.scuffers.com"
+max_pages = 8
+women_terms = ["woman", "girl", "mujer"]
+every_minutes = 30
+outlet_url = "https://www.scuffers.com/collections/woman"
+note = "Hace rebajas en temporadas concretas (verano, Black Friday): el resto del año casi no tiene."
+
+[[stores]]
+id = "emestudios"
+name = "Eme Studios"
+platform = "shopify"
+url = "https://eme-official.myshopify.com"            # su tienda Shopify (la web pública es emestudios.com)
+web = "https://emestudios.com/es/es"
+product_url = "https://emestudios.com/es/es/product/{handle}"
+max_pages = 6
+women_terms = ["mujer", "woman"]
+every_minutes = 30
+outlet_url = "https://emestudios.com/es/es/sales-ss26"
+
+[[stores]]
+id = "yuxus"
+name = "Yuxus"
+platform = "shopify"
+url = "https://www.yuxus.com"
+max_pages = 4
+women_terms = ["woman", "mujer"]
+every_minutes = 30
+outlet_url = "https://www.yuxus.com/collections/archive-sale"
+
+[[stores]]
+id = "nike"
+name = "Nike"
+platform = "nike"                  # páginas de ofertas de mujer de nike.com/es, ordenadas por lo más nuevo
+url = "https://www.nike.com"
+pages = ["/es/w/mujer-ofertas-ropa-3yaepz5e1x6z6ymx6?sortBy=newest", "/es/w/mujer-ofertas-3yaepz5e1x6?sortBy=newest"]
+partial = true                     # solo se ven sus rebajas más nuevas (unas 70 por revisión)
+every_minutes = 30
+outlet_url = "https://www.nike.com/es/w/mujer-ofertas-3yaepz5e1x6"
+note = "Una de las marcas más buscadas en España. En cada revisión se leen sus ~70 rebajas de mujer más nuevas (ropa y zapatillas); no publica las tallas en el listado."
+
+# ─────────────────────────────────────────────────────────────────────────────
+#  NO SE PUEDEN VIGILAR (comprobado en noviembre de 2026): bloquean el acceso automático
+#  o no publican su catálogo en un formato que se pueda leer sin saltarse protecciones.
+#  Shein (captcha) · Mango y Mango Outlet · H&M · Pull&Bear · Bershka · Stradivarius ·
+#  Massimo Dutti · Lefties · Oysho (protección anti-bots de Akamai) · Adidas · ASICS ·
+#  Primark · Kiabi · El Corte Inglés · Zalando · ASOS · Ralph Lauren · On · Under Armour ·
+#  Salomon (cargan los productos en el navegador) · Juicy Couture (solo tienda de Reino Unido, en libras)
+# ─────────────────────────────────────────────────────────────────────────────

@@ -1,0 +1,50 @@
+name: Reloj
+run-name: Reloj · próxima revisión en 15 min
+
+# Lanza una revisión de las tiendas cada 15 minutos, sin servicios externos ni tokens.
+# Cada ejecución espera en el entorno «reloj» (temporizador «Wait timer» de GitHub, que se
+# cumple con puntualidad y no consume minutos), programa la siguiente y lanza la revisión.
+# Si la cadena se rompe, la siguiente ejecución de monitor.yml (respaldo de GitHub, botón
+# «Revisar» o un cambio en la app) la vuelve a arrancar.
+#
+# Activación (una sola vez): Settings → Environments → reloj → Wait timer = 15 → Save.
+
+on:
+  workflow_dispatch:
+
+permissions:
+  actions: write   # lanzar monitor.yml y la siguiente vuelta del reloj
+
+jobs:
+  tic:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    environment: reloj
+    concurrency:          # una sola cadena: si se cuela otra, GitHub descarta la que espera
+      group: reloj
+      cancel-in-progress: false
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+    steps:
+      - name: Comprobar el temporizador
+        id: check
+        run: |
+          created=$(gh api "repos/$GH_REPO/actions/runs/$GITHUB_RUN_ID" --jq .created_at)
+          waited=$(( $(date +%s) - $(date -d "$created" +%s) ))
+          echo "Ha esperado $((waited / 60)) min $((waited % 60)) s."
+          if [ "$waited" -lt 600 ]; then
+            # sin temporizador la cadena daría vueltas sin pausa: se detiene
+            echo "::warning title=Reloj sin activar::Falta el temporizador: Settings → Environments → reloj → marca «Wait timer», pon 15 y pulsa «Save protection rules»."
+            echo "ok=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "ok=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Programar la siguiente vuelta
+        if: steps.check.outputs.ok == 'true'
+        run: gh workflow run reloj.yml --ref "$GITHUB_REF_NAME"
+
+      - name: Revisar las tiendas
+        if: steps.check.outputs.ok == 'true'
+        run: gh workflow run monitor.yml --ref "$GITHUB_REF_NAME" -f origen=reloj

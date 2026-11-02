@@ -1,0 +1,662 @@
+{
+ "categories": [
+  {
+   "id": 1881757,
+   "key": "I2024-MUJER",
+   "name": "MUJER",
+   "sectionName": "WOMAN",
+   "attributes": {
+    "mustDisplayContent": false,
+    "showSubcategories": false,
+    "displayOpen": true,
+    "isDivider": false,
+    "isLineBreak": false,
+    "isTitle": false
+   },
+   "subcategories": [
+    {
+     "id": 2721382,
+     "key": "I2024-MUJER-CREATIVIDADES_NEW_IN",
+     "name": "THE NEW",
+     "sectionName": "WOMAN",
+     "attributes": {
+      "mustDisplayContent": false,
+      "showSubcategories": false,
+      "isDivider": false,
+      "isLineBreak": false,
+      "isTitle": false
+     },
+     "subcategories": [],
+     "seo": {
+      "seoCategoryId": 18378,
+      "keyword": "woman-creativity-newin",
+      "irrelevant": true,
+      "isHiddenInMenu": false,
+      "seoExtraInfo": {
+       "irrelevant": true,
+       "isHiddenInMenu": false,
+       "isCanonicalReference": false
+      }
+     },
+     "sdui": {
+      "id": "fc7f00b9730294d2da89159a7ba7afc4_CARRUSEL_WORLD",
+      "responsiveLayouts": [
+       {
+        "id": "bb070461b9528b12aecf0ff53532e096",
+        "name": "carousel-menu-all",
+        "minWidth": 307,
+        "dimensions": {
+         "width": 307,
+         "height": 185
+        },
+        "componentTree": {
+         "id": "272:180_all",
+         "name": "fg-row",
+         "componentType": "container",
+         "direction": "horizontal",
+         "positioning": {
+          "widthPercentage": 100,
+          "paddingTop": 0,
+          "paddingBottom": 7.818,
+          "paddingStart": 0,
+          "paddingEnd": 0,
+          "paddingPercentage": {
+           "top": 0,
+           "bottom": 7.818,
+           "start": 0,
+           "end": 0
+          }
+         },
+         "styles": {},
+         "children": [
+          {
+           "id": "272:181_frame-7",
+           "name": "fg-row",
+           "componentType": "container",
+           "direction": "horizontal",
+           "positioning": {
+            "widthPercentage": 100,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "paddingStart": 0,
+            "paddingEnd": 0,
+            "paddingPercentage": {
+             "top": 0,
+             "bottom": 0,
+             "start": 0,
+             "end": 0
+            },
+            "horizontalAlignment": "start"
+           },
+           "styles": {},
+           "children": [
+            {
+             "id": "272:182_frame-1",
+             "name": "fg-column",
+             "componentType": "container",
+             "direction": "vertical",
+             "positioning": {
+              "paddingTop": 0,
+              "paddingBottom": 0,
+              "paddingStart": 0,
+              "paddingEnd": 0,
+              "paddingPercentage": {
+               "top": 0,
+               "bottom": 0,
+               "start": 0,
+               "end": 0
+              },
+              "horizontalAlignment": "start"
+             },
+             "styles": {},
+             "children": [
+              {
+               "id": "272:182_frame-1_0_fg-row",
+               "name": "fg-row",
+               "componentType": "container",
+               "direction": "horizontal",
+               "positioning": {
+                "paddingTop": 0,
+                "paddingBottom": 0,
+                "paddingStart": 0,
+                "paddingEnd": 0,
+                "paddingPercentage": {
+                 "top": 0,
+                 "bottom": 0,
+                 "start": 0,
+                 "end": 0
+                }
+               },
+               "overflowVisible": true,
+               "children": [
+                {
+                 "id": "272:183_image",
+                 "name": "Image",
+                 "positioning": {
+                  "heightPercentage": 45.703
+                 },
+                 "componentType": "media"
+                }
+               ]
+              },
+              {
+               "id": "272:182_frame-1_1_fg-row",
+               "name": "fg-row",
+               "componentType": "container",
+               "direction": "horizontal",
+               "positioning": {
+                "paddingTop": 8.527,
+                "paddingBottom": 0,
+                "paddingStart": 0,
+                "paddingEnd": 0,
+                "paddingPercentage": {
+                 "top": 2.555,
+                 "bottom": 0,
+                 "start": 0,
+                 "end": 0
+                }
+               },
+               "overflowVisible": true,
+               "children": [
+                {
+                 "id": "I272:184;2053:1151_label",
+                 "name": "label",
+                 "positioning": {
+                  "paddingTop": 0,
+                  "paddingBottom": 0,
+                  "paddingStart": 0,
+                  "paddingEnd": 0,
+                  "paddingPercentage": {
+                   "top": 0,
+                   "bottom": 0,
+                   "start": 0,
+                   "end": 0
+                  }
+                 },
+                 "componentType": "text",
+                 "styles": {
+                  "color": "mds-color-content-default",
+                  "fontFamily": "Neue Helvetica for Zara",
+                  "fontSize": 7,
+                  "fontWeight": 300,
+                  "fontStyle": "Light",
+                  "fontSizeRelative": 0.02280130293159609,
+                  "textAlign": "start",
+                  "letterSpacing": 0.071,
+                  "lineHeight": 2.124
+                 },
+                 "textContent": "{{name}}"
+                }
+               ]
+              }
+             ],
+             "action": {
+              "type": "navigate"
+             }
+            }
+           ],
+           "scrollable": true,
+           "overflowVisible": true,
+           "spacing": 3,
+           "space": {
+            "value": 1
+           },
+           "dataSourceKey": "272:181"
+          }
+         ],
+         "action": {
+          "type": "navigate"
+         }
+        }
+       }
+      ],
+      "dataSources": {
+       "272:181": {
+        "type": "category",
+        "data": [
+         {
+          "id": "2721382",
+          "name": "THE NEW",
+          "storeFrontMedia": {
+           "asset": {
+            "type": "image",
+            "assetId": "f0a02158c0524d43bb41e777b6e8a577",
+            "timestamp": "2026-10-30T12:23:37.406Z",
+            "url": "https://static.zara.net/assets/public/f0a0/2158/c0524d43bb41/e777b6e8a577/04786283800-730-p/04786283800-730-p.jpg?ts=1793363017406&w={width}",
+            "formats": [],
+            "allowedScreens": [],
+            "styles": {
+             "kind": "double",
+             "scaleType": "fit",
+             "margined": false
+            },
+            "dimensions": {
+             "width": 4158,
+             "height": 3072
+            },
+            "locations": []
+           }
+          },
+          "seo": {
+           "id": "18378",
+           "keyword": "woman-creativity-newin",
+           "layout": "products-category-view"
+          }
+         },
+         {
+          "id": "2419031",
+          "name": "ABRIGOS",
+          "storeFrontMedia": {
+           "asset": {
+            "type": "image",
+            "assetId": "03c7b59b476e466d9f8c5108683ecd36",
+            "timestamp": "2026-10-30T10:49:41.286Z",
+            "url": "https://static.zara.net/assets/public/03c7/b59b/476e466d9f8c/5108683ecd36/02590125704-p/02590125704-p.jpg?ts=1793357381286&w={width}",
+            "formats": [],
+            "allowedScreens": [],
+            "styles": {
+             "kind": "other",
+             "scaleType": "fit",
+             "margined": false
+            },
+            "dimensions": {
+             "width": 2048,
+             "height": 3072
+            },
+            "locations": []
+           }
+          },
+          "seo": {
+           "id": "19675",
+           "keyword": "woman-creativity-coats",
+           "layout": "products-category-view"
+          }
+         },
+         {
+          "id": "2420293",
+          "name": "PUNTO",
+          "storeFrontMedia": {
+           "asset": {
+            "type": "image",
+            "assetId": "3b22713a861048ffaa2f4ad65ce836ee",
+            "timestamp": "2026-10-30T13:21:07.935Z",
+            "url": "https://static.zara.net/assets/public/3b22/713a/861048ffaa2f/4ad65ce836ee/02753722049-a6/02753722049-a6.jpg?ts=1793366467935&w={width}",
+            "formats": [],
+            "allowedScreens": [],
+            "styles": {
+             "kind": "other",
+             "scaleType": "fit",
+             "margined": false
+            },
+            "dimensions": {
+             "width": 2048,
+             "height": 3072
+            },
+            "locations": []
+           }
+          },
+          "seo": {
+           "id": "18158",
+           "keyword": "woman-creativity-17",
+           "layout": "products-category-view"
+          }
+         },
+         {
+          "id": "2419166",
+          "name": "BOTAS",
+          "storeFrontMedia": {
+           "asset": {
+            "type": "image",
+            "assetId": "c25a418e2d9542329cc457dfab6a91d7",
+            "timestamp": "2026-10-27T12:18:04.498Z",
+            "url": "https://static.zara.net/assets/public/c25a/418e/2d9542329cc4/57dfab6a91d7/04360245700-a5/04360245700-a5.jpg?ts=1793103484498&w={width}",
+            "formats": [],
+            "allowedScreens": [],
+            "styles": {
+             "kind": "other",
+             "scaleType": "fit",
+             "margined": false
+            },
+            "dimensions": {
+             "width": 2048,
+             "height": 3072
+            },
+            "locations": []
+           }
+          },
+          "seo": {
+           "id": "1263",
+           "keyword": "mujer-zapatos-botas",
+           "layout": "products-category-view"
+          }
+         },
+         {
+          "id": "2419737",
+          "name": "SPECIAL PRICES",
+          "storeFrontMedia": {
+           "asset": {
+            "type": "image",
+            "assetId": "66e2ea2dd5e044cdb49a4b9dc5752aef",
+            "timestamp": "2026-08-27T15:47:32.954Z",
+            "url": "https://static.zara.net/assets/public/66e2/ea2d/d5e044cdb49a/4b9dc5752aef/03046358712-a1/03046358712-a1.jpg?ts=1787845652954&w={width}",
+            "formats": [],
+            "allowedScreens": [],
+            "styles": {
+             "kind": "other",
+             "scaleType": "fit",
+             "margined": false
+            },
+            "dimensions": {
+             "width": 2048,
+             "height": 3072
+            },
+            "locations": []
+           }
+          },
+          "seo": {
+           "id": "18571",
+           "keyword": "woman-creativity-20",
+           "layout": "products-category-view"
+          }
+         }
+        ]
+       }
+      }
+     },
+     "behaviour": {
+      "positioning": "featured"
+     },
+     "isRedirected": false,
+     "isSelected": false,
+     "hasSubcategories": false,
+     "irrelevant": true,
+     "menuLevel": 2
+    },
+    {
+     "id": 2642765,
+     "key": "I2024-MUJER-DESTACADA_NOVEDADES",
+     "name": "NOVEDADES",
+     "sectionName": "WOMAN",
+     "attributes": {
+      "mustDisplayContent": false,
+      "showSubcategories": false,
+      "displayOpen": true,
+      "isDivider": false,
+      "isLineBreak": false,
+      "isTitle": false
+     },
+     "subcategories": [
+      {
+       "id": 2546081,
+       "key": "I2024-MUJER-ULTIMA_SEMANA",
+       "name": "THE NEW",
+       "sectionName": "WOMAN",
+       "attributes": {
+        "mustDisplayContent": true,
+        "showSubcategories": false,
+        "isDivider": false,
+        "isLineBreak": false,
+        "isTitle": false
+       },
+       "subcategories": [],
+       "seo": {
+        "seoCategoryId": 1180,
+        "keyword": "mujer-nuevo",
+        "irrelevant": false,
+        "isHiddenInMenu": false,
+        "seoExtraInfo": {
+         "irrelevant": false,
+         "isHiddenInMenu": false,
+         "isCanonicalReference": true
+        }
+       },
+       "layout": "products-category-view",
+       "isRedirected": false,
+       "isSelected": false,
+       "hasSubcategories": false,
+       "irrelevant": false,
+       "menuLevel": 3
+      }
+     ],
+     "isIndexed": true,
+     "seo": {
+      "seoCategoryId": 17359,
+      "keyword": "woman-highlight-new",
+      "irrelevant": true,
+      "isHiddenInMenu": false,
+      "seoExtraInfo": {
+       "irrelevant": true,
+       "isHiddenInMenu": false,
+       "isCanonicalReference": false
+      }
+     },
+     "layout": "products-category-view",
+     "isRedirected": false,
+     "isSelected": false,
+     "hasSubcategories": true,
+     "irrelevant": true,
+     "menuLevel": 2
+    },
+    {
+     "id": 2643249,
+     "key": "I2024-MUJER-DESTACADA_COLECCION",
+     "name": "COLECCIÓN",
+     "sectionName": "WOMAN",
+     "attributes": {
+      "mustDisplayContent": false,
+      "showSubcategories": false,
+      "displayOpen": true,
+      "isDivider": false,
+      "isLineBreak": false,
+      "isTitle": false
+     },
+     "subcategories": [
+      {
+       "id": 2420895,
+       "key": "I2024-MUJER-VESTIDOS",
+       "name": "VESTIDOS",
+       "sectionName": "WOMAN",
+       "attributes": {
+        "mustDisplayContent": true,
+        "showSubcategories": false,
+        "isDivider": false,
+        "isLineBreak": false,
+        "isTitle": false,
+        "hasAllSubcategoriesHidden": true
+       },
+       "subcategories": [],
+       "seo": {
+        "seoCategoryId": 1066,
+        "keyword": "mujer-vestidos",
+        "irrelevant": false,
+        "isHiddenInMenu": false,
+        "seoExtraInfo": {
+         "irrelevant": false,
+         "isHiddenInMenu": false,
+         "isCanonicalReference": false
+        }
+       },
+       "redirectCategoryId": 2420896,
+       "layout": "products-category-view",
+       "behaviour": {},
+       "isRedirected": true,
+       "isSelected": false,
+       "hasSubcategories": true,
+       "irrelevant": false,
+       "menuLevel": 3
+      },
+      {
+       "id": 2419724,
+       "key": "I2024-MUJER-SPECIAL_PRICES_GENERAL",
+       "name": "SPECIAL PRICES",
+       "sectionName": "WOMAN",
+       "attributes": {
+        "mustDisplayContent": true,
+        "showSubcategories": false,
+        "isDivider": false,
+        "isLineBreak": false,
+        "isTitle": false,
+        "hasAllSubcategoriesHidden": true
+       },
+       "subcategories": [],
+       "seo": {
+        "seoCategoryId": 1314,
+        "keyword": "mujer-precios-especiales",
+        "irrelevant": false,
+        "isHiddenInMenu": false,
+        "seoExtraInfo": {
+         "irrelevant": false,
+         "isHiddenInMenu": false,
+         "isCanonicalReference": false
+        }
+       },
+       "styles": {
+        "color": "#df1995"
+       },
+       "redirectCategoryId": 2419737,
+       "layout": "products-category-view",
+       "behaviour": {},
+       "isRedirected": true,
+       "isSelected": false,
+       "hasSubcategories": true,
+       "irrelevant": false,
+       "menuLevel": 3
+      }
+     ],
+     "isIndexed": true,
+     "seo": {
+      "seoCategoryId": 2158,
+      "keyword": "mujer-colecciones",
+      "irrelevant": false,
+      "isHiddenInMenu": false,
+      "seoExtraInfo": {
+       "irrelevant": false,
+       "isHiddenInMenu": false,
+       "isCanonicalReference": false
+      }
+     },
+     "layout": "products-category-view",
+     "isRedirected": false,
+     "isSelected": false,
+     "hasSubcategories": true,
+     "irrelevant": false,
+     "menuLevel": 2
+    },
+    {
+     "id": 2643253,
+     "key": "I2024-MUJER-DESTACADA_PERFUMES_BEAUTY",
+     "name": "PERFUMES",
+     "sectionName": "WOMAN",
+     "attributes": {
+      "mustDisplayContent": false,
+      "showSubcategories": false,
+      "displayOpen": true,
+      "isDivider": false,
+      "isLineBreak": false,
+      "isTitle": false
+     },
+     "subcategories": [
+      {
+       "id": 2419830,
+       "key": "I2024-MUJER-PERFUMES",
+       "name": "PERFUMES",
+       "sectionName": "WOMAN",
+       "attributes": {
+        "mustDisplayContent": true,
+        "showSubcategories": false,
+        "isDivider": false,
+        "isLineBreak": false,
+        "isTitle": false,
+        "hasAllSubcategoriesHidden": true
+       },
+       "subcategories": [],
+       "seo": {
+        "seoCategoryId": 1415,
+        "keyword": "mujer-belleza-perfumes",
+        "irrelevant": false,
+        "isHiddenInMenu": false,
+        "seoExtraInfo": {
+         "irrelevant": false,
+         "isHiddenInMenu": false,
+         "isCanonicalReference": false
+        }
+       },
+       "redirectCategoryId": 2419833,
+       "layout": "products-category-view",
+       "behaviour": {},
+       "isRedirected": true,
+       "isSelected": false,
+       "hasSubcategories": true,
+       "irrelevant": false,
+       "menuLevel": 3
+      }
+     ],
+     "isIndexed": true,
+     "seo": {
+      "seoCategoryId": 17361,
+      "keyword": "woman-highlight-perfumes-beauty",
+      "irrelevant": true,
+      "isHiddenInMenu": false,
+      "seoExtraInfo": {
+       "irrelevant": true,
+       "isHiddenInMenu": false,
+       "isCanonicalReference": false
+      }
+     },
+     "layout": "products-category-view",
+     "isRedirected": false,
+     "isSelected": false,
+     "hasSubcategories": true,
+     "irrelevant": true,
+     "menuLevel": 2
+    },
+    {
+     "id": 999001,
+     "name": "REBAJAS",
+     "layout": "products-category-view",
+     "redirectCategoryId": 999002,
+     "seo": {
+      "keyword": "mujer-rebajas"
+     },
+     "subcategories": [
+      {
+       "id": 999003,
+       "name": "VESTIDOS",
+       "layout": "products-category-view",
+       "subcategories": []
+      }
+     ]
+    }
+   ],
+   "seo": {
+    "seoCategoryId": 1000,
+    "keyword": "mujer",
+    "irrelevant": false,
+    "isHiddenInMenu": false,
+    "seoExtraInfo": {
+     "irrelevant": false,
+     "isHiddenInMenu": false,
+     "isCanonicalReference": false
+    }
+   },
+   "layout": "marketing-content-view",
+   "isRedirected": false,
+   "isSelected": false,
+   "hasSubcategories": true,
+   "irrelevant": false,
+   "menuLevel": 1
+  },
+  {
+   "id": 1,
+   "name": "HOMBRE",
+   "subcategories": [
+    {
+     "id": 2,
+     "name": "SPECIAL PRICES",
+     "layout": "products-category-view",
+     "subcategories": []
+    }
+   ]
+  }
+ ]
+}

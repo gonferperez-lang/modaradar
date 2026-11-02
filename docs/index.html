@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>ModaRadar</title>
+  <meta name="description" content="Avisos de rebajas y outlet de moda mujer: Zara, Brownie, Zadig&amp;Voltaire y más tiendas.">
+  <meta name="theme-color" content="#faf7f8" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#141016" media="(prefers-color-scheme: dark)">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="ModaRadar">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <img src="icons/icon-192.png" alt="" width="30" height="30">
+      <div>
+        <h1>ModaRadar</h1>
+        <p id="updated" class="muted">Cargando…</p>
+      </div>
+    </div>
+    <div class="top-actions">
+      <button id="runnow" class="run-btn" aria-label="Revisar las tiendas ahora">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 1 0 10 10h-2a8 8 0 1 1-8-8V2Zm0 4a6 6 0 1 0 6 6h-2a4 4 0 1 1-4-4V6Zm0 4a2 2 0 1 0 2 2h-2v-2Zm1-8.9V12h8.9A9 9 0 0 0 13 1.1Z"/></svg>
+        <span>Revisar</span>
+      </button>
+      <button id="refresh" class="icon-btn" aria-label="Recargar los datos">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 5a7 7 0 0 1 6.6 4.7h-2.6l3.5 4.3 3.5-4.3h-2.3A9 9 0 1 0 21 13h-2a7 7 0 1 1-7-8Z"/></svg>
+      </button>
+    </div>
+  </header>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+
+  <div id="install-hint" class="install-hint" hidden>
+    <span>Instálala: pulsa <b>Compartir</b> <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M12 2 7.5 6.5l1.4 1.4L11 5.8V15h2V5.8l2.1 2.1 1.4-1.4L12 2ZM5 10v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V10h-3v2h1v8H7v-8h1v-2H5Z"/></svg> y luego <b>Añadir a pantalla de inicio</b>.</span>
+    <button class="link-btn" data-dismiss-install>Cerrar</button>
+  </div>
+
+  <main id="view" tabindex="-1"></main>
+
+  <nav class="tabbar" role="tablist">
+    <button role="tab" data-tab="novedades" aria-selected="true">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M10 2.5 12 8l5.5 2-5.5 2-2 5.5L8 12l-5.5-2L8 8l2-5.5Zm8 9 1 2.5 2.5 1-2.5 1-1 2.5-1-2.5-2.5-1 2.5-1 1-2.5Z"/></svg>
+      <span>Novedades</span>
+    </button>
+    <button role="tab" data-tab="destacadas" aria-selected="false">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m12 2.8 2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L12 16.6l-5.4 2.9 1.1-6.1-4.5-4.2 6.1-.8L12 2.8Zm0 4.5-1.4 2.9-3.2.4 2.4 2.2-.6 3.2 2.8-1.5 2.8 1.5-.6-3.2 2.4-2.2-3.2-.4L12 7.3Z"/></svg>
+      <span>Destacadas</span>
+    </button>
+    <button role="tab" data-tab="buscar" aria-selected="false">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M10 3a7 7 0 0 1 5.6 11.2l5.1 5.1-1.4 1.4-5.1-5.1A7 7 0 1 1 10 3Zm0 2a5 5 0 1 0 0 10 5 5 0 0 0 0-10Z"/></svg>
+      <span>Buscar</span>
+    </button>
+    <button role="tab" data-tab="tiendas" aria-selected="false">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 3a3 3 0 0 1 3 3c0 1.2-.7 2.2-1.7 2.7l-.3.1v.6l8.2 5.6A2 2 0 0 1 20.1 19H3.9a2 2 0 0 1-1.1-3.6L11 9.8V8a1 1 0 0 1 .7-1A1 1 0 1 0 11 6H9a3 3 0 0 1 3-3Zm0 8.5L4 17h16l-8-5.5Z"/></svg>
+      <span>Tiendas</span>
+    </button>
+    <button role="tab" data-tab="avisos" aria-selected="false">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a6 6 0 0 1 6 6v4.6l2 3.4H4l2-3.4V8a6 6 0 0 1 6-6Zm0 2a4 4 0 0 0-4 4v5.2L7.5 14h9l-.5-.8V8a4 4 0 0 0-4-4Zm-2 14h4a2 2 0 0 1-4 0Z"/></svg>
+      <span>Avisos</span>
+    </button>
+  </nav>
+
+  <script src="app.js" defer></script>
+</body>
+</html>

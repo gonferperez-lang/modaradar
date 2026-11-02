@@ -1,0 +1,460 @@
+{
+ "productGroups": [
+  {
+   "id": "g",
+   "type": "main",
+   "elements": [
+    {
+     "id": "e",
+     "commercialComponents": [
+      {
+       "id": 549293360,
+       "reference": "01255531-I2026",
+       "type": "Product",
+       "kind": "Wear",
+       "brand": {
+        "brandId": 1,
+        "brandGroupId": 1,
+        "brandGroupCode": "zara"
+       },
+       "name": "PANTALÓN PLIEGUES RAYAS",
+       "description": "",
+       "price": 1599,
+       "oldPrice": 2995,
+       "displayDiscountPercentage": 46,
+       "discountPercentage": "46%",
+       "discountLabel": "-46%",
+       "section": 1,
+       "sectionName": "WOMAN",
+       "familyName": "PANTALON",
+       "subfamilyName": "T.PANTALON",
+       "detail": {
+        "reference": "01255531-I2026",
+        "displayReference": "1255/531",
+        "colors": [
+         {
+          "id": "523",
+          "productId": 549293360,
+          "name": "Khaki vigoré",
+          "stylingId": "0",
+          "outfitId": "BASESTYLE",
+          "xmedia": [
+           {
+            "datatype": "xmedia",
+            "set": 1,
+            "type": "image",
+            "kind": "other",
+            "path": "/assets/public/ddac/2477/7e0c44b595dd/48d941800605/01255535523-a1",
+            "name": "01255535523-a1",
+            "width": 2048,
+            "height": 3072,
+            "timestamp": "1788513619494",
+            "allowedScreens": [
+             "small",
+             "large"
+            ],
+            "extraInfo": {
+             "originalName": "a1",
+             "availableZooms": [
+              "ZOOM2"
+             ],
+             "assetId": "ddac24777e0c44b595dd48d941800605",
+             "deliveryUrl": "https://static.zara.net/assets/public/ddac/2477/7e0c44b595dd/48d941800605/01255535523-a1/01255535523-a1.jpg?ts=1788513619494",
+             "deliveryPath": "/assets/public/ddac/2477/7e0c44b595dd/48d941800605/01255535523-a1/01255535523-a1.jpg?ts=1788513619494"
+            },
+            "url": "https://static.zara.net/assets/public/ddac/2477/7e0c44b595dd/48d941800605/01255535523-a1/01255535523-a1.jpg?ts=1788513619494&w={width}",
+            "metaUrl": "https://static.zara.net/assets/public/ddac/2477/7e0c44b595dd/48d941800605/meta.json?ts=1788513621187"
+           }
+          ],
+          "pdpMedia": {
+           "datatype": "xmedia",
+           "set": 2,
+           "type": "image",
+           "kind": "other",
+           "path": "/assets/public/60a6/61cb/91f7404781b5/4600533f9e80/01255535523-f1",
+           "name": "01255535523-f1",
+           "width": 2048,
+           "height": 3072,
+           "timestamp": "1788509560620",
+           "allowedScreens": [
+            "small",
+            "large"
+           ],
+           "extraInfo": {
+            "originalName": "f1",
+            "assetId": "60a661cb91f7404781b54600533f9e80",
+            "deliveryUrl": "https://static.zara.net/assets/public/60a6/61cb/91f7404781b5/4600533f9e80/01255535523-f1/01255535523-f1.jpg?ts=1788509560620",
+            "deliveryPath": "/assets/public/60a6/61cb/91f7404781b5/4600533f9e80/01255535523-f1/01255535523-f1.jpg?ts=1788509560620"
+           },
+           "url": "https://static.zara.net/assets/public/60a6/61cb/91f7404781b5/4600533f9e80/01255535523-f1/01255535523-f1.jpg?ts=1788509560620&w={width}",
+           "metaUrl": "https://static.zara.net/assets/public/60a6/61cb/91f7404781b5/4600533f9e80/meta.json?ts=1788509561931"
+          },
+          "price": 1599,
+          "oldPrice": 2995,
+          "displayDiscountPercentage": 46,
+          "discountPercentage": "46%",
+          "discountLabel": "-46%",
+          "availability": "in_stock",
+          "reference": "C01255531523000-I2026",
+          "extraInfo": {
+           "highlightPrice": true
+          },
+          "canonicalReference": "01255531523-I2026"
+         }
+        ]
+       },
+       "seo": {
+        "keyword": "pantalon-pliegues",
+        "seoProductId": "01255531",
+        "discernProductId": 549293360
+       },
+       "availability": "in_stock",
+       "tagTypes": [
+        {
+         "displayName": "DEL 22.09 AL 07.01",
+         "type": "SPECIAL_PRICE_ECOMLOAD_SEASON_PROMO_PVP_BASIC_Y_TRF_87061_ZARA_ES"
+        }
+       ],
+       "extraInfo": {
+        "highlightPrice": true,
+        "hideProductInfo": false,
+        "duplicateReference": false
+       },
+       "availableColors": [
+        {
+         "colorName": "Khaki vigoré",
+         "hexColor": "#5D5A4E"
+        },
+        {
+         "colorName": "Negro",
+         "hexColor": "#0A0A0A"
+        },
+        {
+         "colorName": "Marrón vigoré",
+         "hexColor": "#585A59"
+        },
+        {
+         "colorName": "Plomo",
+         "hexColor": "#3D2E2D"
+        }
+       ],
+       "colorInfo": {
+        "mainColorHexCode": "#5D5A4E",
+        "numAdditionalColors": 3,
+        "shouldUseColorcutInColorLabel": false
+       },
+       "gridPosition": 1,
+       "zoomedGridPosition": 1,
+       "preservedBlockPosition": 1,
+       "athleticzPosition": 1,
+       "productTag": [
+        "DEL 22.09 AL 07.01"
+       ],
+       "colorList": "",
+       "isDivider": false,
+       "hasXmediaDouble": false,
+       "showExtraImageOnHover": false,
+       "showAvailability": false,
+       "priceUnavailable": false,
+       "isOnSale": true
+      },
+      {
+       "id": 549293362,
+       "reference": "01255531-I2026",
+       "type": "Product",
+       "kind": "Wear",
+       "brand": {
+        "brandId": 1,
+        "brandGroupId": 1,
+        "brandGroupCode": "zara"
+       },
+       "name": "PANTALÓN PLIEGUES",
+       "description": "",
+       "price": 1599,
+       "oldPrice": 2995,
+       "displayDiscountPercentage": 46,
+       "discountPercentage": "46%",
+       "discountLabel": "-46%",
+       "section": 1,
+       "sectionName": "WOMAN",
+       "familyName": "PANTALON",
+       "subfamilyName": "T.PANTALON",
+       "detail": {
+        "reference": "01255531-I2026",
+        "displayReference": "1255/531",
+        "colors": [
+         {
+          "id": "818",
+          "productId": 549293362,
+          "name": "Plomo",
+          "stylingId": "0",
+          "outfitId": "BASESTYLE",
+          "xmedia": [
+           {
+            "datatype": "xmedia",
+            "set": 2,
+            "type": "image",
+            "kind": "full",
+            "path": "/assets/public/c948/d065/709243959895/8767aa3110d3/01255533818-p",
+            "name": "01255533818-p",
+            "width": 2048,
+            "height": 3072,
+            "timestamp": "1788513618993",
+            "allowedScreens": [
+             "small",
+             "large"
+            ],
+            "extraInfo": {
+             "originalName": "p",
+             "availableZooms": [
+              "ZOOM2"
+             ],
+             "assetId": "c948d0657092439598958767aa3110d3",
+             "deliveryUrl": "https://static.zara.net/assets/public/c948/d065/709243959895/8767aa3110d3/01255533818-p/01255533818-p.jpg?ts=1788513618993",
+             "deliveryPath": "/assets/public/c948/d065/709243959895/8767aa3110d3/01255533818-p/01255533818-p.jpg?ts=1788513618993"
+            },
+            "url": "https://static.zara.net/assets/public/c948/d065/709243959895/8767aa3110d3/01255533818-p/01255533818-p.jpg?ts=1788513618993&w={width}",
+            "metaUrl": "https://static.zara.net/assets/public/c948/d065/709243959895/8767aa3110d3/meta.json?ts=1788513620401"
+           }
+          ],
+          "pdpMedia": {
+           "datatype": "xmedia",
+           "set": 2,
+           "type": "image",
+           "kind": "other",
+           "path": "/assets/public/0e0f/37f5/9e4f4baeb254/1d45fef0e4cc/01255533818-f1",
+           "name": "01255533818-f1",
+           "width": 2048,
+           "height": 3072,
+           "timestamp": "1788509561919",
+           "allowedScreens": [
+            "small",
+            "large"
+           ],
+           "extraInfo": {
+            "originalName": "f1",
+            "assetId": "0e0f37f59e4f4baeb2541d45fef0e4cc",
+            "deliveryUrl": "https://static.zara.net/assets/public/0e0f/37f5/9e4f4baeb254/1d45fef0e4cc/01255533818-f1/01255533818-f1.jpg?ts=1788509561919",
+            "deliveryPath": "/assets/public/0e0f/37f5/9e4f4baeb254/1d45fef0e4cc/01255533818-f1/01255533818-f1.jpg?ts=1788509561919"
+           },
+           "url": "https://static.zara.net/assets/public/0e0f/37f5/9e4f4baeb254/1d45fef0e4cc/01255533818-f1/01255533818-f1.jpg?ts=1788509561919&w={width}",
+           "metaUrl": "https://static.zara.net/assets/public/0e0f/37f5/9e4f4baeb254/1d45fef0e4cc/meta.json?ts=1788509563387"
+          },
+          "price": 1599,
+          "oldPrice": 2995,
+          "displayDiscountPercentage": 46,
+          "discountPercentage": "46%",
+          "discountLabel": "-46%",
+          "availability": "in_stock",
+          "reference": "C01255531818000-I2026",
+          "extraInfo": {
+           "highlightPrice": true
+          },
+          "canonicalReference": "01255531818-I2026"
+         }
+        ]
+       },
+       "seo": {
+        "keyword": "pantalon-pliegues",
+        "seoProductId": "01255531",
+        "discernProductId": 549293362
+       },
+       "availability": "in_stock",
+       "tagTypes": [
+        {
+         "displayName": "DEL 22.09 AL 07.01",
+         "type": "SPECIAL_PRICE_ECOMLOAD_SEASON_PROMO_PVP_BASIC_Y_TRF_87061_ZARA_ES"
+        }
+       ],
+       "extraInfo": {
+        "highlightPrice": true,
+        "hideProductInfo": false,
+        "duplicateReference": false
+       },
+       "availableColors": [
+        {
+         "colorName": "Plomo",
+         "hexColor": "#3D2E2D"
+        },
+        {
+         "colorName": "Khaki vigoré",
+         "hexColor": "#5D5A4E"
+        },
+        {
+         "colorName": "Negro",
+         "hexColor": "#0A0A0A"
+        },
+        {
+         "colorName": "Marrón vigoré",
+         "hexColor": "#585A59"
+        }
+       ],
+       "colorInfo": {
+        "mainColorHexCode": "#3D2E2D",
+        "numAdditionalColors": 3,
+        "shouldUseColorcutInColorLabel": false
+       },
+       "gridPosition": 2,
+       "zoomedGridPosition": 2,
+       "preservedBlockPosition": 2,
+       "athleticzPosition": 2,
+       "productTag": [
+        "DEL 22.09 AL 07.01"
+       ],
+       "colorList": "",
+       "isDivider": false,
+       "hasXmediaDouble": false,
+       "showExtraImageOnHover": false,
+       "showAvailability": false,
+       "priceUnavailable": false,
+       "isOnSale": true
+      },
+      {
+       "id": 552293226,
+       "reference": "04387268-I2026",
+       "type": "Product",
+       "kind": "Wear",
+       "brand": {
+        "brandId": 1,
+        "brandGroupId": 1,
+        "brandGroupCode": "zara"
+       },
+       "name": "BLUSA VOLANTES LUNARES",
+       "description": "",
+       "price": 1299,
+       "oldPrice": 2595,
+       "displayDiscountPercentage": 49,
+       "discountPercentage": "49%",
+       "discountLabel": "-49%",
+       "section": 1,
+       "sectionName": "WOMAN",
+       "familyName": "CAMISA",
+       "subfamilyName": "B.CAMISA",
+       "detail": {
+        "reference": "04387268-I2026",
+        "displayReference": "4387/268",
+        "colors": [
+         {
+          "id": "068",
+          "productId": 552293226,
+          "name": "Crudo / Granate",
+          "stylingId": "0",
+          "outfitId": "BASESTYLE",
+          "xmedia": [
+           {
+            "datatype": "xmedia",
+            "set": 2,
+            "type": "image",
+            "kind": "full",
+            "path": "/assets/public/99d0/f1f1/f2964592aa31/c68b479b8742/04387268068-p",
+            "name": "04387268068-p",
+            "width": 2048,
+            "height": 3072,
+            "timestamp": "1788366403188",
+            "allowedScreens": [
+             "small",
+             "large"
+            ],
+            "extraInfo": {
+             "originalName": "p",
+             "availableZooms": [
+              "ZOOM2"
+             ],
+             "assetId": "99d0f1f1f2964592aa31c68b479b8742",
+             "deliveryUrl": "https://static.zara.net/assets/public/99d0/f1f1/f2964592aa31/c68b479b8742/04387268068-p/04387268068-p.jpg?ts=1788366403188",
+             "deliveryPath": "/assets/public/99d0/f1f1/f2964592aa31/c68b479b8742/04387268068-p/04387268068-p.jpg?ts=1788366403188"
+            },
+            "url": "https://static.zara.net/assets/public/99d0/f1f1/f2964592aa31/c68b479b8742/04387268068-p/04387268068-p.jpg?ts=1788366403188&w={width}",
+            "metaUrl": "https://static.zara.net/assets/public/99d0/f1f1/f2964592aa31/c68b479b8742/meta.json?ts=1788366404646"
+           }
+          ],
+          "pdpMedia": {
+           "datatype": "xmedia",
+           "set": 2,
+           "type": "image",
+           "kind": "other",
+           "path": "/assets/public/5574/0ef8/b17642b399d0/d585b69aa639/04387268068-f1",
+           "name": "04387268068-f1",
+           "width": 2048,
+           "height": 3072,
+           "timestamp": "1788261699273",
+           "allowedScreens": [
+            "small",
+            "large"
+           ],
+           "extraInfo": {
+            "originalName": "f1",
+            "assetId": "55740ef8b17642b399d0d585b69aa639",
+            "deliveryUrl": "https://static.zara.net/assets/public/5574/0ef8/b17642b399d0/d585b69aa639/04387268068-f1/04387268068-f1.jpg?ts=1788261699273",
+            "deliveryPath": "/assets/public/5574/0ef8/b17642b399d0/d585b69aa639/04387268068-f1/04387268068-f1.jpg?ts=1788261699273"
+           },
+           "url": "https://static.zara.net/assets/public/5574/0ef8/b17642b399d0/d585b69aa639/04387268068-f1/04387268068-f1.jpg?ts=1788261699273&w={width}",
+           "metaUrl": "https://static.zara.net/assets/public/5574/0ef8/b17642b399d0/d585b69aa639/meta.json?ts=1788261700693"
+          },
+          "price": 1299,
+          "oldPrice": 2595,
+          "displayDiscountPercentage": 49,
+          "discountPercentage": "49%",
+          "discountLabel": "-49%",
+          "availability": "in_stock",
+          "reference": "C04387268068000-I2026",
+          "extraInfo": {
+           "highlightPrice": true
+          },
+          "canonicalReference": "04387268068-I2026"
+         }
+        ]
+       },
+       "seo": {
+        "keyword": "blusa-volantes-lunares",
+        "seoProductId": "04387268",
+        "discernProductId": 552293226
+       },
+       "availability": "in_stock",
+       "tagTypes": [
+        {
+         "displayName": "DEL 22.09 AL 07.01",
+         "type": "SPECIAL_PRICE_ECOMLOAD_SEASON_PROMO_PVP_BASIC_Y_TRF_87061_ZARA_ES"
+        }
+       ],
+       "extraInfo": {
+        "highlightPrice": true,
+        "hideProductInfo": false,
+        "duplicateReference": false
+       },
+       "availableColors": [
+        {
+         "colorName": "Crudo / Granate",
+         "hexColor": "#591C24"
+        },
+        {
+         "colorName": "Negro / Crudo",
+         "hexColor": "#0A0A0A"
+        }
+       ],
+       "colorInfo": {
+        "mainColorHexCode": "#591C24",
+        "numAdditionalColors": 1,
+        "shouldUseColorcutInColorLabel": false
+       },
+       "gridPosition": 1,
+       "zoomedGridPosition": 3,
+       "preservedBlockPosition": 3,
+       "athleticzPosition": 3,
+       "productTag": [
+        "DEL 22.09 AL 07.01"
+       ],
+       "colorList": "",
+       "isDivider": false,
+       "hasXmediaDouble": false,
+       "showExtraImageOnHover": false,
+       "showAvailability": false,
+       "priceUnavailable": false,
+       "isOnSale": true
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

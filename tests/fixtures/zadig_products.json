@@ -1,0 +1,294 @@
+{
+ "products": [
+  {
+   "id": 8685,
+   "typeId": "configurable",
+   "sku": "PWGCP3201F_BLAN",
+   "enabled": true,
+   "name": "Blusa Tink Satén",
+   "medias": [
+    {
+     "label": "PWGCP3201F_BLANC_SHOOTING",
+     "url": "/P/W/PWGCP3201F_BLANC_SHOOTING_6965ff2163f8f.jpg",
+     "position": 0,
+     "type": "image",
+     "roles": [
+      "shooting_image"
+     ]
+    },
+    {
+     "label": "PWGCP3201F_BLANC_BACK",
+     "url": "/P/W/PWGCP3201F_BLANC_BACK_6965fe50390ea.jpg",
+     "position": 1,
+     "type": "image",
+     "roles": []
+    },
+    {
+     "label": "PWGCP3201F_BLANC_HOVER",
+     "url": "/P/W/PWGCP3201F_BLANC_HOVER_6965fe3349987.jpg",
+     "position": 2,
+     "type": "image",
+     "roles": [
+      "hover_image"
+     ]
+    },
+    {
+     "label": "PWGCP3201F_BLANC_ADDI_1",
+     "url": "/P/W/PWGCP3201F_BLANC_ADDI_1_6965ff130e566.jpg",
+     "position": 3,
+     "type": "image",
+     "roles": []
+    },
+    {
+     "label": "PWGCP3201F_BLANC_ADDI_2",
+     "url": "/P/W/PWGCP3201F_BLANC_ADDI_2_6965fe31bd1a4.jpg",
+     "position": 4,
+     "type": "image",
+     "roles": []
+    },
+    {
+     "label": "PWGCP3201F_BLANC_PACKSHOT",
+     "url": "/P/W/PWGCP3201F_BLANC_PACKSHOT_6965fe3b7dd41.jpg",
+     "position": 5,
+     "type": "image",
+     "roles": [
+      "image",
+      "small_image",
+      "thumbnail",
+      "silhouette"
+     ]
+    }
+   ],
+   "otherColorAvailable": true,
+   "links": [],
+   "slug": "sayo-mujer-tunica-tink-satin-blanco-pwgcp3201f",
+   "comingSoon": false,
+   "new": false,
+   "specialLabel": "ICONIC",
+   "specialLabelCode": "ICONIC",
+   "price": {
+    "hasVariantPrice": false,
+    "special": {
+     "value": 177,
+     "currency": "EUR",
+     "from": "2026-01-01T00:00:00+00:00",
+     "to": "2099-01-01T00:00:00+00:00",
+     "discount": 40
+    },
+    "tier": [],
+    "has_variant_price": false,
+    "fixed": [],
+    "regular": {
+     "currency": "EUR",
+     "value": 295
+    }
+   },
+   "stock": {
+    "maxSaleQuantity": 10,
+    "status": "in_stock",
+    "is_in_stock": true
+   },
+   "alternates": {
+    "uk_en": {
+     "slug": "tunic-women-tink-satin-tunic-white-pwgcp3201f"
+    },
+    "ch_en": {
+     "slug": "tunic-women-tink-satin-tunic-white-pwgcp3201f"
+    },
+    "be_en": {
+     "slug": "tunic-women-tink-satin-tunic-white-pwgcp3201f"
+    },
+    "it_it": {
+     "slug": "tunica-donna-tunica-tink-satin-bianco-pwgcp3201f"
+    },
+    "es_es": {
+     "slug": "sayo-mujer-tunica-tink-satin-blanco-pwgcp3201f"
+    },
+    "usd_store_en": {
+     "slug": "tunic-women-tink-satin-tunic-pwgcp3201f"
+    },
+    "fr_fr": {
+     "slug": "tunique-femme-tunique-tink-satin-blanc-pwgcp3201f"
+    },
+    "de_de": {
+     "slug": "tunika-damen-tunika-tink-satin-weiss-pwgcp3201f"
+    }
+   },
+   "shortDescription": "Blusa de satén con cuello abierto, mangas largas y detalles fruncidos.",
+   "family": "SHIRT",
+   "gender": "Mujer",
+   "range": "READY TO WEAR",
+   "type": "CAMISA",
+   "model": "PWGCP3201F",
+   "bagsRange": "",
+   "collection": "FW19",
+   "open_amount_min": 0,
+   "open_amount_max": 0,
+   "catalog_event": {
+    "date_start": "",
+    "date_end": "",
+    "status": "invalid"
+   },
+   "isStampProduct": false,
+   "stampSettings": [],
+   "customOptions": [],
+   "inStockSizes": [
+    "L",
+    "S",
+    "M",
+    "XS"
+   ],
+   "isKids": false,
+   "parentData": [
+    {
+     "id": 113,
+     "slug": "eshop-fashion-women-ready-to-wear-113",
+     "name": "MUJER : VER TODO",
+     "productCount": 342
+    }
+   ]
+  },
+  {
+   "id": 8686,
+   "typeId": "configurable",
+   "sku": "PWGCP3201F_NOIR",
+   "enabled": true,
+   "name": "Blusa Tink Satén",
+   "medias": [
+    {
+     "label": "PWGCP3201F_NOIR_SHOOTING",
+     "url": "/P/W/PWGCP3201F_NOIR_SHOOTING_6965b7ce9a81c.jpg",
+     "position": 0,
+     "type": "image",
+     "roles": [
+      "shooting_image"
+     ]
+    },
+    {
+     "label": "PWGCP3201F_NOIR_BACK",
+     "url": "/P/W/PWGCP3201F_NOIR_BACK_6965b8d15e3a6.jpg",
+     "position": 1,
+     "type": "image",
+     "roles": []
+    },
+    {
+     "label": "PWGCP3201F_NOIR_ADDI_1",
+     "url": "/P/W/PWGCP3201F_NOIR_ADDI_1_6965b7c5eed01.jpg",
+     "position": 2,
+     "type": "image",
+     "roles": []
+    },
+    {
+     "label": "PWGCP3201F_NOIR_HOVER",
+     "url": "/P/W/PWGCP3201F_NOIR_HOVER_6965b8cd9311e.jpg",
+     "position": 3,
+     "type": "image",
+     "roles": [
+      "hover_image"
+     ]
+    },
+    {
+     "label": "PWGCP3201F_NOIR_PACKSHOT_1",
+     "url": "/P/W/PWGCP3201F_NOIR_PACKSHOT_1_6965b34c08941.jpg",
+     "position": 4,
+     "type": "image",
+     "roles": [
+      "image",
+      "small_image",
+      "thumbnail",
+      "silhouette"
+     ]
+    }
+   ],
+   "otherColorAvailable": true,
+   "links": [],
+   "slug": "sayo-mujer-tunica-tink-satin-negro-pwgcp3201f",
+   "comingSoon": false,
+   "new": false,
+   "specialLabel": "ICONIC",
+   "specialLabelCode": "ICONIC",
+   "price": {
+    "hasVariantPrice": false,
+    "special": {
+     "value": 100,
+     "currency": "EUR",
+     "from": "2020-01-01T00:00:00+00:00",
+     "to": "2020-02-01T00:00:00+00:00",
+     "discount": 66
+    },
+    "tier": [],
+    "has_variant_price": false,
+    "fixed": [],
+    "regular": {
+     "currency": "EUR",
+     "value": 295
+    }
+   },
+   "stock": {
+    "maxSaleQuantity": 10,
+    "status": "in_stock",
+    "is_in_stock": true
+   },
+   "alternates": {
+    "uk_en": {
+     "slug": "tunic-women-tink-satin-tunic-black-pwgcp3201f"
+    },
+    "ch_en": {
+     "slug": "tunic-women-tink-satin-tunic-black-pwgcp3201f"
+    },
+    "be_en": {
+     "slug": "tunic-women-tink-satin-tunic-black-pwgcp3201f"
+    },
+    "it_it": {
+     "slug": "tunica-donna-tunica-tink-satin-nero-pwgcp3201f"
+    },
+    "es_es": {
+     "slug": "sayo-mujer-tunica-tink-satin-negro-pwgcp3201f"
+    },
+    "usd_store_en": {
+     "slug": "tunic-women-tink-satin-tunic-pwgcp3201f"
+    },
+    "fr_fr": {
+     "slug": "tunique-femme-tunique-tink-satin-noir-pwgcp3201f"
+    },
+    "de_de": {
+     "slug": "tunika-damen-tunika-tink-satin-schwarz-pwgcp3201f"
+    }
+   },
+   "shortDescription": "Blusa de satén con cuello abierto, mangas largas y detalles fruncidos.",
+   "family": "SHIRT",
+   "gender": "Mujer",
+   "range": "READY TO WEAR",
+   "type": "CAMISA",
+   "model": "PWGCP3201F",
+   "bagsRange": "",
+   "collection": "FW19",
+   "open_amount_min": 0,
+   "open_amount_max": 0,
+   "catalog_event": {
+    "date_start": "",
+    "date_end": "",
+    "status": "invalid"
+   },
+   "isStampProduct": false,
+   "stampSettings": [],
+   "customOptions": [],
+   "inStockSizes": [
+    "XS",
+    "M",
+    "S",
+    "L"
+   ],
+   "isKids": false,
+   "parentData": [
+    {
+     "id": 113,
+     "slug": "eshop-fashion-women-ready-to-wear-113",
+     "name": "MUJER : VER TODO",
+     "productCount": 342
+    }
+   ]
+  }
+ ],
+ "totalPages": 1
+}
