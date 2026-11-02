@@ -31,7 +31,7 @@ DETECTORS_VERSION = "moda-1"   # cámbialo al mejorar la detección para re-semb
 # opciones de una tienda que cambian QUÉ prendas se leen: si cambian, esa tienda se re-siembra sin avisos
 FETCH_KEYS = ("platform", "url", "locale", "collections", "max_pages", "collection_pages", "categories",
               "sale_categories", "exclude", "exclude_tags", "min_store_pct", "section", "store_code",
-              "women_terms", "pages")
+              "women_terms", "pages", "page_size", "tile", "name_re")
 
 
 def fetch_hash(store: dict[str, Any]) -> str:
@@ -218,7 +218,8 @@ def run(args: argparse.Namespace) -> int:
     order = {s["id"]: i for i, s in enumerate(cfg["stores"])}
     results.sort(key=lambda r: order.get(r["id"], 999))
 
-    state.prune(int(gen.get("forget_after_days", 7)), {s["id"] for s in cfg["stores"]})
+    state.prune(int(gen.get("forget_after_days", 7)), {s["id"] for s in cfg["stores"]},
+                {s["id"]: int(s["forget_days"]) for s in cfg["stores"] if s.get("forget_days")})
     th = thresholds(cfg)
     report = analysis.analyse(state.products(), cfg["stores"], th, cfg)
 

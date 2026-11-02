@@ -15,7 +15,7 @@ sys.path.insert(0, str(ROOT))
 from modaradar import analysis, notify  # noqa: E402
 from modaradar.filters import categorize, fits, is_women, size_tokens  # noqa: E402
 from modaradar.models import Product  # noqa: E402
-from modaradar.sources import PLATFORMS, nike, shopify, zadig, zara  # noqa: E402
+from modaradar.sources import PLATFORMS, nike, sfcc, shopify, zadig, zara  # noqa: E402
 from modaradar.state import State, store_threshold, thresholds  # noqa: E402
 
 FIX = ROOT / "tests" / "fixtures"
@@ -299,6 +299,7 @@ class TestAnalysisAndConfig(unittest.TestCase):
             self.assertIn(s["platform"], PLATFORMS, s["id"])
         self.assertEqual({s["id"] for s in cfg["stores"] if s.get("destacada")}, {"zara", "brownie", "zadig"})
         self.assertTrue({"poloclub", "scuffers", "emestudios", "yuxus", "nike"} <= set(ids))
+        self.assertTrue({"fiftyoutlet", "desigual", "cortefiel", "bimbaylola", "trucco", "misako"} <= set(ids))
 
 
 class TestMixedBrandsAndNike(unittest.TestCase):
@@ -351,6 +352,43 @@ class TestMixedBrandsAndNike(unittest.TestCase):
         self.assertNotIn("unseen", s.items["nike:n"].extra)
         s.items["nike:n"].extra["unseen"] = "2026-01-01T00:00:00+00:00"
         self.assertEqual(s.merge("nike", [prod("n", "nike")], cfg), [])   # su vuelta no es reposición
+
+
+class TestSalesforce(unittest.TestCase):
+    TENDAM = r'class="[^"]*\bproductTile\b'
+
+    def run_parse(self, name, **store):
+        html = (FIX / f"sfcc_{name}.html").read_text(encoding="utf-8")
+        store = {"id": name, **store}
+        out, tiles = sfcc.parse(html, store, CFG, 0.2)
+        self.assertGreater(tiles, 0)
+        self.assertTrue(out, name)
+        for p in out:
+            self.assertGreater(p.original, p.price)
+            self.assertTrue(p.url.startswith("http"), p.url)
+            self.assertTrue(p.title and p.title.lower() not in sfcc.NOT_NAMES)
+        return out
+
+    def test_formats(self):
+        d = self.run_parse("desigual", url="https://www.desigual.com")        # strike-through / sales
+        self.assertEqual((d[0].price, d[0].original), (39.97, 79.95))
+        f = self.run_parse("fifty", url="https://fiftyoutlet.com", tile=self.TENDAM)   # basePrice / salesPrice
+        self.assertEqual((f[0].title, f[0].price, f[0].original), ("Camisa oxford", 15.99, 49.99))
+        self.run_parse("bimba", url="https://www.bimbaylola.com")             # precio en JSON
+        lj = self.run_parse("liujo", url="https://www.liujo.com",
+                            name_re=r'tile-image front" alt="([^"]+?)(?: Liu Jo)?(?: - [a-z]+)?"')
+        self.assertEqual(lj[0].title, "Jersey con escote de pico")
+        sd = self.run_parse("superdry", url="https://www.superdry.es")        # discounted-price
+        self.assertEqual((sd[0].price, sd[0].original), (125.99, 179.99))
+
+    def test_money_and_urls(self):
+        self.assertEqual(sfcc.money("1.299,95"), 1299.95)
+        self.assertEqual(sfcc.money("49,99"), 49.99)
+        self.assertEqual(sfcc.money("159.90"), 159.9)
+        self.assertEqual(sfcc.money("1.299"), 1299.0)
+        self.assertEqual(sfcc.page_url("https://x.com", "/es/mujer?pmin=1&start=5", 60, 60),
+                         "https://x.com/es/mujer?pmin=1&start=60&sz=60")
+        self.assertEqual(sfcc.page_url("https://x.com", "/outlet/mujer/", 0, 0), "https://x.com/outlet/mujer/")
 
 
 if __name__ == "__main__":

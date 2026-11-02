@@ -47,13 +47,13 @@ _NOT_FASHION = re.compile(
 _SHOES = re.compile(
     r"\bzapat(o|os|illa|illas)\b|\bsandalias?\b|\bbotas?\b|\bbotin(es)?\b|\bbotines\b|\bbailarinas?\b|\bmocasin(es)?\b"
     r"|\bsneakers?\b|\bdeportivas?\b|\bshoes?\b|\bchaussures?\b|\bscarp[ae]\b|\balpargatas?\b|\bespadrilles?\b"
-    r"|\bsalon(es)?\b|\bmules?\b|\bzuecos?\b|\bchanclas?\b|\bboots?\b|\bankle boot|\bstiletto|\bslingback"
+    r"|\bsalon(es)?\b|\bmules?\b|\bzuecos?\b|\bchanclas?\b|\bboots?\b|\bminibotas?\b|\bankle boot|\bstiletto|\bslingback"
     r"|\bbambas?\b|\brunning\b|\bzapatos\b|\bcalzado\b|\bfootwear\b|\bbaskets?\b|\bderbies\b|\bloafers?\b|\bpumps?\b"
     r"|\btacon\b"
 )
 _BAGS = re.compile(
     r"\bbols(o|os|ito|itos|a|as)\b|\bbags?\b|\bhandbags?\b|\bsac\b|\bborsa\b|\bmochilas?\b|\bclutch\b|\bbandolera\b"
-    r"|\bshopper\b|\btote\b|\brinonera\b|\bmonederos?\b|\bcarteras?\b|\bwallets?\b|\bneceser\b|\bpurses?\b"
+    r"|\bshopper\b|\btote\b|\brinonera\b|\bmonederos?\b|\bcarteras?\b|\bwallets?\b|\bneceser(es)?\b|\bpurses?\b"
     r"|\bpochette\b|\bcabas\b|\bcrossbody\b|\bmarroquineria\b|\bleather goods\b|\btarjeteros?\b"
 )
 _ACCESSORIES = re.compile(
@@ -64,14 +64,14 @@ _ACCESSORIES = re.compile(
     r"|\bfundas?\b|\bearrings?\b|\bnecklaces?\b|\bbracelets?\b|\brings?\b|\bscar(f|ves)\b|\bhats?\b|\bcaps?\b"
     r"|\bbeanie\b|\bchal(es)?\b|\bshawls?\b|\bestolas?\b|\bgloves?\b|\bhair\b|\bbijoux\b|\becharpe\b|\bfoulard\b"
     r"|\bceinture\b|\bchapeau\b|\bcomplementos?\b|\baccesorios?\b|\baccessor(y|ies)\b|\bcomples\b|\bgorro\b"
-    r"|\bboina\b|\bcintas? (para el )?pelo\b|\bmunequeras?\b|\bcintas?\b"
+    r"|\bboina\b|\bclips?\b|\bbandanas?\b|\bfoulards?\b|\bfoular\b|\bcalcetin\b|\bbombonera\b|\bcintas? (para el )?pelo\b|\bmunequeras?\b|\bcintas?\b"
 )
 
 # tipo de prenda (en orden: «chaqueta de punto» es punto, «vestido camisero» es vestido…)
 PRENDAS: list[tuple[str, str, re.Pattern[str]]] = [
     ("monos", "Monos", re.compile(r"\bmonos?\b|\bjumpsuits?\b|\bpetos?\b|\bcombinaison|\bplaysuit|\btuta\b|\bovershirt dress\b")),
-    ("vestidos", "Vestidos", re.compile(r"\bvestidos?\b|\bdress(es)?\b|\brobes?\b|\babit[oi]\b|\bkleid")),
-    ("faldas", "Faldas", re.compile(r"\bfaldas?\b|\bskirts?\b|\bjupes?\b|\bgonn[ae]\b|\bskort")),
+    ("vestidos", "Vestidos", re.compile(r"\b(?:mini|maxi)?vestidos?\b|\bdress(es)?\b|\brobes?\b|\babit[oi]\b|\bkleid")),
+    ("faldas", "Faldas", re.compile(r"\b(?:mini|maxi)?faldas?\b|\bskirts?\b|\bjupes?\b|\bgonn[ae]\b|\bskort")),
     ("bano", "Baño", re.compile(r"\bbikinis?\b|\bbanadores?\b|\bswim|\bmaillot de bain\b|\btrikini\b|\bcostume\b|\bpareos?\b")),
     ("lenceria", "Lencería y pijamas", re.compile(
         r"\blenceria\b|\bsujetador(es)?\b|\bbragas?\b|\bbralettes?\b|\bbras?\b|\bpijamas?\b|\bcamison\b|\bbatas?\b"
@@ -84,12 +84,12 @@ PRENDAS: list[tuple[str, str, re.Pattern[str]]] = [
         r"\babrigos?\b|\bchaquet(a|as|on|ones)\b|\bcazadoras?\b|\bblazers?\b|\bamericanas?\b|\bgabardinas?\b|\btrench\b"
         r"|\bparkas?\b|\bplumifer[oa]s?\b|\banoraks?\b|\bchalecos?\b|\bcapas?\b|\bcapes?\b|\bcoats?\b|\bjackets?\b"
         r"|\bmanteaux?\b|\bvestes?\b|\bcappott[oi]\b|\bgiacc[ah]e?\b|\bpuffers?\b|\bbombers?\b|\bsobrecamisa\b|\bovershirt\b"
-        r"|\bperfecto\b|\bwaistcoats?\b|\bvests?\b|\bdown jacket\b|\boutwear\b|\boutwerwear\b|\bouterwear\b|\bdoudoune\b|\bblouson\b")),
+        r"|\bperfecto\b|\bcaban\b|\bpeacoat\b|\bponchos?\b|\bsastre\b|\bwaistcoats?\b|\bvests?\b|\bdown jacket\b|\boutwear\b|\boutwerwear\b|\bouterwear\b|\bdoudoune\b|\bblouson\b")),
     ("vaqueros", "Vaqueros", re.compile(r"\bpantalon(es)? vaquer[oa]s?\b|\bvaquer[oa]s?\b|\bjeans?\b|\btejan[oa]s?\b|\bdenim\b")),
     ("shorts", "Shorts y bermudas", re.compile(r"\bshorts?\b|\bbermudas?\b|\bpantalon(es)? cort[oa]s?\b")),
     ("pantalones", "Pantalones", re.compile(
         r"\bpantalon(es)?\b|\btrousers?\b|\bpants?\b|\bculottes?\b|\bleggings?\b|\bjoggers?\b|\bchinos?\b|\bpalazzo\b"
-        r"|\bpantaloni?\b|\bcargo\b|\bmallas?\b|\btights\b")),
+        r"|\bpantaloni?\b|\bcargo\b|\bmallas?\b|\btights\b|\bleggins\b")),
     ("camisas", "Camisas y blusas", re.compile(
         r"\bcamisas?\b|\bblusas?\b|\bshirts?\b|\bblouses?\b|\bchemises?\b|\bcamicie?a?\b|\btunicas?\b|\bcamisola\b|\bsayo\b")),
     ("camisetas", "Camisetas y tops", re.compile(

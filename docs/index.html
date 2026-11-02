@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>ModaRadar</title>
   <meta name="description" content="Avisos de rebajas y outlet de moda mujer: Zara, Brownie, Zadig&amp;Voltaire y más tiendas.">
-  <meta name="theme-color" content="#faf7f8" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#141016" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f7f2eb" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#14100e" media="(prefers-color-scheme: dark)">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-title" content="ModaRadar">
@@ -15,14 +15,17 @@
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
   <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..800;1,6..96,400..700&family=Manrope:wght@400;500;600;700;800&display=swap">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="topbar">
     <div class="brand">
-      <img src="icons/icon-192.png" alt="" width="30" height="30">
+      <img src="icons/icon-192.png" alt="" width="32" height="32">
       <div>
-        <h1>ModaRadar</h1>
+        <h1 class="wordmark">Moda<em>Radar</em></h1>
         <p id="updated" class="muted">Cargando…</p>
       </div>
     </div>
@@ -43,7 +46,15 @@
     <button class="link-btn" data-dismiss-install>Cerrar</button>
   </div>
 
-  <main id="view" tabindex="-1"></main>
+  <main id="view" tabindex="-1">
+    <div class="hero" aria-hidden="true"><div class="skel line short"></div><div class="skel line" style="height:38px;margin-top:14px"></div><div class="skel line" style="height:38px;width:70%"></div></div>
+    <div class="grid" style="margin-top:28px" aria-hidden="true">
+      <div><div class="skel media"></div><div class="skel line short"></div><div class="skel line"></div></div>
+      <div><div class="skel media"></div><div class="skel line short"></div><div class="skel line"></div></div>
+      <div><div class="skel media"></div><div class="skel line short"></div><div class="skel line"></div></div>
+      <div><div class="skel media"></div><div class="skel line short"></div><div class="skel line"></div></div>
+    </div>
+  </main>
 
   <nav class="tabbar" role="tablist">
     <button role="tab" data-tab="novedades" aria-selected="true">

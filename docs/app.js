@@ -47,7 +47,7 @@ const PRENDAS = [
 const PRENDA = Object.fromEntries(PRENDAS.map(([k, l, e]) => [k, { label: l, emoji: e }]));
 const CAT_EMOJI = { calzado: '👠', bolsos: '👜', accesorios: '💍' };
 const emojiOf = (p) => (p.category === 'ropa' ? (PRENDA[p.prenda] || PRENDA.otras).emoji : CAT_EMOJI[p.category] || '🛍️');
-const EVENT = { new: ['🆕', 'Nuevo en outlet'], price_drop: ['💸', 'Rebajado aún más'], restock: ['🔁', 'Vuelve a haber stock'] };
+const EVENT = { new: ['', 'Nuevo en outlet'], price_drop: ['', 'Rebajado aún más'], restock: ['', 'Vuelve a haber stock'] };
 const SORTS = [['nuevas', 'Más nuevas'], ['descuento', 'Mayor descuento'], ['precio', 'Más baratas']];
 const PAGE = 40;
 // sinónimos habituales al buscar
@@ -160,7 +160,7 @@ function sortItems(list, how = S.sort) {
 // ── componentes ─────────────────────────────────────────────────────────────
 function img(src, emoji, cls = 'pimg') {
   return src
-    ? `<img class="${cls}" src="${esc(safeUrl(src))}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'${cls} ph',textContent:'${emoji}'}))">`
+    ? `<img class="${cls}" src="${esc(safeUrl(src))}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onload="this.classList.add('ld')" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'${cls} ph',textContent:'${emoji}'}))">`
     : `<div class="${cls} ph">${emoji}</div>`;
 }
 
@@ -189,20 +189,42 @@ function productCard(p) {
   return `
   <article class="pcard tap${isHot(p) ? ' hot' : ''}" data-open="${esc(p.id)}" tabindex="0" aria-label="${esc(p.title)}">
     <div class="pmedia">${img(p.image, emojiOf(p))}
-      ${p.pct ? `<span class="off${isHot(p) ? ' hot' : ''}">−${p.pct} %</span>` : ''}
-      ${isDest(p.store) ? '<span class="star" title="Marca destacada">⭐</span>' : ''}
+      ${p.pct ? `<span class="tag${isHot(p) ? ' hot' : ''}">−${p.pct}%</span>` : ''}
+      ${isDest(p.store) ? '<span class="star" title="Marca destacada">★</span>' : ''}
       ${!inStock(p) ? `<span class="sold">${gone(p) ? 'Ya no está' : 'Agotada'}</span>` : ''}
     </div>
     <div class="pbody">
       <div class="pshop">${esc(shopName(p.store))}${when ? ` · ${esc(agoShort(when))}` : ''}</div>
       <p class="ptitle">${esc(p.title)}</p>
       <div class="prices">${priceHTML(p)}</div>
-      <div class="psizes">${dropped(p) ? `<span class="drop">💸 bajó de ${money(p.prev_price)}</span>` : sizesLine(p, 5)}</div>
+      <div class="psizes">${dropped(p) ? `<span class="drop">↓ bajó de ${money(p.prev_price)}</span>` : sizesLine(p, 5)}</div>
     </div>
   </article>`;
 }
 
 const grid = (items) => `<div class="grid">${items.map(productCard).join('')}</div>`;
+const rail = (items) => `<div class="rail">${items.map(productCard).join('')}</div>`;
+const fmtInt = (n) => Number(n || 0).toLocaleString('es-ES');
+const neg = (n) => `<span class="neg">−</span>${n}%`;   // el «−» de Bodoni es muy fino: va en la letra de la interfaz
+
+// barra de marcas (filtra por tienda): destacadas primero, luego las que más rebajas tienen
+function brandBar() {
+  const shops = S.data.stores.filter((s) => s.items > 0 || s.id === S.shop)
+    .sort((a, b) => (b.destacada ? 1 : 0) - (a.destacada ? 1 : 0) || b.items - a.items);
+  return `<div class="brandbar" role="group" aria-label="Tiendas">
+    <button class="brand-chip" data-shopchip="todas" aria-pressed="${S.shop === 'todas'}">Todas</button>
+    ${shops.map((s) => `<button class="brand-chip" data-shopchip="${esc(s.id)}" aria-pressed="${S.shop === s.id}">${esc(s.short || s.name)}<small>${fmtInt(s.items)}</small></button>`).join('')}
+  </div>`;
+}
+
+// los chollos de hoy: con stock, desde el umbral de chollo, lo más nuevo y como mucho 3 por tienda
+function topDeals(n = 12) {
+  const per = {};
+  return sortItems(S.data.products.filter((p) => inStock(p) && isHot(p) && p.image), 'nuevas')
+    .sort((a, b) => newKey(b).slice(0, 10).localeCompare(newKey(a).slice(0, 10)) || (b.pct || 0) - (a.pct || 0))
+    .filter((p) => { per[p.store] = (per[p.store] || 0) + 1; return per[p.store] <= 3; })
+    .slice(0, n);
+}
 const moreBtn = (n) => (n > S.limit ? `<p style="text-align:center"><button class="btn ghost" data-more>Ver más (${n - S.limit})</button></p>` : '');
 
 function eventCard(e) {
@@ -212,7 +234,7 @@ function eventCard(e) {
   <a class="card${known ? ' tap' : ''}" href="${esc(safeUrl(e.url))}" target="_blank" rel="noopener" ${known ? `data-open="${esc(e.id)}"` : ''}>
     ${img(e.image, emojiOf(e), 'thumb')}
     <div class="body">
-      <div class="meta"><span class="pill ${e.type === 'restock' ? 'ok' : e.type === 'price_drop' ? 'warn' : 'accent'}">${icon} ${label}</span>${e.pct ? ` <span class="pill ${e.hot ? 'hot' : 'accent'}">−${e.pct} %</span>` : ''}${e.dest ? ' <span class="pill star-pill">⭐</span>' : ''} ${esc(ago(e.at))}</div>
+      <div class="meta"><span class="pill ${e.type === 'restock' ? 'ok' : e.type === 'price_drop' ? 'warn' : 'accent'}">${label}</span>${e.pct ? ` <span class="pill ${e.hot ? 'hot' : 'accent'}">−${e.pct} %</span>` : ''}${e.dest ? ' <span class="pill star-pill">★</span>' : ''} ${esc(ago(e.at))}</div>
       <p class="title" style="margin-top:4px">${esc(e.title)}</p>
       <div class="meta"><span class="price sm">${money(e.price, e.currency)}</span>${e.old_price ? `<s class="was">${money(e.old_price)}</s>` : e.original ? `<s class="was">${money(e.original)}</s>` : ''} · ${esc(shopName(e.store))}</div>
     </div>
@@ -237,16 +259,16 @@ function prendaSelect() {
   for (const p of S.data.products) if (!gone(p) && p.category === 'ropa') counts[p.prenda || 'otras'] = (counts[p.prenda || 'otras'] || 0) + 1;
   return `<select class="chip" data-prenda aria-label="Tipo de prenda" ${S.prenda !== 'todas' ? 'aria-pressed="true"' : ''}>
     <option value="todas">Todas las prendas</option>
-    ${PRENDAS.filter(([k]) => counts[k] || k === S.prenda).map(([k, l, e]) => `<option value="${k}" ${k === S.prenda ? 'selected' : ''}>${e} ${esc(l)}</option>`).join('')}
+    ${PRENDAS.filter(([k]) => counts[k] || k === S.prenda).map(([k, l, e]) => `<option value="${k}" ${k === S.prenda ? 'selected' : ''}>${esc(l)}</option>`).join('')}
   </select>`;
 }
 const catChips = () => CATS.map(([v, l]) => `<button class="chip" data-cat="${esc(v)}" aria-pressed="${v === S.cat}">${esc(l)}</button>`).join('');
-const sortSelect = () => `<select class="chip" data-sort aria-label="Ordenar">${SORTS.map(([v, l]) => `<option value="${v}" ${v === S.sort ? 'selected' : ''}>↕ ${esc(l)}</option>`).join('')}</select>`;
+const sortSelect = () => `<select class="chip" data-sort aria-label="Ordenar">${SORTS.map(([v, l]) => `<option value="${v}" ${v === S.sort ? 'selected' : ''}>${esc(l)}</option>`).join('')}</select>`;
 const stockChip = () => `<button class="chip" data-stock aria-pressed="${S.stockOnly}">Solo con stock</button>`;
 const sizeChip = () => (mySizes().length
   ? `<button class="chip" data-mysize aria-pressed="${S.mySize}">Mi talla (${esc(S.sizes.join(', '))})</button>`
   : '<button class="chip" data-gosizes>＋ Mi talla</button>');
-const bigChip = () => `<button class="chip" data-big aria-pressed="${S.big}">🔥 Desde −${umbral().chollo} %</button>`;
+const bigChip = () => `<button class="chip" data-big aria-pressed="${S.big}">Desde −${umbral().chollo} %</button>`;
 
 // ── vistas ──────────────────────────────────────────────────────────────────
 function welcome() {
@@ -268,17 +290,45 @@ const destNames = () => {
 const ownThr = () => S.data.stores.filter((s) => !s.destacada && s.thr != null && s.thr !== umbral().min)
   .map((s) => `; <b>${s.thr} %</b> en ${esc(s.name)}`).join('');
 
+function hero() {
+  const D = S.data;
+  const live = D.products.filter((p) => !gone(p));
+  const shops = D.stores.filter((s) => s.items > 0).length;
+  const maxPct = Math.max(0, ...live.filter(inStock).map((p) => p.pct || 0));
+  const half = live.filter((p) => inStock(p) && isHot(p)).length;
+  const fresh = live.filter((p) => newKey(p) && Date.now() - new Date(newKey(p)).getTime() < 86400000).length;
+  return `<section class="hero">
+    <p class="eyebrow">Rebajas y outlet · mujer</p>
+    <h2 class="display">Hoy hay <em>${fmtInt(live.length)}</em> prendas rebajadas</h2>
+    <div class="hero-stats">
+      <div><b>${shops}</b><span>tiendas con rebajas</span></div>
+      <div><b>${neg(maxPct)}</b><span>el mayor descuento</span></div>
+      <div><b>${fmtInt(fresh || half)}</b><span>${fresh ? 'nuevas en 24 h' : `a −${umbral().chollo} % o más`}</span></div>
+    </div>
+  </section>`;
+}
+
 function viewNovedades() {
   const D = S.data;
   if (!D.status.generated) return welcome();
   const u = umbral();
-  let html = `<h2 class="section">Novedades</h2>
-    ${segmented('seg', [['nuevas', 'Rebajas'], ['chollos', `🔥 −${u.chollo} %`], ['bajadas', '💸 Bajadas']], S.seg)}`;
+  let html = '';
+  if (S.seg === 'nuevas' && S.shop === 'todas') {
+    html += hero();
+    const deals = topDeals();
+    if (deals.length) {
+      html += `<div class="rail-head"><h3 class="rail-title">Los chollos de hoy</h3><button class="more-link" data-seg="chollos">Ver todos →</button></div>${rail(deals)}`;
+    }
+  } else {
+    html += `<h2 class="section">${S.shop !== 'todas' ? esc(shopName(S.shop)) : 'Novedades'}</h2>`;
+  }
+  html += `<div class="rail-head"><h3 class="rail-title">Por tienda</h3></div>${brandBar()}
+    ${segmented('seg', [['nuevas', 'Lo último'], ['chollos', `Desde −${u.chollo} %`], ['bajadas', 'Bajadas']], S.seg)}`;
 
   if (S.seg === 'chollos') {
     const hot = sortItems(D.products.filter((p) => isHot(p) && baseFilter(p, { cat: 'todo', prenda: 'todas' })), 'descuento');
     html += `<p class="lead">Prendas rebajadas un <b>${u.chollo} % o más</b>. Te avisamos al momento y con prioridad de cada una nueva.</p>
-      <div class="chips">${stockChip()} ${sizeChip()} ${shopSelect()}</div>`;
+      <div class="chips">${stockChip()} ${sizeChip()}</div>`;
     html += hot.length ? grid(hot.slice(0, S.limit)) + moreBtn(hot.length)
       : empty(`Nada a −${u.chollo} % ahora mismo`, 'En cuanto una tienda rebaje una prenda a la mitad o más, aparecerá aquí y te llegará un aviso.');
     return html;
@@ -287,45 +337,47 @@ function viewNovedades() {
   if (S.seg === 'bajadas') {
     const list = D.products.filter((p) => dropped(p) && baseFilter(p, { cat: 'todo', prenda: 'todas' }))
       .sort((a, b) => (1 - b.price / b.prev_price) - (1 - a.price / a.prev_price));
-    html += `<p class="lead">Prendas que ya estaban rebajadas y <b>han bajado otra vez</b> (segundas rebajas, «last chance»…).</p>
-      <div class="chips">${stockChip()} ${sizeChip()} ${shopSelect()}</div>`;
+    html += `<p class="lead">Prendas que ya estaban rebajadas y <b>han bajado otra vez</b>: segundas rebajas, «last chance»…</p>
+      <div class="chips">${stockChip()} ${sizeChip()}</div>`;
     html += list.length ? grid(list.slice(0, S.limit)) + moreBtn(list.length)
       : empty('Sin bajadas todavía', 'Cuando una prenda ya rebajada baje de precio otra vez, la verás aquí.');
     return html;
   }
 
   const items = sortItems(D.products.filter((p) => baseFilter(p)));
-  const total = D.products.filter((p) => !gone(p)).length;
-  html += `<p class="lead">${total} prendas rebajadas en ${D.stores.filter((s) => s.items > 0).length} tiendas. Te avisamos desde un <b>${u.min} %</b> de descuento (<b>${u.dest} %</b> en ${esc(destNames())}${ownThr()}).</p>
-    <div class="chips">${catChips()}</div>
-    <div class="chips">${prendaSelect()} ${shopSelect()} ${sortSelect()} ${stockChip()} ${sizeChip()} ${bigChip()}</div>`;
+  html += `<div class="chips">${catChips()}</div>
+    <div class="chips">${prendaSelect()} ${sortSelect()} ${stockChip()} ${sizeChip()} ${bigChip()}</div>`;
   html += items.length ? grid(items.slice(0, S.limit)) + moreBtn(items.length)
     : empty('Nada por aquí', 'Prueba con otra categoría, tienda o quita algún filtro.');
+  html += `<p class="muted" style="font-size:12.5px;margin-top:22px">Te avisamos desde un <b>${u.min} %</b> de descuento (<b>${u.dest} %</b> en ${esc(destNames())}${ownThr()}).</p>`;
   return html;
 }
 
 function viewDestacadas() {
   const D = S.data;
   const dest = D.status.destacadas || D.stores.filter((s) => s.destacada).map((s) => ({ id: s.id, name: s.name, short: s.short || s.name }));
-  let html = '<h2 class="section">Marcas destacadas</h2>';
-  if (!dest.length) return html + empty('Ninguna marca destacada', 'Se marcan en config.toml con destacada = true.');
+  if (!dest.length) return '<h2 class="section">Destacadas</h2>' + empty('Ninguna marca destacada', 'Se marcan en config.toml con destacada = true.');
   if (!dest.some((f) => f.id === S.dest)) S.dest = dest[0].id;
   const m = D.meta[S.dest] || {};
   const st = (D.status.stores || []).find((s) => s.id === S.dest) || {};
   const all = D.products.filter((p) => p.store === S.dest && !gone(p));
   const items = all.filter((p) => (S.cat === 'todo' || p.category === S.cat) && (!S.stockOnly || inStock(p)) && (!S.mySize || fitsMe(p)) && (!S.big || isHot(p)));
   const maxPct = Math.max(0, ...all.map((p) => p.pct || 0));
-  html += `${segmented('dest', dest.map((f) => [f.id, f.short || f.name]), S.dest)}`;
-  html += all.length
-    ? `<p class="lead"><b>${esc(m.name || S.dest)}</b>: ${all.length} prendas rebajadas, hasta <b>−${maxPct} %</b>${m.avg ? ` (−${m.avg} % de media)` : ''}. Te avisamos con prioridad de cada prenda nueva desde un <b>${umbral().dest} %</b>, de cada segunda rebaja y de las reposiciones.</p>`
-    : `<p class="lead"><b>${esc(m.name || S.dest)}</b> no tiene prendas de mujer rebajadas ahora mismo. Lo vigilamos cada 15 minutos: en cuanto rebaje algo (Black Friday, rebajas, outlet…) te llega un aviso.</p>`;
-  if (st.sections && st.sections.length) html += `<p class="muted" style="margin:-6px 0 10px;font-size:12.5px">Secciones vigiladas: ${st.sections.map(esc).join(' · ')}</p>`;
-  html += `<div class="chips">${catChips()}</div><div class="chips">${stockChip()} ${sizeChip()} ${bigChip()}
-      ${m.outlet_url ? `<a class="chip linkchip" href="${esc(safeUrl(m.outlet_url))}" target="_blank" rel="noopener">Abrir su outlet ↗</a>` : ''}</div>`;
+  let html = `<div class="brand-tabs" role="group" aria-label="Marcas destacadas">${dest.map((f) => `<button data-dest="${esc(f.id)}" aria-pressed="${f.id === S.dest}">${esc(f.short || f.name)}</button>`).join('')}</div>
+    <section class="cover">
+      <p class="eyebrow">Marca destacada</p>
+      <h2 class="cover-name">${esc(m.name || S.dest)}</h2>
+      ${all.length ? `<div class="cover-stats"><span><b>${fmtInt(all.length)}</b> prendas rebajadas</span><span>hasta <b class="red">−${maxPct} %</b></span>${m.avg ? `<span>media <b>−${m.avg} %</b></span>` : ''}</div>
+        <p class="lead">Te avisamos con prioridad de cada prenda nueva desde un <b>${umbral().dest} %</b>, de cada segunda rebaja y de las reposiciones.</p>`
+    : `<p class="lead">Ahora mismo no tiene prendas de mujer rebajadas. La vigilamos cada 15 minutos: en cuanto rebaje algo (Black Friday, rebajas, outlet…) te llega un aviso.</p>`}
+      ${st.sections && st.sections.length ? `<p class="muted" style="margin:8px 0 0;font-size:12px">Secciones vigiladas: ${st.sections.map(esc).join(' · ')}</p>` : ''}
+      ${m.outlet_url ? `<a class="chip" href="${esc(safeUrl(m.outlet_url))}" target="_blank" rel="noopener">Abrir su outlet ↗</a>` : ''}
+    </section>`;
   if (m.note) html += `<p class="note">${esc(m.note)}</p>`;
+  if (!all.length) return html;
+  html += `<div class="chips">${catChips()}</div><div class="chips">${stockChip()} ${sizeChip()} ${bigChip()}</div>`;
   const moves = D.events.filter((e) => e.store === S.dest).slice(0, 3);
   if (moves.length) html += `<h3 class="sub">Últimos avisos</h3><div class="list">${moves.map(eventCard).join('')}</div>`;
-  if (!all.length) return html;
   const groups = new Map();
   for (const p of items) {
     const k = p.category === 'ropa' ? (p.prenda || 'otras') : p.category;
@@ -333,7 +385,7 @@ function viewDestacadas() {
     groups.get(k).push(p);
   }
   const order = [...PRENDAS.map(([k]) => k), 'calzado', 'bolsos', 'accesorios'];
-  const label = (k) => (PRENDA[k] ? `${PRENDA[k].emoji} ${PRENDA[k].label}` : `${CAT_EMOJI[k] || ''} ${CATS.find(([c]) => c === k)?.[1] || k}`);
+  const label = (k) => (PRENDA[k] ? PRENDA[k].label : CATS.find(([c]) => c === k)?.[1] || k);
   let any = false;
   for (const k of order) {
     const list = groups.get(k);
@@ -342,11 +394,9 @@ function viewDestacadas() {
     sortItems(list, 'descuento');
     const key = `${S.dest}:${k}`;
     const open = S.expanded[key];
-    const best = list[0];
-    html += `<h3 class="sub">${esc(label(k))} · ${list.length}</h3>
-      <p class="kind-best">Hasta <b>−${best.pct} %</b>: desde ${money(Math.min(...list.filter(inStock).map((p) => p.price).concat([best.price])))}</p>
-      ${grid(list.slice(0, open ? list.length : 4))}
-      ${list.length > 4 && !open ? `<button class="btn ghost more-row" data-expand="${esc(key)}">Ver las ${list.length}</button>` : ''}`;
+    html += `<div class="rail-head"><h3 class="rail-title">${esc(label(k))}<small>${list.length} · hasta −${list[0].pct} %</small></h3>
+        ${list.length > 4 ? `<button class="more-link" data-expand="${esc(key)}">${open ? 'Menos ↑' : 'Ver todas →'}</button>` : ''}</div>
+      ${open ? grid(list) : rail(list.slice(0, 12))}`;
   }
   if (!any) html += empty('Nada con estos filtros', 'Prueba con «Todo» o quita «Solo con stock».');
   return html;
@@ -384,9 +434,7 @@ function resultsHTML() {
 
 function storeCard(s, statusById) {
   const st = statusById[s.id];
-  const avg = s.avg ?? 0;
-  const color = avg >= 45 ? 'var(--hot)' : avg >= 30 ? 'var(--accent)' : 'var(--info)';
-  let statusTxt = '—';
+  let statusTxt = '';
   if (st) {
     const map = { ok: ['ok', 'Vigilando'], skipped: ['info', 'Sin configurar'], blocked: ['warn', 'En pausa'], error: ['no', 'Error'] };
     const [cls, l] = map[st.status] || ['info', st.status];
@@ -394,23 +442,24 @@ function storeCard(s, statusById) {
   }
   const thr = s.thr ?? (s.destacada ? umbral().dest : umbral().min);
   return `<article class="store">
-    <div class="store-head">
-      <div class="ring" style="--v:${Math.min(100, avg * 1.4)};--ring-color:${color}" title="Descuento medio"><span>${s.avg != null ? `−${s.avg}%` : '–'}</span></div>
-      <div><h4>${s.country && s.country !== 'ES' ? flag(s.country) + ' ' : ''}${esc(s.name)} ${s.destacada ? '<span class="pill star-pill">⭐ Destacada</span>' : ''}</h4>
-        <div class="meta">${s.items ? `${s.items} prendas rebajadas${s.ropa != null && s.ropa !== s.items ? ` (${s.ropa} de ropa)` : ''}` : 'Sin rebajas ahora mismo'}${s.country && s.country !== 'ES' ? ` · envía desde ${esc(COUNTRY[s.country] || s.country)}` : ''}</div></div>
+    <div class="store-top">
+      <div style="min-width:0">
+        <h4 class="store-name">${esc(s.name)}</h4>
+        <div class="store-sub">${s.destacada ? '<span class="pill star-pill">★ Destacada</span>' : ''}${statusTxt}${s.country && s.country !== 'ES' ? `<span>${flag(s.country)} desde ${esc(COUNTRY[s.country] || s.country)}</span>` : ''}<a class="weblink" href="${esc(safeUrl(s.url))}" target="_blank" rel="noopener">Web ↗</a></div>
+      </div>
+      <div class="store-avg">${s.avg != null ? `<b>${neg(s.avg)}</b><span>de media</span>` : '<span>sin rebajas ahora</span>'}</div>
     </div>
+    ${s.avg != null ? `<div class="meter" title="Descuento medio"><i style="width:${Math.min(100, s.avg * 1.25)}%"></i></div>` : ''}
     <dl class="facts">
-      <div><dt>Descuento medio · máximo</dt><dd>${s.avg != null ? `−${s.avg} % · −${s.max} %` : '—'}</dd></div>
-      <div><dt>🔥 Desde −${umbral().chollo} %</dt><dd>${s.big || 0}</dd></div>
-      <div><dt>Te avisaría (desde −${thr} %)</dt><dd>${s.alert || 0}</dd></div>
-      <div><dt>Nuevas esta semana</dt><dd>${s.week || 0}</dd></div>
-      <div><dt>Estado</dt><dd>${statusTxt}</dd></div>
+      <div><dt>Prendas rebajadas</dt><dd>${fmtInt(s.items)}${s.ropa != null && s.ropa !== s.items ? ` <span class="muted" style="font-weight:500">(${fmtInt(s.ropa)} de ropa)</span>` : ''}</dd></div>
+      <div><dt>Descuento máximo</dt><dd>${s.max != null ? `−${s.max} %` : '—'}</dd></div>
+      <div><dt>Desde −${umbral().chollo} %</dt><dd>${fmtInt(s.big)}</dd></div>
+      <div><dt>Te avisaría (desde −${thr} %)</dt><dd>${fmtInt(s.alert)}</dd></div>
     </dl>
     ${s.note ? `<p class="note">${esc(s.note)}</p>` : ''}
     <div class="actions">
-      ${s.outlet_url ? `<a class="btn" href="${esc(safeUrl(s.outlet_url))}" target="_blank" rel="noopener">Ver outlet</a>` : ''}
-      <a class="btn ghost" href="${esc(safeUrl(s.url))}" target="_blank" rel="noopener">Abrir tienda</a>
-      ${s.items ? `<button class="btn ghost" data-goshop="${esc(s.id)}">Ver sus ${s.items} en la app</button>` : ''}
+      ${s.outlet_url ? `<a class="btn" href="${esc(safeUrl(s.outlet_url))}" target="_blank" rel="noopener">Ver su outlet</a>` : ''}
+      ${s.items ? `<button class="btn ghost" data-goshop="${esc(s.id)}">Ver sus ${fmtInt(s.items)} aquí</button>` : ''}
     </div>
   </article>`;
 }
@@ -423,7 +472,10 @@ const OTHER_SHOPS = [
   ['Pull&Bear, Bershka, Stradivarius, Massimo Dutti, Lefties y Oysho', 'https://www.pullandbear.com/es/', 'Del grupo Inditex (como Zara), pero sus webs tienen una protección anti-bots que el radar no se salta.'],
   ['H&M, COS y & Other Stories', 'https://www2.hm.com/', 'Bloquean el acceso automático.'],
   ['Adidas y ASICS', 'https://www.adidas.es/', 'Bloquean el acceso automático.'],
-  ['El Corte Inglés, Zalando y ASOS', 'https://www.zalando.es/', 'Grandes tiendas multimarca. Bloquean el acceso automático.'],
+  ['El Corte Inglés y su outlet (también Sfera y Easy Wear)', 'https://www.elcorteingles.es/', 'Bloquea el acceso automático a toda su web.'],
+  ['Zalando y ASOS', 'https://www.zalando.es/', 'Grandes tiendas multimarca. Bloquean el acceso automático.'],
+  ["Levi's, Tommy Hilfiger, Calvin Klein, Guess y Lacoste", 'https://www.levi.com/ES/es_ES/', 'Bloquean el acceso automático.'],
+  ['Decathlon, Uniqlo, Vans, The North Face y New Balance', 'https://www.decathlon.es/', 'Bloquean el acceso automático.'],
   ['Primark y Kiabi', 'https://www.kiabi.es/', 'Bloquean el acceso automático.'],
   ['Ralph Lauren', 'https://www.ralphlauren.es/', 'Bloquea el acceso automático.'],
   ['On, Under Armour y Salomon', 'https://www.on.com/es-es/', 'Cargan sus productos dentro del navegador: no se pueden leer sin simular uno.'],
@@ -435,11 +487,12 @@ function viewTiendas() {
   const dest = D.stores.filter((s) => s.destacada);
   const rest = D.stores.filter((s) => !s.destacada);
   return `<h2 class="section">Tiendas</h2>
-    <h3 class="sub">⭐ Destacadas · revisadas cada 15 min</h3>
-    <div class="list">${dest.map((s) => storeCard(s, statusById)).join('')}</div>
-    <h3 class="sub">Otras tiendas de moda mujer · ${rest.length}</h3>
-    <p class="lead">Ordenadas por rebajas: primero las que más prendas tienen con un descuento que te avisaría. Todas son las <b>webs oficiales</b> de cada marca.</p>
-    <div class="list">${rest.map((s) => storeCard(s, statusById)).join('')}</div>
+    <p class="lead">${D.stores.length} tiendas vigiladas, todas webs oficiales. Las destacadas se revisan cada 15 minutos.</p>
+    <h3 class="sub">Destacadas</h3>
+    <div class="list stores">${dest.map((s) => storeCard(s, statusById)).join('')}</div>
+    <h3 class="sub">Más tiendas · ${rest.length}</h3>
+    <p class="lead">Ordenadas por rebajas: primero las que más prendas tienen con un descuento que te avisaría.</p>
+    <div class="list stores">${rest.map((s) => storeCard(s, statusById)).join('')}</div>
     <h3 class="sub">Marcas que no se pueden vigilar</h3>
     <p class="lead">Están entre las más buscadas en España, pero no dejan leer su catálogo de forma automática y el radar no se salta esas protecciones. Aquí tienes sus webs.</p>
     <div class="tips"><ul>${OTHER_SHOPS.map(([n, u, d]) => `<li><a href="${esc(u)}" target="_blank" rel="noopener"><b>${esc(n)}</b></a><br><span class="muted">${esc(d)}</span></li>`).join('')}</ul></div>
@@ -731,10 +784,11 @@ function sheetHTML(p) {
   const m = D.meta[p.store] || {};
   const min = p.extra && p.extra.min;
   const when = newKey(p);
-  let html = `<div class="sheet-media">${img(p.image, emojiOf(p), 'simg')}${p.pct ? `<span class="off big${isHot(p) ? ' hot' : ''}">−${p.pct} %</span>` : ''}</div>
+  let html = `<div class="sheet-media">${img(p.image, emojiOf(p), 'simg')}${p.pct ? `<span class="tag big${isHot(p) ? ' hot' : ''}">−${p.pct}%</span>` : ''}</div>
+    <div class="sheet-brand">${isDest(p.store) ? '★ ' : ''}${esc(shopName(p.store))}</div>
     <p class="stitle">${esc(p.title)}</p>
     <div class="meta"><span class="price lg">${money(p.price, p.currency)}</span>${p.original ? `<s class="was">${money(p.original, p.currency)}</s>` : ''} ${stockPill(p)}</div>
-    <div class="meta" style="margin-top:6px">${isDest(p.store) ? '⭐ ' : ''}${esc(shopName(p.store))}${p.category === 'ropa' && p.prenda ? ` · ${esc((PRENDA[p.prenda] || PRENDA.otras).label)}` : ''}${when ? ` · en outlet ${esc(ago(when))}` : ''}</div>`;
+    <div class="meta" style="margin-top:6px">${p.category === 'ropa' && p.prenda ? esc((PRENDA[p.prenda] || PRENDA.otras).label) : esc(CATS.find(([c]) => c === p.category)?.[1] || '')}${when ? ` · en outlet ${esc(ago(when))}` : ''}</div>`;
   const facts = [];
   if (p.original && p.price) facts.push(`Te ahorras <b>${money(p.original - p.price)}</b> sobre su precio original.`);
   if (dropped(p)) facts.push(`💸 Ha bajado de <b>${money(p.prev_price)}</b> a <b>${money(p.price)}</b>.`);
@@ -751,7 +805,7 @@ function sheetHTML(p) {
   }
   html += `<p class="muted sheet-note">${stockNote(p)}</p>`;
   html += `<div class="actions sheet-actions">
-      <a class="btn" href="${esc(safeUrl(p.url))}" target="_blank" rel="noopener">Ver en ${esc(shopName(p.store))}</a>
+      <a class="btn" href="${esc(safeUrl(p.url))}" target="_blank" rel="noopener">Ver en ${esc(shopName(p.store))} →</a>
       ${m.outlet_url ? `<a class="btn ghost" href="${esc(safeUrl(m.outlet_url))}" target="_blank" rel="noopener">Su outlet</a>` : ''}
     </div>`;
   if (m.note) html += `<p class="muted sheet-note">${esc(m.note)}</p>`;
@@ -817,7 +871,8 @@ document.addEventListener('click', (ev) => {
   if (!t) return;
   if (t.dataset.tab) { S.tab = t.dataset.tab; S.limit = PAGE; store.set('tab', S.tab); render(); window.scrollTo(0, 0); return; }
   if (t.dataset.dest) { setPref('dest', t.dataset.dest); return; }
-  if (t.dataset.expand) { S.expanded[t.dataset.expand] = true; render(); return; }
+  if (t.dataset.expand) { S.expanded[t.dataset.expand] = !S.expanded[t.dataset.expand]; render(); return; }
+  if (t.dataset.shopchip) { setPref('shop', t.dataset.shopchip); return; }
   if (t.dataset.seg) { setPref('seg', t.dataset.seg); return; }
   if (t.dataset.cat) { S.prenda = 'todas'; store.set('prenda', 'todas'); setPref('cat', t.dataset.cat); return; }
   if (t.dataset.goshop) {

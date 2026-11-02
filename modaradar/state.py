@@ -149,7 +149,7 @@ class State:
              "price": p.price, "original": p.original, "pct": round(p.discount * 100), "currency": p.currency,
              "image": p.image, "category": p.category, "prenda": p.prenda, "available": p.available,
              "sizes": p.sizes}
-        if p.discount >= th["chollo"]:
+        if round(p.discount * 100) >= round(th["chollo"] * 100):   # lo mismo que muestra la app («−50 %»)
             e["hot"] = True
         if p.store in featured(cfg):
             e["dest"] = True
@@ -159,12 +159,17 @@ class State:
         return {k: v for k, v in e.items() if v is not None}
 
     # ── limpieza y guardado ────────────────────────────────────────────────
-    def prune(self, forget_after_days: int, active_store_ids: set[str]) -> None:
-        limit = datetime.now(timezone.utc) - timedelta(days=forget_after_days)
-        self.items = {
-            k: p for k, p in self.items.items()
-            if p.store in active_store_ids and (parse_iso(p.last_seen) or limit) >= limit
-        }
+    def prune(self, forget_after_days: int, active_store_ids: set[str],
+              per_store: dict[str, int] | None = None) -> None:
+        """Olvida lo que lleva N días sin aparecer (`per_store`: N propio de algunas tiendas)."""
+        now = datetime.now(timezone.utc)
+        days = per_store or {}
+
+        def keep(p: Product) -> bool:
+            limit = now - timedelta(days=days.get(p.store, forget_after_days))
+            return p.store in active_store_ids and (parse_iso(p.last_seen) or limit) >= limit
+
+        self.items = {k: p for k, p in self.items.items() if keep(p)}
         self.events = [e for e in self.events if e.get("store") in active_store_ids][:MAX_EVENTS]
         self.store_state = {k: v for k, v in self.store_state.items() if k in active_store_ids}
 

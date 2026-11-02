@@ -3,7 +3,8 @@
 Vigila el **outlet y las rebajas de moda mujer** de tus tiendas favoritas y te **avisa en el móvil** en cuanto sacan prendas mucho más baratas.
 
 - **Marcas destacadas: Zara, Brownie y Zadig&Voltaire.** Se revisan cada 15 minutos, tienen su propia pestaña y te avisan con prioridad desde un 30 % de descuento.
-- **Más marcas de moda mujer:** Polo Club, Scuffers, Eme Studios, Yuxus, Nike, Lola Casademunt, Compañía Fantástica, Laagam, Rouje y Pinko (se añaden más en `config.toml`).
+- **21 tiendas:** grandes de España y outlets (Fifty Outlet de Tendam, Desigual, Cortefiel, Bimba y Lola, Trucco, Misako, Superdry, Liu Jo), las marcas que pediste (Polo Club, Scuffers, Eme Studios, Yuxus, Nike) y Lola Casademunt, Compañía Fantástica, Laagam, Rouje y Pinko. Se añaden más en `config.toml`.
+- **¿Outlet de Zara?** Zara no tiene outlet propio: su equivalente es la sección «Special prices», que ya se vigila, y en rebajas o Black Friday el radar añade solas esas secciones.
 - **App para el móvil** (web instalable, se abre como una app normal): rebajas nuevas, 🔥 prendas a −50 %, segundas rebajas, buscador, tiendas y estado de los avisos.
 - **Avisos push** al momento con la app gratuita **ntfy** (y, si quieres, por Telegram), con foto, precio, precio original, descuento y tallas.
 - **Gratis**: funciona con GitHub Actions y GitHub Pages, con un [reloj propio](#revisión-puntual-cada-15-minutos-reloj) que lo lanza cada 15 minutos. No necesitas servidor ni ordenador encendido.
@@ -49,6 +50,9 @@ Solo **webs oficiales** de cada marca, leyendo el catálogo público que ellas m
 | **Polo Club** | Shopify | Su colección de mujer y su outlet de mujer. Como casi todo está siempre rebajado, **avisa desde −60 %**. |
 | **Scuffers** · **Eme Studios** · **Yuxus** | Shopify | Catálogo completo, solo lo que la marca etiqueta como de mujer (también venden ropa de hombre). |
 | **Nike** | Sus páginas de ofertas de mujer | Las ~70 rebajas de mujer más nuevas en cada revisión (ropa y zapatillas). |
+| **Fifty Outlet** | Su web (Salesforce) | El outlet oficial de Tendam: Women'secret, Springfield, Cortefiel y Pedro del Hierro. Hasta −88 %. |
+| **Desigual** · **Cortefiel** · **Bimba y Lola** · **Liu Jo** 🇮🇹 · **Superdry** | Su web (Salesforce) | Sus secciones de outlet y rebajas de mujer (las primeras páginas, cada hora). |
+| **Trucco** · **Misako** | Shopify | Catálogo completo (Misako es sobre todo bolsos y complementos). |
 | Lola Casademunt · Compañía Fantástica · Laagam · Rouje 🇫🇷 · Pinko 🇮🇹 | Shopify | Catálogo completo. |
 
 Las tiendas que no son destacadas se revisan cada 30 minutos para no saturarlas.
@@ -67,7 +71,7 @@ No hay un ranking oficial de «marcas más buscadas en Google». Como referencia
 | | Marcas |
 |---|---|
 | ✅ **Vigiladas** | Zara · Nike · Polo Club · Scuffers · Eme Studios · Yuxus (además de Brownie, Zadig y el resto) |
-| ⛔ **Bloquean el acceso automático** | Shein (captcha) · Mango y Mango Outlet · H&M, COS y & Other Stories · Pull&Bear, Bershka, Stradivarius, Massimo Dutti, Lefties y Oysho (protección anti-bots, aunque Zara sí deja) · Adidas · ASICS · Primark · Kiabi · El Corte Inglés · Zalando · ASOS · Ralph Lauren |
+| ⛔ **Bloquean el acceso automático** | El Corte Inglés y su outlet (también Sfera y Easy Wear) · Shein (captcha) · Mango y Mango Outlet · H&M, COS y & Other Stories · Pull&Bear, Bershka, Stradivarius, Massimo Dutti, Lefties y Oysho (protección anti-bots, aunque Zara sí deja) · Adidas · ASICS · Primark · Kiabi · Zalando · ASOS · Ralph Lauren · Levi's · Tommy Hilfiger · Calvin Klein · Guess · Lacoste · Decathlon · Uniqlo · Vans · The North Face · New Balance |
 | ⛔ **Cargan los productos en el navegador** | On · Under Armour · Salomon |
 | ⛔ **No venden en euros a España** | Juicy Couture (solo tienda de Reino Unido) |
 | — | Vinted (segunda mano, no son rebajas de una marca) |
@@ -194,6 +198,7 @@ reloj.yml (cada 15 min) → GitHub Actions   (+ programador de GitHub como respa
        ├─ sources/zadig.py     API pública de catálogo de Zadig&Voltaire
        ├─ sources/shopify.py   Brownie, Polo Club, Scuffers, Eme, Yuxus… (precio rebajado vs. original tachado)
        ├─ sources/nike.py      páginas de ofertas de mujer de Nike (lo más nuevo)
+       ├─ sources/sfcc.py      outlets con Salesforce: Fifty Outlet, Desigual, Cortefiel, Bimba y Lola…
        ├─ filters.py   solo mujer · ropa / calzado / bolsos / accesorios · tipo de prenda · tallas
        ├─ state.py     detecta prendas nuevas en outlet, segundas rebajas y reposiciones
        ├─ analysis.py  descuento medio y máximo de cada tienda

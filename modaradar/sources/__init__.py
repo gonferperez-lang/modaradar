@@ -5,7 +5,7 @@ from collections.abc import Callable
 
 from ..http import PoliteClient, SourceSkipped  # noqa: F401  (re-exportado)
 from ..models import Product
-from . import nike, shopify, zadig, zara
+from . import nike, sfcc, shopify, zadig, zara
 
 Fetcher = Callable[..., list[Product]]  # (client, store, cfg[, memo=…]) → productos
 
@@ -14,4 +14,5 @@ PLATFORMS: dict[str, Fetcher] = {
     "zara": zara.fetch,
     "zadig": zadig.fetch,
     "nike": nike.fetch,
+    "sfcc": sfcc.fetch,
 }

@@ -212,10 +212,122 @@ outlet_url = "https://www.nike.com/es/w/mujer-ofertas-3yaepz5e1x6"
 note = "Una de las marcas más buscadas en España. En cada revisión se leen sus ~70 rebajas de mujer más nuevas (ropa y zapatillas); no publica las tallas en el listado."
 
 # ─────────────────────────────────────────────────────────────────────────────
+#  GRANDES TIENDAS Y OUTLETS DE ESPAÑA
+#  Las de Salesforce (`platform = "sfcc"`) se leen desde sus páginas de outlet/rebajas de
+#  mujer. `partial = true`: solo se leen las primeras páginas, así que lo que deja de salir
+#  no se da por agotado; se olvida a los `forget_days` días.
+# ─────────────────────────────────────────────────────────────────────────────
+
+[[stores]]
+id = "fiftyoutlet"
+name = "Fifty Outlet"
+short = "Fifty"
+platform = "sfcc"
+url = "https://fiftyoutlet.com"
+pages = ["/es/es/mujer"]
+page_size = 60
+max_pages = 5
+tile = 'class="[^"]*\bproductTile\b'
+partial = true
+forget_days = 2
+every_minutes = 60
+outlet_url = "https://fiftyoutlet.com/es/es/mujer"
+note = "El outlet oficial de Tendam: ropa de Women'secret, Springfield, Cortefiel y Pedro del Hierro a precio de outlet."
+
+[[stores]]
+id = "desigual"
+name = "Desigual"
+platform = "sfcc"
+url = "https://www.desigual.com"
+pages = ["/es_ES/outlet/", "/es_ES/rebajas/"]
+page_size = 48
+max_pages = 4
+partial = true
+forget_days = 2
+every_minutes = 60
+outlet_url = "https://www.desigual.com/es_ES/outlet/"
+
+[[stores]]
+id = "cortefiel"
+name = "Cortefiel"
+platform = "sfcc"
+url = "https://cortefiel.com"
+pages = ["/es/es/mujer/rebajas"]
+page_size = 60
+max_pages = 3
+tile = 'class="[^"]*\bproductTile\b'
+partial = true
+forget_days = 2
+every_minutes = 60
+outlet_url = "https://cortefiel.com/es/es/mujer/rebajas"
+
+[[stores]]
+id = "bimbaylola"
+name = "Bimba y Lola"
+platform = "sfcc"
+url = "https://www.bimbaylola.com"
+pages = ["/es_es/rebajas"]
+page_size = 48
+max_pages = 3
+partial = true
+forget_days = 2
+every_minutes = 60
+outlet_url = "https://www.bimbaylola.com/es_es/rebajas"
+
+[[stores]]
+id = "trucco"
+name = "Trucco"
+platform = "shopify"
+url = "https://truccoshop.com"
+max_pages = 3
+every_minutes = 30
+outlet_url = "https://truccoshop.com/collections/rebajas"
+
+[[stores]]
+id = "misako"
+name = "Misako"
+platform = "shopify"
+url = "https://www.misako.com"
+max_pages = 8
+women_terms = ["mujer"]
+every_minutes = 60
+outlet_url = "https://www.misako.com/collections/outlet"
+note = "Sobre todo bolsos y complementos: no te avisa de ellos salvo que añadas «bolsos» o «accesorios» en categories."
+
+[[stores]]
+id = "liujo"
+name = "Liu Jo"
+platform = "sfcc"
+url = "https://www.liujo.com"
+pages = ["/es/mujer/outlet/ofertas-ropa"]
+page_size = 56
+max_pages = 4
+name_re = 'tile-image front" alt="([^"]+?)(?: Liu Jo)?(?: - [a-z]+)?"'
+partial = true
+forget_days = 2
+every_minutes = 60
+country = "IT"
+outlet_url = "https://www.liujo.com/es/mujer/outlet"
+
+[[stores]]
+id = "superdry"
+name = "Superdry"
+platform = "sfcc"
+url = "https://www.superdry.es"
+pages = ["/outlet/mujer/"]
+page_size = 0                      # su robots.txt no permite paginar (?start=): solo la primera página
+partial = true
+forget_days = 2
+every_minutes = 60
+outlet_url = "https://www.superdry.es/outlet/mujer/"
+
+# ─────────────────────────────────────────────────────────────────────────────
 #  NO SE PUEDEN VIGILAR (comprobado en noviembre de 2026): bloquean el acceso automático
 #  o no publican su catálogo en un formato que se pueda leer sin saltarse protecciones.
-#  Shein (captcha) · Mango y Mango Outlet · H&M · Pull&Bear · Bershka · Stradivarius ·
+#  El Corte Inglés y su outlet (también Sfera y Easy Wear) · Shein (captcha) · Mango y Mango Outlet · H&M ·
+#  Pull&Bear · Bershka · Stradivarius ·
 #  Massimo Dutti · Lefties · Oysho (protección anti-bots de Akamai) · Adidas · ASICS ·
-#  Primark · Kiabi · El Corte Inglés · Zalando · ASOS · Ralph Lauren · On · Under Armour ·
+#  Primark · Kiabi · Zalando · ASOS · Ralph Lauren · Levi's · Tommy Hilfiger · Calvin Klein · Guess ·
+#  Lacoste · Decathlon · Uniqlo · Vans · The North Face · New Balance · Converse · On · Under Armour ·
 #  Salomon (cargan los productos en el navegador) · Juicy Couture (solo tienda de Reino Unido, en libras)
 # ─────────────────────────────────────────────────────────────────────────────

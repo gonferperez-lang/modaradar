@@ -28,7 +28,7 @@ def analyse(products: list[Product], stores: list[dict[str, Any]], th: dict[str,
             ropa=len(ropa),
             avg=round(mean(discounts) * 100) if discounts else None,
             max=round(max(discounts) * 100) if discounts else None,
-            big=sum(1 for d in discounts if d >= th["chollo"]),      # 🔥 −50 % o más
+            big=sum(1 for d in discounts if round(d * 100) >= round(th["chollo"] * 100)),  # 🔥 −50 % o más
             alert=sum(1 for d in discounts if d >= thr),              # lo que te avisaría
             week=sum(1 for p in ps if (parse_iso(p.first_seen) or week) > week),
             thr=round(thr * 100),

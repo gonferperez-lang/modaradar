@@ -1,5 +1,5 @@
 /* Service worker: la app abre al instante y funciona sin conexión con los últimos datos. */
-const VERSION = 'modaradar-v1';
+const VERSION = 'modaradar-v2';
 const SHELL = ['./', 'index.html', 'styles.css', 'app.js', 'manifest.webmanifest',
   'icons/icon-192.png', 'icons/apple-touch-icon.png'];
 
