@@ -109,24 +109,31 @@ def build(events: list[dict[str, Any]], cfg: dict[str, Any], store_names: dict[s
 
 def send(messages: list[Message], client: PoliteClient) -> list[str]:
     """Envía por los canales configurados. Devuelve la lista de errores (vacía si todo ok)."""
+    return deliver(messages, client)[1]
+
+
+def deliver(messages: list[Message], client: PoliteClient) -> tuple[int, list[str]]:
+    """(avisos que han llegado al menos a un canal, errores)."""
     errors: list[str] = []
+    sent = 0
     # GitHub pasa los secrets inexistentes como texto vacío: se tratan como "no definido"
     env = lambda k: (os.environ.get(k) or "").strip()  # noqa: E731
     topic = env("NTFY_TOPIC")
     server = (env("NTFY_SERVER") or "https://ntfy.sh").rstrip("/")
     tg_token, tg_chat = env("TELEGRAM_BOT_TOKEN"), env("TELEGRAM_CHAT_ID")
     if not topic and not (tg_token and tg_chat):
-        return ["No hay canal de avisos: crea el secret NTFY_TOPIC en GitHub "
+        return 0, ["No hay canal de avisos: crea el secret NTFY_TOPIC en GitHub "
                 "(Settings → Secrets and variables → Actions → pestaña Secrets)."]
     if topic and not re.fullmatch(r"[A-Za-z0-9_-]{1,64}", topic):
-        return [f"El tema de ntfy («{topic[:3]}…», {len(topic)} caracteres) no es válido: usa solo letras sin "
+        return 0, [f"El tema de ntfy («{topic[:3]}…», {len(topic)} caracteres) no es válido: usa solo letras sin "
                 "acentos ni ñ, números, guiones (-) y guiones bajos (_), sin espacios y con 64 caracteres como máximo."]
     if not server.startswith(("http://", "https://")):
-        return ["NTFY_SERVER debe empezar por https:// (o bórralo para usar https://ntfy.sh)."]
+        return 0, ["NTFY_SERVER debe empezar por https:// (o bórralo para usar https://ntfy.sh)."]
     headers = {}
     if env("NTFY_TOKEN"):
         headers["Authorization"] = f"Bearer {env('NTFY_TOKEN')}"
     for m in messages:
+        ok = False
         if topic:
             payload: dict[str, Any] = {"topic": topic, "title": m.title, "message": m.body,
                                        "priority": m.priority, "tags": m.tags}
@@ -137,6 +144,7 @@ def send(messages: list[Message], client: PoliteClient) -> list[str]:
                 payload["attach"] = m.image
             try:
                 client.post_json(server + "/", payload, headers=headers, check_robots=False)
+                ok = True
             except Exception as e:
                 errors.append(f"ntfy: {e}")
         if tg_token and tg_chat:
@@ -152,9 +160,11 @@ def send(messages: list[Message], client: PoliteClient) -> list[str]:
                     client.post_json(f"https://api.telegram.org/bot{tg_token}/sendMessage",
                                      {"chat_id": tg_chat, "text": text, "parse_mode": "HTML"},
                                      check_robots=False)
+                ok = True
             except Exception as e:
                 errors.append(f"telegram: {type(e).__name__}")  # sin token en el mensaje
-    return errors
+        sent += ok
+    return sent, errors
 
 
 def _esc(s: str) -> str:

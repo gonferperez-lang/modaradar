@@ -225,12 +225,13 @@ def run(args: argparse.Namespace) -> int:
 
     messages = notify.build(all_events, cfg, store_names)
     notify_errors: list[str] = []
+    sent = 0
     if messages:
         if args.dry_run:
             for m in messages:
                 print(f"  ✉ {m.title} — {m.body.splitlines()[0]}")
         else:
-            notify_errors = notify.send(messages, client)
+            sent, notify_errors = notify.deliver(messages, client)
             for err in notify_errors:
                 annotate("warning", err)
 
@@ -240,7 +241,7 @@ def run(args: argparse.Namespace) -> int:
         "generated": now_iso(),
         "stores": results,
         "events_this_run": len(all_events),
-        "notifications_sent": 0 if args.dry_run else len(messages) - len(notify_errors),
+        "notifications_sent": sent,
         "notify_errors": notify_errors,
         "watchlist": n.get("watchlist", []),
         "categories": n.get("categories", ["ropa"]),

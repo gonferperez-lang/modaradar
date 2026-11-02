@@ -277,6 +277,16 @@ class TestNotify(unittest.TestCase):
         self.assertEqual(len(msgs), 1)
         self.assertTrue(msgs[0].title.startswith("🛍️ 3 rebajas más"), msgs[0].title)
 
+    def test_no_channel_sends_nothing(self):
+        import os
+        saved = {k: os.environ.pop(k, None) for k in ("NTFY_TOPIC", "TELEGRAM_BOT_TOKEN", "TELEGRAM_CHAT_ID")}
+        try:
+            sent, errors = notify.deliver([notify.Message("t", "b")], None)
+            self.assertEqual(sent, 0)
+            self.assertIn("NTFY_TOPIC", errors[0])
+        finally:
+            os.environ.update({k: v for k, v in saved.items() if v is not None})
+
     def test_euros(self):
         self.assertEqual(notify.euros(15.99), "15,99 €")
         self.assertEqual(notify.euros(1295.0), "1.295 €")
