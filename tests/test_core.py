@@ -309,7 +309,7 @@ class TestAnalysisAndConfig(unittest.TestCase):
             self.assertIn(s["platform"], PLATFORMS, s["id"])
         self.assertEqual({s["id"] for s in cfg["stores"] if s.get("destacada")}, {"zara", "brownie", "zadig"})
         self.assertTrue({"poloclub", "scuffers", "emestudios", "yuxus", "nike"} <= set(ids))
-        self.assertTrue({"fiftyoutlet", "desigual", "cortefiel", "bimbaylola", "trucco", "misako"} <= set(ids))
+        self.assertTrue({"fiftyoutlet", "desigual", "cortefiel", "bimbaylola", "trucco", "misako", "noon"} <= set(ids))
 
 
 class TestMixedBrandsAndNike(unittest.TestCase):

@@ -284,6 +284,15 @@ every_minutes = 30
 outlet_url = "https://truccoshop.com/collections/rebajas"
 
 [[stores]]
+id = "noon"
+name = "Noon"
+platform = "shopify"
+url = "https://noonspain.com"
+max_pages = 3
+every_minutes = 30
+note = "Marca sevillana de moda joven. Fuera de temporada casi no rebaja (en verano llegó a −50 %): te avisamos en cuanto lo haga."
+
+[[stores]]
 id = "misako"
 name = "Misako"
 platform = "shopify"
