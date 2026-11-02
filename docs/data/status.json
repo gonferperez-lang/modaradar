@@ -1,35 +1,35 @@
 {
  "version": "1.0.0",
- "generated": "2026-11-02T21:21:26+00:00",
+ "generated": "2026-11-02T21:30:24+00:00",
  "stores": [
   {
    "id": "zara",
    "name": "Zara",
-   "at": "2026-11-02T21:21:14+00:00",
+   "at": "2026-11-02T21:29:59+00:00",
    "status": "ok",
-   "items": 106,
+   "items": 99,
    "sections": [
     "Special Prices"
    ],
    "seconds": 2.4,
-   "events": 11
+   "events": 1
   },
   {
    "id": "brownie",
    "name": "Brownie",
-   "at": "2026-11-02T21:21:14+00:00",
+   "at": "2026-11-02T21:29:59+00:00",
    "status": "ok",
    "items": 83,
-   "seconds": 6.9,
+   "seconds": 6.8,
    "events": 0
   },
   {
    "id": "zadig",
    "name": "Zadig&Voltaire",
-   "at": "2026-11-02T21:21:14+00:00",
+   "at": "2026-11-02T21:29:59+00:00",
    "status": "ok",
    "items": 0,
-   "seconds": 12.4,
+   "seconds": 12.3,
    "events": 0
   },
   {
@@ -121,10 +121,82 @@
    "items": 50,
    "events": 0,
    "message": "Se consulta cada 30 min para no saturarla"
+  },
+  {
+   "id": "fiftyoutlet",
+   "name": "Fifty Outlet",
+   "at": "2026-11-02T21:29:59+00:00",
+   "status": "ok",
+   "items": 180,
+   "seconds": 10.5,
+   "events": 0
+  },
+  {
+   "id": "desigual",
+   "name": "Desigual",
+   "at": "2026-11-02T21:29:59+00:00",
+   "status": "ok",
+   "items": 369,
+   "seconds": 16.5,
+   "events": 0
+  },
+  {
+   "id": "cortefiel",
+   "name": "Cortefiel",
+   "at": "2026-11-02T21:29:59+00:00",
+   "status": "ok",
+   "items": 24,
+   "seconds": 6.7,
+   "events": 0
+  },
+  {
+   "id": "bimbaylola",
+   "name": "Bimba y Lola",
+   "at": "2026-11-02T21:30:01+00:00",
+   "status": "ok",
+   "items": 137,
+   "seconds": 6.5,
+   "events": 0
+  },
+  {
+   "id": "trucco",
+   "name": "Trucco",
+   "at": "2026-11-02T21:30:06+00:00",
+   "status": "ok",
+   "items": 197,
+   "seconds": 4.3,
+   "events": 0
+  },
+  {
+   "id": "misako",
+   "name": "Misako",
+   "at": "2026-11-02T21:30:06+00:00",
+   "status": "ok",
+   "items": 403,
+   "seconds": 17.7,
+   "events": 0
+  },
+  {
+   "id": "liujo",
+   "name": "Liu Jo",
+   "at": "2026-11-02T21:30:08+00:00",
+   "status": "ok",
+   "items": 224,
+   "seconds": 8.5,
+   "events": 0
+  },
+  {
+   "id": "superdry",
+   "name": "Superdry",
+   "at": "2026-11-02T21:30:10+00:00",
+   "status": "ok",
+   "items": 48,
+   "seconds": 3.1,
+   "events": 0
   }
  ],
- "events_this_run": 11,
- "notifications_sent": 5,
+ "events_this_run": 1,
+ "notifications_sent": 0,
  "notify_errors": [
   "No hay canal de avisos: crea el secret NTFY_TOPIC en GitHub (Settings → Secrets and variables → Actions → pestaña Secrets)."
  ],
@@ -164,6 +236,10 @@
   }
  ],
  "history": [
+  {
+   "at": "2026-11-02T21:30:24+00:00",
+   "by": "push"
+  },
   {
    "at": "2026-11-02T21:21:26+00:00",
    "by": "schedule"
