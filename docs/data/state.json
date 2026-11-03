@@ -22,13 +22,13 @@
    "reason": "bloqueo anti-bots"
   },
   "brownie": {
-   "last_ok": "2026-11-03T17:12:29+00:00",
+   "last_ok": "2026-11-03T17:26:24+00:00",
    "cfg": "1a8a5a6fbc",
    "seeded": true,
    "seeded_at": "2026-11-02T20:34:35+00:00"
   },
   "zadig": {
-   "last_ok": "2026-11-03T17:12:29+00:00",
+   "last_ok": "2026-11-03T17:26:24+00:00",
    "cfg": "42e94aea3e",
    "seeded": true,
    "seeded_at": "2026-11-02T20:34:35+00:00"
