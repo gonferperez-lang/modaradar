@@ -9,13 +9,13 @@
    "outlet_url": "https://www.zara.com/es/es/mujer-precios-especiales-l1314.html",
    "destacada": true,
    "short": "Zara",
-   "items": 104,
-   "ropa": 82,
+   "items": 99,
+   "ropa": 77,
    "avg": 43,
    "max": 50,
-   "big": 20,
-   "alert": 104,
-   "week": 104,
+   "big": 19,
+   "alert": 99,
+   "week": 99,
    "thr": 30
   },
   {
@@ -56,6 +56,22 @@
    "thr": 30
   },
   {
+   "id": "misako",
+   "name": "Misako",
+   "url": "https://www.misako.com",
+   "platform": "shopify",
+   "note": "Sobre todo bolsos y complementos: no te avisa de ellos salvo que añadas «bolsos» o «accesorios» en categories.",
+   "outlet_url": "https://www.misako.com/collections/outlet",
+   "items": 264,
+   "ropa": 0,
+   "avg": 50,
+   "max": 50,
+   "big": 264,
+   "alert": 264,
+   "week": 264,
+   "thr": 40
+  },
+  {
    "id": "fiftyoutlet",
    "name": "Fifty Outlet",
    "url": "https://fiftyoutlet.com",
@@ -71,22 +87,6 @@
    "big": 216,
    "alert": 259,
    "week": 275,
-   "thr": 40
-  },
-  {
-   "id": "misako",
-   "name": "Misako",
-   "url": "https://www.misako.com",
-   "platform": "shopify",
-   "note": "Sobre todo bolsos y complementos: no te avisa de ellos salvo que añadas «bolsos» o «accesorios» en categories.",
-   "outlet_url": "https://www.misako.com/collections/outlet",
-   "items": 242,
-   "ropa": 0,
-   "avg": 50,
-   "max": 50,
-   "big": 242,
-   "alert": 242,
-   "week": 242,
    "thr": 40
   },
   {
