@@ -9,13 +9,13 @@
    "outlet_url": "https://www.zara.com/es/es/mujer-precios-especiales-l1314.html",
    "destacada": true,
    "short": "Zara",
-   "items": 121,
-   "ropa": 103,
+   "items": 119,
+   "ropa": 97,
    "avg": 43,
    "max": 56,
-   "big": 30,
-   "alert": 121,
-   "week": 121,
+   "big": 27,
+   "alert": 119,
+   "week": 119,
    "thr": 30
   },
   {
@@ -80,13 +80,13 @@
    "platform": "shopify",
    "note": "Sobre todo bolsos y complementos: no te avisa de ellos salvo que añadas «bolsos» o «accesorios» en categories.",
    "outlet_url": "https://www.misako.com/collections/outlet",
-   "items": 253,
+   "items": 250,
    "ropa": 0,
    "avg": 50,
    "max": 50,
-   "big": 253,
-   "alert": 253,
-   "week": 253,
+   "big": 250,
+   "alert": 250,
+   "week": 250,
    "thr": 40
   },
   {
@@ -106,6 +106,22 @@
    "thr": 40
   },
   {
+   "id": "poloclub",
+   "name": "Polo Club",
+   "url": "https://www.poloclub.com",
+   "platform": "shopify",
+   "note": "La mayor parte de su ropa de mujer está siempre rebajada (mucha entre un 40 y un 60 %), así que solo te avisa desde −60 %.",
+   "outlet_url": "https://www.poloclub.com/collections/mujer-outlet",
+   "items": 323,
+   "ropa": 320,
+   "avg": 41,
+   "max": 73,
+   "big": 141,
+   "alert": 38,
+   "week": 323,
+   "thr": 60
+  },
+  {
    "id": "bimbaylola",
    "name": "Bimba y Lola",
    "url": "https://www.bimbaylola.com",
@@ -120,22 +136,6 @@
    "alert": 34,
    "week": 137,
    "thr": 40
-  },
-  {
-   "id": "poloclub",
-   "name": "Polo Club",
-   "url": "https://www.poloclub.com",
-   "platform": "shopify",
-   "note": "La mayor parte de su ropa de mujer está siempre rebajada (mucha entre un 40 y un 60 %), así que solo te avisa desde −60 %.",
-   "outlet_url": "https://www.poloclub.com/collections/mujer-outlet",
-   "items": 313,
-   "ropa": 310,
-   "avg": 41,
-   "max": 73,
-   "big": 132,
-   "alert": 33,
-   "week": 313,
-   "thr": 60
   },
   {
    "id": "trucco",
