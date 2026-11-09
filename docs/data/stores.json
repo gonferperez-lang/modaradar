@@ -9,13 +9,13 @@
    "outlet_url": "https://www.zara.com/es/es/mujer-precios-especiales-l1314.html",
    "destacada": true,
    "short": "Zara",
-   "items": 152,
-   "ropa": 119,
+   "items": 114,
+   "ropa": 89,
    "avg": 43,
    "max": 56,
-   "big": 41,
-   "alert": 152,
-   "week": 152,
+   "big": 31,
+   "alert": 114,
+   "week": 114,
    "thr": 30
   },
   {
@@ -112,13 +112,13 @@
    "platform": "shopify",
    "note": "La mayor parte de su ropa de mujer está siempre rebajada (mucha entre un 40 y un 60 %), así que solo te avisa desde −60 %.",
    "outlet_url": "https://www.poloclub.com/collections/mujer-outlet",
-   "items": 321,
-   "ropa": 318,
+   "items": 320,
+   "ropa": 317,
    "avg": 41,
    "max": 73,
-   "big": 139,
+   "big": 138,
    "alert": 36,
-   "week": 321,
+   "week": 320,
    "thr": 60
   },
   {
@@ -185,6 +185,21 @@
    "thr": 40
   },
   {
+   "id": "laagam",
+   "name": "Laagam",
+   "url": "https://www.laagam.com",
+   "platform": "shopify",
+   "outlet_url": "https://www.laagam.com/es/collections/last-units",
+   "items": 163,
+   "ropa": 143,
+   "avg": 30,
+   "max": 51,
+   "big": 1,
+   "alert": 1,
+   "week": 163,
+   "thr": 40
+  },
+  {
    "id": "liujo",
    "name": "Liu Jo",
    "url": "https://www.liujo.com",
@@ -214,21 +229,6 @@
    "big": 0,
    "alert": 0,
    "week": 228,
-   "thr": 40
-  },
-  {
-   "id": "laagam",
-   "name": "Laagam",
-   "url": "https://www.laagam.com",
-   "platform": "shopify",
-   "outlet_url": "https://www.laagam.com/es/collections/last-units",
-   "items": 162,
-   "ropa": 143,
-   "avg": 30,
-   "max": 30,
-   "big": 0,
-   "alert": 0,
-   "week": 162,
    "thr": 40
   },
   {
