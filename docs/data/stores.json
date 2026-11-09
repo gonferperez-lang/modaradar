@@ -9,13 +9,13 @@
    "outlet_url": "https://www.zara.com/es/es/mujer-precios-especiales-l1314.html",
    "destacada": true,
    "short": "Zara",
-   "items": 85,
+   "items": 83,
    "ropa": 64,
    "avg": 43,
-   "max": 56,
-   "big": 17,
-   "alert": 85,
-   "week": 7,
+   "max": 50,
+   "big": 18,
+   "alert": 83,
+   "week": 6,
    "thr": 30
   },
   {
@@ -70,7 +70,7 @@
    "max": 88,
    "big": 229,
    "alert": 284,
-   "week": 184,
+   "week": 181,
    "thr": 40
   },
   {
@@ -128,8 +128,8 @@
    "platform": "shopify",
    "note": "La mayor parte de su ropa de mujer está siempre rebajada (mucha entre un 40 y un 60 %), así que solo te avisa desde −60 %.",
    "outlet_url": "https://www.poloclub.com/collections/mujer-outlet",
-   "items": 316,
-   "ropa": 313,
+   "items": 315,
+   "ropa": 312,
    "avg": 41,
    "max": 73,
    "big": 134,
@@ -213,7 +213,7 @@
    "max": 36,
    "big": 0,
    "alert": 0,
-   "week": 12,
+   "week": 10,
    "thr": 40
   },
   {
