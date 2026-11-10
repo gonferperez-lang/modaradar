@@ -9,13 +9,13 @@
    "outlet_url": "https://www.zara.com/es/es/mujer-precios-especiales-l1314.html",
    "destacada": true,
    "short": "Zara",
-   "items": 104,
-   "ropa": 84,
+   "items": 150,
+   "ropa": 119,
    "avg": 43,
-   "max": 50,
-   "big": 24,
-   "alert": 104,
-   "week": 2,
+   "max": 56,
+   "big": 39,
+   "alert": 150,
+   "week": 3,
    "thr": 30
   },
   {
@@ -106,22 +106,6 @@
    "thr": 40
   },
   {
-   "id": "poloclub",
-   "name": "Polo Club",
-   "url": "https://www.poloclub.com",
-   "platform": "shopify",
-   "note": "La mayor parte de su ropa de mujer está siempre rebajada (mucha entre un 40 y un 60 %), así que solo te avisa desde −60 %.",
-   "outlet_url": "https://www.poloclub.com/collections/mujer-outlet",
-   "items": 319,
-   "ropa": 316,
-   "avg": 42,
-   "max": 73,
-   "big": 142,
-   "alert": 34,
-   "week": 8,
-   "thr": 60
-  },
-  {
    "id": "bimbaylola",
    "name": "Bimba y Lola",
    "url": "https://www.bimbaylola.com",
@@ -136,6 +120,22 @@
    "alert": 34,
    "week": 8,
    "thr": 40
+  },
+  {
+   "id": "poloclub",
+   "name": "Polo Club",
+   "url": "https://www.poloclub.com",
+   "platform": "shopify",
+   "note": "La mayor parte de su ropa de mujer está siempre rebajada (mucha entre un 40 y un 60 %), así que solo te avisa desde −60 %.",
+   "outlet_url": "https://www.poloclub.com/collections/mujer-outlet",
+   "items": 317,
+   "ropa": 314,
+   "avg": 42,
+   "max": 73,
+   "big": 140,
+   "alert": 32,
+   "week": 8,
+   "thr": 60
   },
   {
    "id": "trucco",
