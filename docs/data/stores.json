@@ -13,7 +13,7 @@
    "ropa": 83,
    "avg": 43,
    "max": 56,
-   "big": 24,
+   "big": 27,
    "alert": 106,
    "week": 2,
    "thr": 30
@@ -128,11 +128,11 @@
    "platform": "shopify",
    "note": "La mayor parte de su ropa de mujer está siempre rebajada (mucha entre un 40 y un 60 %), así que solo te avisa desde −60 %.",
    "outlet_url": "https://www.poloclub.com/collections/mujer-outlet",
-   "items": 315,
-   "ropa": 312,
+   "items": 314,
+   "ropa": 311,
    "avg": 42,
    "max": 73,
-   "big": 138,
+   "big": 137,
    "alert": 31,
    "week": 8,
    "thr": 60
