@@ -9,12 +9,12 @@
    "outlet_url": "https://www.zara.com/es/es/mujer-precios-especiales-l1314.html",
    "destacada": true,
    "short": "Zara",
-   "items": 98,
-   "ropa": 78,
+   "items": 92,
+   "ropa": 72,
    "avg": 43,
    "max": 50,
    "big": 21,
-   "alert": 98,
+   "alert": 92,
    "week": 2,
    "thr": 30
   },
@@ -33,7 +33,7 @@
    "max": 60,
    "big": 8,
    "alert": 65,
-   "week": 3,
+   "week": 2,
    "thr": 30
   },
   {
@@ -80,12 +80,12 @@
    "platform": "shopify",
    "note": "Sobre todo bolsos y complementos: no te avisa de ellos salvo que añadas «bolsos» o «accesorios» en categories.",
    "outlet_url": "https://www.misako.com/collections/outlet",
-   "items": 247,
+   "items": 246,
    "ropa": 0,
    "avg": 50,
    "max": 50,
-   "big": 247,
-   "alert": 247,
+   "big": 246,
+   "alert": 246,
    "week": 0,
    "thr": 40
   },
@@ -133,8 +133,8 @@
    "avg": 41,
    "max": 73,
    "big": 134,
-   "alert": 30,
-   "week": 8,
+   "alert": 31,
+   "week": 10,
    "thr": 60
   },
   {
@@ -149,7 +149,7 @@
    "max": 55,
    "big": 3,
    "alert": 30,
-   "week": 1,
+   "week": 0,
    "thr": 40
   },
   {
@@ -190,8 +190,8 @@
    "url": "https://www.laagam.com",
    "platform": "shopify",
    "outlet_url": "https://www.laagam.com/es/collections/last-units",
-   "items": 165,
-   "ropa": 145,
+   "items": 166,
+   "ropa": 146,
    "avg": 30,
    "max": 51,
    "big": 1,
@@ -222,13 +222,13 @@
    "url": "https://www.lolacasademunt.com",
    "platform": "shopify",
    "outlet_url": "https://www.lolacasademunt.com/es-es/collections/outlet",
-   "items": 274,
-   "ropa": 148,
+   "items": 282,
+   "ropa": 155,
    "avg": 31,
    "max": 34,
    "big": 0,
    "alert": 0,
-   "week": 101,
+   "week": 97,
    "thr": 40
   },
   {
