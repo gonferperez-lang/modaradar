@@ -9,12 +9,12 @@
    "outlet_url": "https://www.zara.com/es/es/mujer-precios-especiales-l1314.html",
    "destacada": true,
    "short": "Zara",
-   "items": 106,
-   "ropa": 86,
-   "avg": 43,
+   "items": 122,
+   "ropa": 103,
+   "avg": 44,
    "max": 56,
-   "big": 25,
-   "alert": 106,
+   "big": 33,
+   "alert": 122,
    "week": 0,
    "thr": 30
   },
@@ -86,7 +86,7 @@
    "max": 88,
    "big": 191,
    "alert": 243,
-   "week": 142,
+   "week": 141,
    "thr": 40
   },
   {
@@ -106,6 +106,21 @@
    "thr": 40
   },
   {
+   "id": "trucco",
+   "name": "Trucco",
+   "url": "https://truccoshop.com",
+   "platform": "shopify",
+   "outlet_url": "https://truccoshop.com/collections/rebajas",
+   "items": 201,
+   "ropa": 189,
+   "avg": 33,
+   "max": 55,
+   "big": 2,
+   "alert": 63,
+   "week": 7,
+   "thr": 40
+  },
+  {
    "id": "bimbaylola",
    "name": "Bimba y Lola",
    "url": "https://www.bimbaylola.com",
@@ -122,21 +137,6 @@
    "thr": 40
   },
   {
-   "id": "trucco",
-   "name": "Trucco",
-   "url": "https://truccoshop.com",
-   "platform": "shopify",
-   "outlet_url": "https://truccoshop.com/collections/rebajas",
-   "items": 194,
-   "ropa": 182,
-   "avg": 28,
-   "max": 55,
-   "big": 3,
-   "alert": 30,
-   "week": 0,
-   "thr": 40
-  },
-  {
    "id": "poloclub",
    "name": "Polo Club",
    "url": "https://www.poloclub.com",
@@ -149,7 +149,7 @@
    "max": 73,
    "big": 124,
    "alert": 28,
-   "week": 9,
+   "week": 8,
    "thr": 60
   },
   {
@@ -190,8 +190,8 @@
    "url": "https://www.laagam.com",
    "platform": "shopify",
    "outlet_url": "https://www.laagam.com/es/collections/last-units",
-   "items": 167,
-   "ropa": 147,
+   "items": 168,
+   "ropa": 148,
    "avg": 30,
    "max": 51,
    "big": 1,
