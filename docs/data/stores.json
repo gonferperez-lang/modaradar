@@ -1,24 +1,6 @@
 {
  "stores": [
   {
-   "id": "zara",
-   "name": "Zara",
-   "url": "https://www.zara.com",
-   "platform": "zara",
-   "note": "Todo el año tiene «Special prices» de mujer; cuando abre rebajas o Black Friday el radar añade esas secciones solo. Zara no publica las tallas en el listado: compruébalas en su web.",
-   "outlet_url": "https://www.zara.com/es/es/mujer-precios-especiales-l1314.html",
-   "destacada": true,
-   "short": "Zara",
-   "items": 111,
-   "ropa": 89,
-   "avg": 43,
-   "max": 56,
-   "big": 25,
-   "alert": 111,
-   "week": 0,
-   "thr": 30
-  },
-  {
    "id": "zadig",
    "name": "Zadig&Voltaire",
    "url": "https://zadig-et-voltaire.com/eu/es",
@@ -35,6 +17,24 @@
    "big": 0,
    "alert": 92,
    "week": 92,
+   "thr": 30
+  },
+  {
+   "id": "zara",
+   "name": "Zara",
+   "url": "https://www.zara.com",
+   "platform": "zara",
+   "note": "Todo el año tiene «Special prices» de mujer; cuando abre rebajas o Black Friday el radar añade esas secciones solo. Zara no publica las tallas en el listado: compruébalas en su web.",
+   "outlet_url": "https://www.zara.com/es/es/mujer-precios-especiales-l1314.html",
+   "destacada": true,
+   "short": "Zara",
+   "items": 87,
+   "ropa": 70,
+   "avg": 43,
+   "max": 56,
+   "big": 18,
+   "alert": 87,
+   "week": 0,
    "thr": 30
   },
   {
@@ -143,11 +143,11 @@
    "platform": "shopify",
    "note": "La mayor parte de su ropa de mujer está siempre rebajada (mucha entre un 40 y un 60 %), así que solo te avisa desde −60 %.",
    "outlet_url": "https://www.poloclub.com/collections/mujer-outlet",
-   "items": 274,
-   "ropa": 271,
+   "items": 273,
+   "ropa": 270,
    "avg": 40,
    "max": 73,
-   "big": 106,
+   "big": 105,
    "alert": 19,
    "week": 10,
    "thr": 60
@@ -269,13 +269,13 @@
    "note": "Una de las marcas más buscadas en España. En cada revisión se leen sus ~70 rebajas de mujer más nuevas (ropa y zapatillas); no publica las tallas en el listado.",
    "outlet_url": "https://www.nike.com/es/w/mujer-ofertas-3yaepz5e1x6",
    "partial": true,
-   "items": 54,
+   "items": 56,
    "ropa": 34,
    "avg": 28,
    "max": 30,
    "big": 0,
    "alert": 0,
-   "week": 3,
+   "week": 5,
    "thr": 40
   },
   {
