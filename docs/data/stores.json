@@ -13,7 +13,7 @@
    "ropa": 79,
    "avg": 43,
    "max": 50,
-   "big": 20,
+   "big": 19,
    "alert": 101,
    "week": 0,
    "thr": 30
@@ -62,12 +62,12 @@
    "platform": "shopify",
    "note": "Sobre todo bolsos y complementos: no te avisa de ellos salvo que añadas «bolsos» o «accesorios» en categories.",
    "outlet_url": "https://www.misako.com/collections/outlet",
-   "items": 249,
+   "items": 254,
    "ropa": 0,
    "avg": 50,
    "max": 50,
-   "big": 249,
-   "alert": 249,
+   "big": 254,
+   "alert": 254,
    "week": 9,
    "thr": 40
   },
@@ -86,7 +86,7 @@
    "max": 88,
    "big": 179,
    "alert": 222,
-   "week": 113,
+   "week": 109,
    "thr": 40
   },
   {
@@ -159,13 +159,13 @@
    "platform": "sfcc",
    "outlet_url": "https://www.superdry.es/outlet/mujer/",
    "partial": true,
-   "items": 56,
-   "ropa": 51,
+   "items": 59,
+   "ropa": 54,
    "avg": 34,
    "max": 50,
-   "big": 10,
-   "alert": 11,
-   "week": 28,
+   "big": 11,
+   "alert": 12,
+   "week": 31,
    "thr": 40
   },
   {
