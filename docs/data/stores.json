@@ -9,12 +9,12 @@
    "outlet_url": "https://www.zara.com/es/es/mujer-precios-especiales-l1314.html",
    "destacada": true,
    "short": "Zara",
-   "items": 93,
-   "ropa": 72,
+   "items": 100,
+   "ropa": 78,
    "avg": 43,
    "max": 50,
    "big": 20,
-   "alert": 93,
+   "alert": 100,
    "week": 0,
    "thr": 30
   },
@@ -86,7 +86,7 @@
    "max": 88,
    "big": 179,
    "alert": 222,
-   "week": 117,
+   "week": 113,
    "thr": 40
   },
   {
@@ -96,13 +96,13 @@
    "platform": "sfcc",
    "outlet_url": "https://www.desigual.com/es_ES/outlet/",
    "partial": true,
-   "items": 395,
-   "ropa": 281,
+   "items": 408,
+   "ropa": 291,
    "avg": 39,
    "max": 50,
-   "big": 176,
-   "alert": 177,
-   "week": 235,
+   "big": 181,
+   "alert": 182,
+   "week": 241,
    "thr": 40
   },
   {
