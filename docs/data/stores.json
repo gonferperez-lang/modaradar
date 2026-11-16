@@ -13,7 +13,7 @@
    "ropa": 100,
    "avg": 44,
    "max": 56,
-   "big": 33,
+   "big": 32,
    "alert": 119,
    "week": 0,
    "thr": 30
@@ -80,13 +80,13 @@
    "outlet_url": "https://fiftyoutlet.com/es/es/mujer",
    "short": "Fifty",
    "partial": true,
-   "items": 236,
-   "ropa": 178,
+   "items": 245,
+   "ropa": 186,
    "avg": 57,
    "max": 88,
-   "big": 183,
-   "alert": 224,
-   "week": 114,
+   "big": 190,
+   "alert": 231,
+   "week": 123,
    "thr": 40
   },
   {
