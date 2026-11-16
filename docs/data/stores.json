@@ -9,12 +9,12 @@
    "outlet_url": "https://www.zara.com/es/es/mujer-precios-especiales-l1314.html",
    "destacada": true,
    "short": "Zara",
-   "items": 111,
-   "ropa": 90,
+   "items": 114,
+   "ropa": 93,
    "avg": 44,
    "max": 50,
    "big": 29,
-   "alert": 111,
+   "alert": 114,
    "week": 0,
    "thr": 30
   },
@@ -86,7 +86,7 @@
    "max": 88,
    "big": 190,
    "alert": 231,
-   "week": 118,
+   "week": 115,
    "thr": 40
   },
   {
@@ -159,13 +159,13 @@
    "platform": "sfcc",
    "outlet_url": "https://www.superdry.es/outlet/mujer/",
    "partial": true,
-   "items": 57,
-   "ropa": 52,
+   "items": 63,
+   "ropa": 58,
    "avg": 34,
    "max": 50,
    "big": 10,
    "alert": 11,
-   "week": 29,
+   "week": 35,
    "thr": 40
   },
   {
