@@ -1,107 +1,100 @@
 {
  "version": "1.0.0",
- "generated": "2026-11-17T00:00:03+00:00",
+ "generated": "2026-11-17T00:09:48+00:00",
  "stores": [
   {
    "id": "zara",
    "name": "Zara",
-   "at": "2026-11-16T23:58:55+00:00",
+   "at": "2026-11-17T00:09:11+00:00",
    "status": "ok",
-   "items": 107,
+   "items": 110,
    "sections": [
     "Special Prices"
    ],
-   "seconds": 2.3,
+   "seconds": 2.7,
    "events": 0
   },
   {
    "id": "brownie",
    "name": "Brownie",
-   "at": "2026-11-16T23:58:55+00:00",
-   "status": "error",
-   "message": "FetchError: TimeoutError: The read operation timed out en https://www.browniespain.com/es-es/products.json?limit=250&page=1",
-   "seconds": 57.1
+   "at": "2026-11-17T00:09:11+00:00",
+   "status": "ok",
+   "items": 85,
+   "seconds": 8.3,
+   "events": 0
   },
   {
    "id": "zadig",
    "name": "Zadig&Voltaire",
-   "at": "2026-11-16T23:58:55+00:00",
+   "at": "2026-11-17T00:09:11+00:00",
    "status": "ok",
    "items": 92,
-   "seconds": 12.2,
+   "seconds": 12.4,
    "events": 0
   },
   {
    "id": "lolacasademunt",
    "name": "Lola Casademunt",
-   "at": "2026-11-16T23:58:55+00:00",
+   "at": "2026-11-17T00:09:11+00:00",
    "status": "blocked",
-   "message": "En pausa hasta las 01:58: la tienda limita el acceso automático (bloqueo anti-bots). Se reintenta sola. Detalle: robots.txt no permite https://www.lolacasademunt.com/es-es/products.json?limit=250&page=1",
-   "seconds": 25.1,
-   "until": "2026-11-17T00:58:55+00:00"
+   "until": "2026-11-17T00:58:55+00:00",
+   "message": "En pausa hasta las 01:58: la tienda limita el acceso automático (bloqueo anti-bots). Se reintenta sola."
   },
   {
    "id": "companiafantastica",
    "name": "Compañía Fantástica",
-   "at": "2026-11-16T23:58:55+00:00",
+   "at": "2026-11-17T00:09:11+00:00",
    "status": "blocked",
-   "message": "En pausa hasta las 01:58: la tienda limita el acceso automático (bloqueo anti-bots). Se reintenta sola. Detalle: robots.txt no permite https://www.companiafantastica.com/products.json?limit=250&page=1",
-   "seconds": 27.0,
-   "until": "2026-11-17T00:58:55+00:00"
+   "until": "2026-11-17T00:58:55+00:00",
+   "message": "En pausa hasta las 01:58: la tienda limita el acceso automático (bloqueo anti-bots). Se reintenta sola."
   },
   {
    "id": "laagam",
    "name": "Laagam",
-   "at": "2026-11-16T23:58:55+00:00",
+   "at": "2026-11-17T00:09:11+00:00",
    "status": "blocked",
-   "message": "En pausa hasta las 01:58: la tienda limita el acceso automático (bloqueo anti-bots). Se reintenta sola. Detalle: robots.txt no permite https://www.laagam.com/es/products.json?limit=250&page=1",
-   "seconds": 25.1,
-   "until": "2026-11-17T00:58:55+00:00"
+   "until": "2026-11-17T00:58:55+00:00",
+   "message": "En pausa hasta las 01:58: la tienda limita el acceso automático (bloqueo anti-bots). Se reintenta sola."
   },
   {
    "id": "rouje",
    "name": "Rouje",
-   "at": "2026-11-16T23:58:57+00:00",
+   "at": "2026-11-17T00:09:11+00:00",
    "status": "blocked",
-   "message": "En pausa hasta las 01:58: la tienda limita el acceso automático (bloqueo anti-bots). Se reintenta sola. Detalle: robots.txt no permite https://www.rouje.com/es-es/products.json?limit=250&page=1",
-   "seconds": 14.5,
-   "until": "2026-11-17T00:58:55+00:00"
+   "until": "2026-11-17T00:58:55+00:00",
+   "message": "En pausa hasta las 01:58: la tienda limita el acceso automático (bloqueo anti-bots). Se reintenta sola."
   },
   {
    "id": "pinko",
    "name": "Pinko",
-   "at": "2026-11-16T23:59:07+00:00",
+   "at": "2026-11-17T00:09:11+00:00",
    "status": "blocked",
-   "message": "En pausa hasta las 01:58: la tienda limita el acceso automático (bloqueo anti-bots). Se reintenta sola. Detalle: robots.txt no permite https://www.pinko.com/es-es/products.json?limit=250&page=1",
-   "seconds": 25.7,
-   "until": "2026-11-17T00:58:55+00:00"
+   "until": "2026-11-17T00:58:55+00:00",
+   "message": "En pausa hasta las 01:58: la tienda limita el acceso automático (bloqueo anti-bots). Se reintenta sola."
   },
   {
    "id": "poloclub",
    "name": "Polo Club",
-   "at": "2026-11-16T23:59:11+00:00",
+   "at": "2026-11-17T00:09:11+00:00",
    "status": "blocked",
-   "message": "En pausa hasta las 01:58: la tienda limita el acceso automático (bloqueo anti-bots). Se reintenta sola. Detalle: robots.txt no permite https://www.poloclub.com/collections/mujer/products.json?limit=250&page=1",
-   "seconds": 25.2,
-   "until": "2026-11-17T00:58:55+00:00"
+   "until": "2026-11-17T00:58:55+00:00",
+   "message": "En pausa hasta las 01:58: la tienda limita el acceso automático (bloqueo anti-bots). Se reintenta sola."
   },
   {
    "id": "scuffers",
    "name": "Scuffers",
-   "at": "2026-11-16T23:59:20+00:00",
+   "at": "2026-11-17T00:09:11+00:00",
    "status": "blocked",
-   "message": "En pausa hasta las 01:58: la tienda limita el acceso automático (bloqueo anti-bots). Se reintenta sola. Detalle: robots.txt no permite https://www.scuffers.com/products.json?limit=250&page=1",
-   "seconds": 25.2,
-   "until": "2026-11-17T00:58:55+00:00"
+   "until": "2026-11-17T00:58:55+00:00",
+   "message": "En pausa hasta las 01:58: la tienda limita el acceso automático (bloqueo anti-bots). Se reintenta sola."
   },
   {
    "id": "emestudios",
    "name": "Eme Studios",
-   "at": "2026-11-16T23:59:20+00:00",
+   "at": "2026-11-17T00:09:11+00:00",
    "status": "blocked",
-   "message": "En pausa hasta las 01:58: la tienda limita el acceso automático (bloqueo anti-bots). Se reintenta sola. Detalle: robots.txt no permite https://eme-official.myshopify.com/products.json?limit=250&page=1",
-   "seconds": 25.0,
-   "until": "2026-11-17T00:58:55+00:00"
+   "until": "2026-11-17T00:58:55+00:00",
+   "message": "En pausa hasta las 01:58: la tienda limita el acceso automático (bloqueo anti-bots). Se reintenta sola."
   },
   {
    "id": "yuxus",
@@ -109,8 +102,8 @@
    "at": "2026-11-16T23:59:22+00:00",
    "status": "ok",
    "items": 70,
-   "seconds": 34.4,
-   "events": 0
+   "events": 0,
+   "message": "Se consulta cada 30 min para no saturarla"
   },
   {
    "id": "nike",
@@ -118,94 +111,94 @@
    "at": "2026-11-16T23:59:33+00:00",
    "status": "ok",
    "items": 51,
-   "seconds": 5.2,
-   "events": 0
+   "events": 0,
+   "message": "Se consulta cada 30 min para no saturarla"
   },
   {
    "id": "fiftyoutlet",
    "name": "Fifty Outlet",
-   "at": "2026-11-16T23:09:15+00:00",
+   "at": "2026-11-17T00:09:11+00:00",
    "status": "ok",
-   "items": 193,
-   "events": 0,
-   "message": "Se consulta cada 60 min para no saturarla"
+   "items": 194,
+   "seconds": 11.3,
+   "events": 1
   },
   {
    "id": "desigual",
    "name": "Desigual",
-   "at": "2026-11-16T23:09:17+00:00",
+   "at": "2026-11-17T00:09:11+00:00",
    "status": "ok",
    "items": 367,
-   "events": 0,
-   "message": "Se consulta cada 60 min para no saturarla"
+   "seconds": 17.3,
+   "events": 0
   },
   {
    "id": "cortefiel",
    "name": "Cortefiel",
-   "at": "2026-11-16T23:09:17+00:00",
+   "at": "2026-11-17T00:09:11+00:00",
    "status": "ok",
    "items": 25,
-   "events": 0,
-   "message": "Se consulta cada 60 min para no saturarla"
+   "seconds": 7.2,
+   "events": 0
   },
   {
    "id": "bimbaylola",
    "name": "Bimba y Lola",
-   "at": "2026-11-16T23:09:19+00:00",
+   "at": "2026-11-17T00:09:13+00:00",
    "status": "ok",
    "items": 137,
-   "events": 0,
-   "message": "Se consulta cada 60 min para no saturarla"
+   "seconds": 14.3,
+   "events": 0
   },
   {
    "id": "trucco",
    "name": "Trucco",
-   "at": "2026-11-16T23:59:37+00:00",
+   "at": "2026-11-17T00:09:18+00:00",
    "status": "blocked",
-   "message": "En pausa hasta las 01:58: la tienda limita el acceso automático (bloqueo anti-bots). Se reintenta sola. Detalle: robots.txt no permite https://truccoshop.com/products.json?limit=250&page=1",
-   "seconds": 25.1,
-   "until": "2026-11-17T00:58:55+00:00"
+   "until": "2026-11-17T00:58:55+00:00",
+   "message": "En pausa hasta las 01:58: la tienda limita el acceso automático (bloqueo anti-bots). Se reintenta sola."
   },
   {
    "id": "noon",
    "name": "Noon",
-   "at": "2026-11-16T23:59:38+00:00",
+   "at": "2026-11-17T00:09:18+00:00",
    "status": "blocked",
-   "message": "En pausa hasta las 01:58: la tienda limita el acceso automático (bloqueo anti-bots). Se reintenta sola. Detalle: robots.txt no permite https://noonspain.com/products.json?limit=250&page=1",
-   "seconds": 25.3,
-   "until": "2026-11-17T00:58:55+00:00"
+   "until": "2026-11-17T00:58:55+00:00",
+   "message": "En pausa hasta las 01:58: la tienda limita el acceso automático (bloqueo anti-bots). Se reintenta sola."
   },
   {
    "id": "misako",
    "name": "Misako",
-   "at": "2026-11-16T23:09:24+00:00",
+   "at": "2026-11-17T00:09:18+00:00",
    "status": "ok",
    "items": 308,
-   "events": 0,
-   "message": "Se consulta cada 60 min para no saturarla"
+   "seconds": 15.4,
+   "events": 0
   },
   {
    "id": "liujo",
    "name": "Liu Jo",
-   "at": "2026-11-16T23:09:26+00:00",
+   "at": "2026-11-17T00:09:19+00:00",
    "status": "ok",
    "items": 223,
-   "events": 0,
-   "message": "Se consulta cada 60 min para no saturarla"
+   "seconds": 28.5,
+   "events": 0
   },
   {
    "id": "superdry",
    "name": "Superdry",
-   "at": "2026-11-16T23:09:26+00:00",
+   "at": "2026-11-17T00:09:22+00:00",
    "status": "ok",
    "items": 48,
-   "events": 0,
-   "message": "Se consulta cada 60 min para no saturarla"
+   "seconds": 2.9,
+   "events": 0
   }
  ],
- "events_this_run": 0,
+ "events_this_run": 1,
  "notifications_sent": 0,
- "notify_errors": [],
+ "notify_errors": [
+  "No hay canal de avisos: crea el secret NTFY_TOPIC en GitHub (Settings → Secrets and variables → Actions → pestaña Secrets)."
+ ],
  "watchlist": [
   "cachemir",
   "cashmere",
@@ -242,6 +235,10 @@
   }
  ],
  "history": [
+  {
+   "at": "2026-11-17T00:09:48+00:00",
+   "by": "reloj"
+  },
   {
    "at": "2026-11-17T00:00:03+00:00",
    "by": "schedule"
@@ -332,10 +329,6 @@
   },
   {
    "at": "2026-11-16T09:18:22+00:00",
-   "by": "reloj"
-  },
-  {
-   "at": "2026-11-16T08:07:32+00:00",
    "by": "reloj"
   }
  ]
