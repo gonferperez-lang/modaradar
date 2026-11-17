@@ -1,7 +1,7 @@
 {
  "stores": {
   "zara": {
-   "last_ok": "2026-11-16T23:09:00+00:00",
+   "last_ok": "2026-11-16T23:58:55+00:00",
    "memo": {
     "cats": [
      {
@@ -25,7 +25,7 @@
    "seeded_at": "2026-11-02T20:34:35+00:00"
   },
   "zadig": {
-   "last_ok": "2026-11-16T23:09:00+00:00",
+   "last_ok": "2026-11-16T23:58:55+00:00",
    "cfg": "42e94aea3e",
    "seeded": true,
    "seeded_at": "2026-11-02T20:34:35+00:00"
@@ -34,58 +34,82 @@
    "last_ok": "2026-11-16T23:09:00+00:00",
    "cfg": "df6bb2f8b7",
    "seeded": true,
-   "seeded_at": "2026-11-02T20:34:35+00:00"
+   "seeded_at": "2026-11-02T20:34:35+00:00",
+   "fails": 1,
+   "retry_after": "2026-11-17T00:58:55+00:00",
+   "reason": "bloqueo anti-bots"
   },
   "companiafantastica": {
    "last_ok": "2026-11-16T23:09:00+00:00",
    "cfg": "641010ec14",
    "seeded": true,
-   "seeded_at": "2026-11-02T20:34:35+00:00"
+   "seeded_at": "2026-11-02T20:34:35+00:00",
+   "fails": 1,
+   "retry_after": "2026-11-17T00:58:55+00:00",
+   "reason": "bloqueo anti-bots"
   },
   "laagam": {
    "last_ok": "2026-11-16T23:09:00+00:00",
    "cfg": "822623b278",
    "seeded": true,
-   "seeded_at": "2026-11-02T20:34:35+00:00"
+   "seeded_at": "2026-11-02T20:34:35+00:00",
+   "fails": 1,
+   "retry_after": "2026-11-17T00:58:55+00:00",
+   "reason": "bloqueo anti-bots"
   },
   "rouje": {
    "last_ok": "2026-11-16T23:09:03+00:00",
    "cfg": "fbf145ec8b",
    "seeded": true,
-   "seeded_at": "2026-11-02T20:34:35+00:00"
+   "seeded_at": "2026-11-02T20:34:35+00:00",
+   "fails": 1,
+   "retry_after": "2026-11-17T00:58:55+00:00",
+   "reason": "bloqueo anti-bots"
   },
   "pinko": {
    "last_ok": "2026-11-16T23:09:05+00:00",
    "cfg": "81c3bc51eb",
    "seeded": true,
-   "seeded_at": "2026-11-02T20:34:35+00:00"
+   "seeded_at": "2026-11-02T20:34:35+00:00",
+   "fails": 1,
+   "retry_after": "2026-11-17T00:58:55+00:00",
+   "reason": "bloqueo anti-bots"
   },
   "poloclub": {
    "last_ok": "2026-11-16T23:09:09+00:00",
    "cfg": "ee76f3c0b3",
    "seeded": true,
-   "seeded_at": "2026-11-02T20:34:35+00:00"
+   "seeded_at": "2026-11-02T20:34:35+00:00",
+   "fails": 1,
+   "retry_after": "2026-11-17T00:58:55+00:00",
+   "reason": "bloqueo anti-bots"
   },
   "scuffers": {
    "last_ok": "2026-11-16T23:09:09+00:00",
    "cfg": "44d0bd99f7",
    "seeded": true,
-   "seeded_at": "2026-11-02T20:34:35+00:00"
+   "seeded_at": "2026-11-02T20:34:35+00:00",
+   "fails": 1,
+   "retry_after": "2026-11-17T00:58:55+00:00",
+   "reason": "bloqueo anti-bots"
   },
   "emestudios": {
    "last_ok": "2026-11-16T23:09:11+00:00",
    "cfg": "5c7c3d8f60",
    "seeded": true,
-   "seeded_at": "2026-11-02T20:34:35+00:00"
+   "seeded_at": "2026-11-02T20:34:35+00:00",
+   "fails": 1,
+   "retry_after": "2026-11-17T00:58:55+00:00",
+   "reason": "bloqueo anti-bots"
   },
   "yuxus": {
-   "last_ok": "2026-11-16T23:09:13+00:00",
+   "last_ok": "2026-11-16T23:59:22+00:00",
    "cfg": "32ed7aab6a",
    "seeded": true,
    "seeded_at": "2026-11-02T20:34:35+00:00"
   },
   "nike": {
-   "last_ok": "2026-11-16T23:09:13+00:00",
+   "last_ok": "2026-11-16T23:59:33+00:00",
    "cfg": "b2f4ff3dc6",
    "seeded": true,
    "seeded_at": "2026-11-02T20:34:35+00:00"
@@ -118,7 +142,10 @@
    "last_ok": "2026-11-16T23:09:21+00:00",
    "cfg": "7393b4c6aa",
    "seeded": true,
-   "seeded_at": "2026-11-02T21:30:24+00:00"
+   "seeded_at": "2026-11-02T21:30:24+00:00",
+   "fails": 1,
+   "retry_after": "2026-11-17T00:58:55+00:00",
+   "reason": "bloqueo anti-bots"
   },
   "misako": {
    "last_ok": "2026-11-16T23:09:24+00:00",
@@ -142,7 +169,10 @@
    "last_ok": "2026-11-16T23:09:24+00:00",
    "cfg": "a2c93e3227",
    "seeded": true,
-   "seeded_at": "2026-11-02T23:03:53+00:00"
+   "seeded_at": "2026-11-02T23:03:53+00:00",
+   "fails": 1,
+   "retry_after": "2026-11-17T00:58:55+00:00",
+   "reason": "bloqueo anti-bots"
   }
  },
  "filters_hash": "755b3ce8aaf1"
