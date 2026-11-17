@@ -11,9 +11,9 @@
    "short": "Zara",
    "items": 121,
    "ropa": 99,
-   "avg": 43,
+   "avg": 44,
    "max": 50,
-   "big": 28,
+   "big": 30,
    "alert": 121,
    "week": 0,
    "thr": 30
@@ -86,7 +86,7 @@
    "max": 88,
    "big": 198,
    "alert": 233,
-   "week": 123,
+   "week": 122,
    "thr": 40
   },
   {
@@ -102,7 +102,7 @@
    "max": 50,
    "big": 187,
    "alert": 188,
-   "week": 241,
+   "week": 239,
    "thr": 40
   },
   {
