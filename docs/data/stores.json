@@ -9,12 +9,12 @@
    "outlet_url": "https://www.zara.com/es/es/mujer-precios-especiales-l1314.html",
    "destacada": true,
    "short": "Zara",
-   "items": 127,
-   "ropa": 106,
+   "items": 135,
+   "ropa": 114,
    "avg": 44,
    "max": 56,
-   "big": 29,
-   "alert": 127,
+   "big": 35,
+   "alert": 135,
    "week": 0,
    "thr": 30
   },
@@ -64,13 +64,13 @@
    "outlet_url": "https://fiftyoutlet.com/es/es/mujer",
    "short": "Fifty",
    "partial": true,
-   "items": 258,
-   "ropa": 200,
+   "items": 259,
+   "ropa": 201,
    "avg": 58,
    "max": 88,
    "big": 205,
    "alert": 243,
-   "week": 127,
+   "week": 128,
    "thr": 40
   },
   {
@@ -227,7 +227,7 @@
    "max": 38,
    "big": 0,
    "alert": 0,
-   "week": 32,
+   "week": 25,
    "thr": 40
   },
   {
