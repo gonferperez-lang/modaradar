@@ -13,7 +13,7 @@
    "ropa": 98,
    "avg": 43,
    "max": 50,
-   "big": 29,
+   "big": 30,
    "alert": 122,
    "week": 4,
    "thr": 30
@@ -86,7 +86,7 @@
    "max": 50,
    "big": 197,
    "alert": 198,
-   "week": 245,
+   "week": 236,
    "thr": 40
   },
   {
@@ -95,14 +95,30 @@
    "url": "https://truccoshop.com",
    "platform": "shopify",
    "outlet_url": "https://truccoshop.com/collections/rebajas",
-   "items": 243,
-   "ropa": 231,
+   "items": 244,
+   "ropa": 232,
    "avg": 32,
    "max": 50,
    "big": 1,
    "alert": 76,
-   "week": 50,
+   "week": 51,
    "thr": 40
+  },
+  {
+   "id": "poloclub",
+   "name": "Polo Club",
+   "url": "https://www.poloclub.com",
+   "platform": "shopify",
+   "note": "La mayor parte de su ropa de mujer está siempre rebajada (mucha entre un 40 y un 60 %), así que solo te avisa desde −60 %.",
+   "outlet_url": "https://www.poloclub.com/collections/mujer-outlet",
+   "items": 307,
+   "ropa": 295,
+   "avg": 42,
+   "max": 73,
+   "big": 127,
+   "alert": 63,
+   "week": 21,
+   "thr": 60
   },
   {
    "id": "bimbaylola",
@@ -136,22 +152,6 @@
    "alert": 28,
    "week": 167,
    "thr": 40
-  },
-  {
-   "id": "poloclub",
-   "name": "Polo Club",
-   "url": "https://www.poloclub.com",
-   "platform": "shopify",
-   "note": "La mayor parte de su ropa de mujer está siempre rebajada (mucha entre un 40 y un 60 %), así que solo te avisa desde −60 %.",
-   "outlet_url": "https://www.poloclub.com/collections/mujer-outlet",
-   "items": 291,
-   "ropa": 288,
-   "avg": 41,
-   "max": 73,
-   "big": 123,
-   "alert": 25,
-   "week": 3,
-   "thr": 60
   },
   {
    "id": "superdry",
@@ -238,13 +238,13 @@
    "url": "https://www.lolacasademunt.com",
    "platform": "shopify",
    "outlet_url": "https://www.lolacasademunt.com/es-es/collections/outlet",
-   "items": 294,
-   "ropa": 159,
+   "items": 293,
+   "ropa": 158,
    "avg": 31,
    "max": 38,
    "big": 0,
    "alert": 0,
-   "week": 25,
+   "week": 22,
    "thr": 40
   },
   {
