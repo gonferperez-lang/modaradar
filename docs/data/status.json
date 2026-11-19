@@ -1,32 +1,32 @@
 {
  "version": "1.0.0",
- "generated": "2026-11-19T13:38:12+00:00",
+ "generated": "2026-11-19T14:20:19+00:00",
  "stores": [
   {
    "id": "zara",
    "name": "Zara",
-   "at": "2026-11-19T13:37:59+00:00",
+   "at": "2026-11-19T14:19:21+00:00",
    "status": "ok",
-   "items": 119,
+   "items": 164,
    "sections": [
     "Special Prices"
    ],
-   "seconds": 2.1,
-   "events": 1
+   "seconds": 2.5,
+   "events": 37
   },
   {
    "id": "brownie",
    "name": "Brownie",
-   "at": "2026-11-19T13:37:59+00:00",
+   "at": "2026-11-19T14:19:21+00:00",
    "status": "ok",
    "items": 88,
-   "seconds": 8.4,
+   "seconds": 8.6,
    "events": 0
   },
   {
    "id": "zadig",
    "name": "Zadig&Voltaire",
-   "at": "2026-11-19T13:37:59+00:00",
+   "at": "2026-11-19T14:19:21+00:00",
    "status": "ok",
    "items": 92,
    "seconds": 12.3,
@@ -35,176 +35,176 @@
   {
    "id": "lolacasademunt",
    "name": "Lola Casademunt",
-   "at": "2026-11-19T13:19:09+00:00",
+   "at": "2026-11-19T14:19:21+00:00",
    "status": "ok",
    "items": 302,
-   "events": 0,
-   "message": "Se consulta cada 30 min para no saturarla"
+   "seconds": 12.3,
+   "events": 0
   },
   {
    "id": "companiafantastica",
    "name": "Compañía Fantástica",
-   "at": "2026-11-19T13:19:09+00:00",
+   "at": "2026-11-19T14:19:21+00:00",
    "status": "ok",
    "items": 24,
-   "events": 0,
-   "message": "Se consulta cada 30 min para no saturarla"
+   "seconds": 10.5,
+   "events": 0
   },
   {
    "id": "laagam",
    "name": "Laagam",
-   "at": "2026-11-19T13:19:09+00:00",
+   "at": "2026-11-19T14:19:21+00:00",
    "status": "ok",
    "items": 124,
-   "events": 0,
-   "message": "Se consulta cada 30 min para no saturarla"
+   "seconds": 4.4,
+   "events": 0
   },
   {
    "id": "rouje",
    "name": "Rouje",
-   "at": "2026-11-19T13:19:14+00:00",
+   "at": "2026-11-19T14:19:24+00:00",
    "status": "ok",
    "items": 0,
-   "events": 0,
-   "message": "Se consulta cada 30 min para no saturarla"
+   "seconds": 6.6,
+   "events": 0
   },
   {
    "id": "pinko",
    "name": "Pinko",
-   "at": "2026-11-19T13:19:14+00:00",
+   "at": "2026-11-19T14:19:26+00:00",
    "status": "ok",
    "items": 0,
-   "events": 0,
-   "message": "Se consulta cada 30 min para no saturarla"
+   "seconds": 10.6,
+   "events": 0
   },
   {
    "id": "poloclub",
    "name": "Polo Club",
-   "at": "2026-11-19T13:19:18+00:00",
+   "at": "2026-11-19T14:19:30+00:00",
    "status": "ok",
    "items": 365,
-   "events": 0,
-   "message": "Se consulta cada 30 min para no saturarla"
+   "seconds": 8.6,
+   "events": 0
   },
   {
    "id": "scuffers",
    "name": "Scuffers",
-   "at": "2026-11-19T13:19:20+00:00",
+   "at": "2026-11-19T14:19:31+00:00",
    "status": "ok",
    "items": 0,
-   "events": 0,
-   "message": "Se consulta cada 30 min para no saturarla"
+   "seconds": 14.5,
+   "events": 0
   },
   {
    "id": "emestudios",
    "name": "Eme Studios",
-   "at": "2026-11-19T13:19:20+00:00",
+   "at": "2026-11-19T14:19:32+00:00",
    "status": "ok",
    "items": 22,
-   "events": 0,
-   "message": "Se consulta cada 30 min para no saturarla"
+   "seconds": 10.3,
+   "events": 0
   },
   {
    "id": "yuxus",
    "name": "Yuxus",
-   "at": "2026-11-19T13:19:21+00:00",
+   "at": "2026-11-19T14:19:34+00:00",
    "status": "ok",
    "items": 79,
-   "events": 0,
-   "message": "Se consulta cada 30 min para no saturarla"
+   "seconds": 6.3,
+   "events": 0
   },
   {
    "id": "nike",
    "name": "Nike",
-   "at": "2026-11-19T13:19:22+00:00",
+   "at": "2026-11-19T14:19:34+00:00",
    "status": "ok",
    "items": 24,
-   "events": 0,
-   "message": "Se consulta cada 30 min para no saturarla"
+   "seconds": 11.7,
+   "events": 0
   },
   {
    "id": "fiftyoutlet",
    "name": "Fifty Outlet",
-   "at": "2026-11-19T13:19:24+00:00",
+   "at": "2026-11-19T14:19:36+00:00",
    "status": "ok",
-   "items": 160,
-   "events": 0,
-   "message": "Se consulta cada 60 min para no saturarla"
+   "items": 162,
+   "seconds": 11.9,
+   "events": 0
   },
   {
    "id": "desigual",
    "name": "Desigual",
-   "at": "2026-11-19T13:19:26+00:00",
+   "at": "2026-11-19T14:19:39+00:00",
    "status": "ok",
    "items": 222,
-   "events": 0,
-   "message": "Se consulta cada 60 min para no saturarla"
+   "seconds": 18.2,
+   "events": 0
   },
   {
    "id": "cortefiel",
    "name": "Cortefiel",
-   "at": "2026-11-19T13:19:26+00:00",
+   "at": "2026-11-19T14:19:40+00:00",
    "status": "ok",
    "items": 42,
-   "events": 0,
-   "message": "Se consulta cada 60 min para no saturarla"
+   "seconds": 6.3,
+   "events": 0
   },
   {
    "id": "bimbaylola",
    "name": "Bimba y Lola",
-   "at": "2026-11-19T13:19:28+00:00",
+   "at": "2026-11-19T14:19:42+00:00",
    "status": "ok",
    "items": 141,
-   "events": 0,
-   "message": "Se consulta cada 60 min para no saturarla"
+   "seconds": 11.6,
+   "events": 0
   },
   {
    "id": "trucco",
    "name": "Trucco",
-   "at": "2026-11-19T13:19:31+00:00",
+   "at": "2026-11-19T14:19:45+00:00",
    "status": "ok",
    "items": 277,
-   "events": 0,
-   "message": "Se consulta cada 30 min para no saturarla"
+   "seconds": 4.6,
+   "events": 0
   },
   {
    "id": "noon",
    "name": "Noon",
-   "at": "2026-11-19T13:19:34+00:00",
+   "at": "2026-11-19T14:19:46+00:00",
    "status": "ok",
    "items": 0,
-   "events": 0,
-   "message": "Se consulta cada 30 min para no saturarla"
+   "seconds": 4.7,
+   "events": 0
   },
   {
    "id": "misako",
    "name": "Misako",
-   "at": "2026-11-19T13:19:35+00:00",
+   "at": "2026-11-19T14:19:46+00:00",
    "status": "ok",
    "items": 303,
-   "events": 0,
-   "message": "Se consulta cada 60 min para no saturarla"
+   "seconds": 15.4,
+   "events": 0
   },
   {
    "id": "liujo",
    "name": "Liu Jo",
-   "at": "2026-11-19T13:19:36+00:00",
+   "at": "2026-11-19T14:19:48+00:00",
    "status": "ok",
    "items": 224,
-   "events": 0,
-   "message": "Se consulta cada 60 min para no saturarla"
+   "seconds": 31.0,
+   "events": 0
   },
   {
    "id": "superdry",
    "name": "Superdry",
-   "at": "2026-11-19T13:19:36+00:00",
+   "at": "2026-11-19T14:19:50+00:00",
    "status": "ok",
    "items": 48,
-   "events": 0,
-   "message": "Se consulta cada 60 min para no saturarla"
+   "seconds": 2.6,
+   "events": 0
   }
  ],
- "events_this_run": 1,
+ "events_this_run": 37,
  "notifications_sent": 0,
  "notify_errors": [
   "No hay canal de avisos: crea el secret NTFY_TOPIC en GitHub (Settings → Secrets and variables → Actions → pestaña Secrets)."
@@ -245,6 +245,10 @@
   }
  ],
  "history": [
+  {
+   "at": "2026-11-19T14:20:19+00:00",
+   "by": "reloj"
+  },
   {
    "at": "2026-11-19T13:38:12+00:00",
    "by": "schedule"
@@ -336,10 +340,6 @@
   {
    "at": "2026-11-19T02:17:43+00:00",
    "by": "reloj"
-  },
-  {
-   "at": "2026-11-19T01:51:51+00:00",
-   "by": "schedule"
   }
  ]
 }

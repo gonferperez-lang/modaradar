@@ -9,13 +9,13 @@
    "outlet_url": "https://www.zara.com/es/es/mujer-precios-especiales-l1314.html",
    "destacada": true,
    "short": "Zara",
-   "items": 118,
-   "ropa": 96,
-   "avg": 43,
-   "max": 50,
-   "big": 27,
-   "alert": 118,
-   "week": 4,
+   "items": 164,
+   "ropa": 132,
+   "avg": 44,
+   "max": 56,
+   "big": 45,
+   "alert": 164,
+   "week": 6,
    "thr": 30
   },
   {
@@ -165,7 +165,7 @@
    "max": 54,
    "big": 24,
    "alert": 24,
-   "week": 14,
+   "week": 10,
    "thr": 40
   },
   {
@@ -269,7 +269,7 @@
    "platform": "shopify",
    "note": "Sobre todo bolsos y complementos: no te avisa de ellos salvo que añadas «bolsos» o «accesorios» en categories.",
    "outlet_url": "https://www.misako.com/collections/outlet",
-   "items": 254,
+   "items": 253,
    "ropa": 0,
    "avg": 30,
    "max": 30,
