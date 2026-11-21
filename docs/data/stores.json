@@ -13,7 +13,7 @@
    "ropa": 74,
    "avg": 43,
    "max": 56,
-   "big": 21,
+   "big": 20,
    "alert": 92,
    "week": 4,
    "thr": 30
@@ -86,7 +86,7 @@
    "max": 88,
    "big": 188,
    "alert": 223,
-   "week": 109,
+   "week": 108,
    "thr": 40
   },
   {
@@ -192,13 +192,13 @@
    "platform": "sfcc",
    "outlet_url": "https://www.superdry.es/outlet/mujer/",
    "partial": true,
-   "items": 114,
-   "ropa": 102,
+   "items": 115,
+   "ropa": 103,
    "avg": 34,
    "max": 70,
    "big": 21,
    "alert": 22,
-   "week": 97,
+   "week": 98,
    "thr": 40
   },
   {
