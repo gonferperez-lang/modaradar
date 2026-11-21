@@ -1,6 +1,24 @@
 {
  "stores": [
   {
+   "id": "zara",
+   "name": "Zara",
+   "url": "https://www.zara.com",
+   "platform": "zara",
+   "note": "Todo el año tiene «Special prices» de mujer; cuando abre rebajas o Black Friday el radar añade esas secciones solo. Zara no publica las tallas en el listado: compruébalas en su web.",
+   "outlet_url": "https://www.zara.com/es/es/mujer-precios-especiales-l1314.html",
+   "destacada": true,
+   "short": "Zara",
+   "items": 101,
+   "ropa": 80,
+   "avg": 43,
+   "max": 50,
+   "big": 21,
+   "alert": 101,
+   "week": 4,
+   "thr": 30
+  },
+  {
    "id": "zadig",
    "name": "Zadig&Voltaire",
    "url": "https://zadig-et-voltaire.com/eu/es",
@@ -17,24 +35,6 @@
    "big": 0,
    "alert": 92,
    "week": 0,
-   "thr": 30
-  },
-  {
-   "id": "zara",
-   "name": "Zara",
-   "url": "https://www.zara.com",
-   "platform": "zara",
-   "note": "Todo el año tiene «Special prices» de mujer; cuando abre rebajas o Black Friday el radar añade esas secciones solo. Zara no publica las tallas en el listado: compruébalas en su web.",
-   "outlet_url": "https://www.zara.com/es/es/mujer-precios-especiales-l1314.html",
-   "destacada": true,
-   "short": "Zara",
-   "items": 90,
-   "ropa": 65,
-   "avg": 42,
-   "max": 50,
-   "big": 18,
-   "alert": 90,
-   "week": 4,
    "thr": 30
   },
   {
@@ -127,8 +127,8 @@
    "platform": "shopify",
    "note": "La mayor parte de su ropa de mujer está siempre rebajada (mucha entre un 40 y un 60 %), así que solo te avisa desde −60 %.",
    "outlet_url": "https://www.poloclub.com/collections/mujer-outlet",
-   "items": 293,
-   "ropa": 282,
+   "items": 292,
+   "ropa": 281,
    "avg": 41,
    "max": 71,
    "big": 112,
