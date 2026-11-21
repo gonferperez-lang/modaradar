@@ -10,10 +10,10 @@
    "destacada": true,
    "short": "Zara",
    "items": 100,
-   "ropa": 77,
+   "ropa": 80,
    "avg": 43,
-   "max": 56,
-   "big": 21,
+   "max": 50,
+   "big": 22,
    "alert": 100,
    "week": 4,
    "thr": 30
@@ -68,7 +68,7 @@
    "max": 60,
    "big": 131,
    "alert": 291,
-   "week": 152,
+   "week": 151,
    "thr": 40
   },
   {
