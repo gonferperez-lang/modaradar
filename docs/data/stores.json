@@ -1,24 +1,6 @@
 {
  "stores": [
   {
-   "id": "zara",
-   "name": "Zara",
-   "url": "https://www.zara.com",
-   "platform": "zara",
-   "note": "Todo el año tiene «Special prices» de mujer; cuando abre rebajas o Black Friday el radar añade esas secciones solo. Zara no publica las tallas en el listado: compruébalas en su web.",
-   "outlet_url": "https://www.zara.com/es/es/mujer-precios-especiales-l1314.html",
-   "destacada": true,
-   "short": "Zara",
-   "items": 92,
-   "ropa": 76,
-   "avg": 43,
-   "max": 56,
-   "big": 21,
-   "alert": 92,
-   "week": 4,
-   "thr": 30
-  },
-  {
    "id": "zadig",
    "name": "Zadig&Voltaire",
    "url": "https://zadig-et-voltaire.com/eu/es",
@@ -35,6 +17,24 @@
    "big": 0,
    "alert": 92,
    "week": 0,
+   "thr": 30
+  },
+  {
+   "id": "zara",
+   "name": "Zara",
+   "url": "https://www.zara.com",
+   "platform": "zara",
+   "note": "Todo el año tiene «Special prices» de mujer; cuando abre rebajas o Black Friday el radar añade esas secciones solo. Zara no publica las tallas en el listado: compruébalas en su web.",
+   "outlet_url": "https://www.zara.com/es/es/mujer-precios-especiales-l1314.html",
+   "destacada": true,
+   "short": "Zara",
+   "items": 89,
+   "ropa": 72,
+   "avg": 43,
+   "max": 50,
+   "big": 20,
+   "alert": 89,
+   "week": 4,
    "thr": 30
   },
   {
