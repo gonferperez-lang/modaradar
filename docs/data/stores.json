@@ -9,12 +9,12 @@
    "outlet_url": "https://www.zara.com/es/es/mujer-precios-especiales-l1314.html",
    "destacada": true,
    "short": "Zara",
-   "items": 102,
-   "ropa": 77,
+   "items": 95,
+   "ropa": 72,
    "avg": 43,
    "max": 50,
-   "big": 22,
-   "alert": 102,
+   "big": 24,
+   "alert": 95,
    "week": 4,
    "thr": 30
   },
@@ -86,7 +86,7 @@
    "max": 88,
    "big": 163,
    "alert": 197,
-   "week": 90,
+   "week": 89,
    "thr": 40
   },
   {
