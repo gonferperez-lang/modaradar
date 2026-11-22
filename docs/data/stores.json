@@ -1,6 +1,24 @@
 {
  "stores": [
   {
+   "id": "zara",
+   "name": "Zara",
+   "url": "https://www.zara.com",
+   "platform": "zara",
+   "note": "Todo el año tiene «Special prices» de mujer; cuando abre rebajas o Black Friday el radar añade esas secciones solo. Zara no publica las tallas en el listado: compruébalas en su web.",
+   "outlet_url": "https://www.zara.com/es/es/mujer-precios-especiales-l1314.html",
+   "destacada": true,
+   "short": "Zara",
+   "items": 104,
+   "ropa": 78,
+   "avg": 43,
+   "max": 50,
+   "big": 26,
+   "alert": 104,
+   "week": 4,
+   "thr": 30
+  },
+  {
    "id": "zadig",
    "name": "Zadig&Voltaire",
    "url": "https://zadig-et-voltaire.com/eu/es",
@@ -17,24 +35,6 @@
    "big": 0,
    "alert": 92,
    "week": 0,
-   "thr": 30
-  },
-  {
-   "id": "zara",
-   "name": "Zara",
-   "url": "https://www.zara.com",
-   "platform": "zara",
-   "note": "Todo el año tiene «Special prices» de mujer; cuando abre rebajas o Black Friday el radar añade esas secciones solo. Zara no publica las tallas en el listado: compruébalas en su web.",
-   "outlet_url": "https://www.zara.com/es/es/mujer-precios-especiales-l1314.html",
-   "destacada": true,
-   "short": "Zara",
-   "items": 83,
-   "ropa": 62,
-   "avg": 43,
-   "max": 50,
-   "big": 18,
-   "alert": 83,
-   "week": 4,
    "thr": 30
   },
   {
@@ -127,11 +127,11 @@
    "platform": "shopify",
    "note": "La mayor parte de su ropa de mujer está siempre rebajada (mucha entre un 40 y un 60 %), así que solo te avisa desde −60 %.",
    "outlet_url": "https://www.poloclub.com/collections/mujer-outlet",
-   "items": 283,
-   "ropa": 272,
+   "items": 281,
+   "ropa": 270,
    "avg": 41,
    "max": 71,
-   "big": 104,
+   "big": 103,
    "alert": 53,
    "week": 18,
    "thr": 60
@@ -176,13 +176,13 @@
    "url": "https://www.lolacasademunt.com",
    "platform": "shopify",
    "outlet_url": "https://www.lolacasademunt.com/es-es/collections/outlet",
-   "items": 285,
-   "ropa": 153,
-   "avg": 33,
+   "items": 521,
+   "ropa": 266,
+   "avg": 32,
    "max": 54,
    "big": 24,
    "alert": 24,
-   "week": 10,
+   "week": 246,
    "thr": 40
   },
   {
@@ -244,7 +244,7 @@
    "max": 51,
    "big": 1,
    "alert": 1,
-   "week": 1,
+   "week": 0,
    "thr": 40
   },
   {
