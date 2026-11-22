@@ -9,12 +9,12 @@
    "outlet_url": "https://www.zara.com/es/es/mujer-precios-especiales-l1314.html",
    "destacada": true,
    "short": "Zara",
-   "items": 93,
-   "ropa": 74,
-   "avg": 44,
+   "items": 102,
+   "ropa": 81,
+   "avg": 43,
    "max": 56,
    "big": 24,
-   "alert": 93,
+   "alert": 102,
    "week": 4,
    "thr": 30
   },
@@ -68,7 +68,7 @@
    "max": 60,
    "big": 123,
    "alert": 272,
-   "week": 140,
+   "week": 139,
    "thr": 40
   },
   {
@@ -82,9 +82,9 @@
    "partial": true,
    "items": 210,
    "ropa": 161,
-   "avg": 56,
+   "avg": 57,
    "max": 88,
-   "big": 164,
+   "big": 171,
    "alert": 198,
    "week": 90,
    "thr": 40
@@ -150,7 +150,7 @@
    "max": 40,
    "big": 0,
    "alert": 42,
-   "week": 275,
+   "week": 274,
    "thr": 40
   },
   {
@@ -208,13 +208,13 @@
    "platform": "sfcc",
    "outlet_url": "https://cortefiel.com/es/es/mujer/rebajas",
    "partial": true,
-   "items": 42,
-   "ropa": 30,
+   "items": 78,
+   "ropa": 53,
    "avg": 28,
    "max": 50,
    "big": 3,
    "alert": 7,
-   "week": 18,
+   "week": 54,
    "thr": 40
   },
   {
