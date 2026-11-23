@@ -9,12 +9,12 @@
    "outlet_url": "https://www.zara.com/es/es/mujer-precios-especiales-l1314.html",
    "destacada": true,
    "short": "Zara",
-   "items": 117,
-   "ropa": 95,
-   "avg": 44,
+   "items": 123,
+   "ropa": 99,
+   "avg": 43,
    "max": 56,
-   "big": 30,
-   "alert": 117,
+   "big": 32,
+   "alert": 123,
    "week": 4,
    "thr": 30
   },
@@ -86,7 +86,7 @@
    "max": 88,
    "big": 169,
    "alert": 199,
-   "week": 97,
+   "week": 96,
    "thr": 40
   },
   {
@@ -176,13 +176,13 @@
    "url": "https://www.lolacasademunt.com",
    "platform": "shopify",
    "outlet_url": "https://www.lolacasademunt.com/es-es/collections/outlet",
-   "items": 1065,
-   "ropa": 501,
+   "items": 1063,
+   "ropa": 500,
    "avg": 31,
    "max": 54,
    "big": 24,
    "alert": 24,
-   "week": 790,
+   "week": 789,
    "thr": 40
   },
   {
