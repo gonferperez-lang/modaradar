@@ -9,13 +9,13 @@
    "outlet_url": "https://www.zara.com/es/es/mujer-precios-especiales-l1314.html",
    "destacada": true,
    "short": "Zara",
-   "items": 128,
-   "ropa": 99,
-   "avg": 43,
+   "items": 111,
+   "ropa": 89,
+   "avg": 44,
    "max": 56,
-   "big": 33,
-   "alert": 128,
-   "week": 6,
+   "big": 30,
+   "alert": 111,
+   "week": 4,
    "thr": 30
   },
   {
@@ -90,6 +90,21 @@
    "thr": 40
   },
   {
+   "id": "trucco",
+   "name": "Trucco",
+   "url": "https://truccoshop.com",
+   "platform": "shopify",
+   "outlet_url": "https://truccoshop.com/collections/rebajas",
+   "items": 351,
+   "ropa": 339,
+   "avg": 31,
+   "max": 50,
+   "big": 2,
+   "alert": 105,
+   "week": 110,
+   "thr": 40
+  },
+  {
    "id": "bimbaylola",
    "name": "Bimba y Lola",
    "url": "https://www.bimbaylola.com",
@@ -103,21 +118,6 @@
    "big": 23,
    "alert": 83,
    "week": 4,
-   "thr": 40
-  },
-  {
-   "id": "trucco",
-   "name": "Trucco",
-   "url": "https://truccoshop.com",
-   "platform": "shopify",
-   "outlet_url": "https://truccoshop.com/collections/rebajas",
-   "items": 224,
-   "ropa": 220,
-   "avg": 32,
-   "max": 40,
-   "big": 0,
-   "alert": 74,
-   "week": 28,
    "thr": 40
   },
   {
@@ -144,13 +144,13 @@
    "note": "Una de las marcas más buscadas en España. En cada revisión se leen sus ~70 rebajas de mujer más nuevas (ropa y zapatillas); no publica las tallas en el listado.",
    "outlet_url": "https://www.nike.com/es/w/mujer-ofertas-3yaepz5e1x6",
    "partial": true,
-   "items": 326,
-   "ropa": 229,
+   "items": 327,
+   "ropa": 230,
    "avg": 27,
    "max": 40,
    "big": 0,
    "alert": 42,
-   "week": 274,
+   "week": 275,
    "thr": 40
   },
   {
@@ -176,13 +176,13 @@
    "url": "https://www.lolacasademunt.com",
    "platform": "shopify",
    "outlet_url": "https://www.lolacasademunt.com/es-es/collections/outlet",
-   "items": 1063,
-   "ropa": 500,
+   "items": 1062,
+   "ropa": 499,
    "avg": 31,
    "max": 54,
    "big": 24,
    "alert": 24,
-   "week": 789,
+   "week": 788,
    "thr": 40
   },
   {
@@ -229,7 +229,7 @@
    "max": 55,
    "big": 3,
    "alert": 5,
-   "week": 65,
+   "week": 35,
    "thr": 40
   },
   {
