@@ -1,24 +1,6 @@
 {
  "stores": [
   {
-   "id": "zara",
-   "name": "Zara",
-   "url": "https://www.zara.com",
-   "platform": "zara",
-   "note": "Todo el año tiene «Special prices» de mujer; cuando abre rebajas o Black Friday el radar añade esas secciones solo. Zara no publica las tallas en el listado: compruébalas en su web.",
-   "outlet_url": "https://www.zara.com/es/es/mujer-precios-especiales-l1314.html",
-   "destacada": true,
-   "short": "Zara",
-   "items": 100,
-   "ropa": 70,
-   "avg": 43,
-   "max": 56,
-   "big": 22,
-   "alert": 100,
-   "week": 4,
-   "thr": 30
-  },
-  {
    "id": "zadig",
    "name": "Zadig&Voltaire",
    "url": "https://zadig-et-voltaire.com/eu/es",
@@ -35,6 +17,24 @@
    "big": 0,
    "alert": 92,
    "week": 0,
+   "thr": 30
+  },
+  {
+   "id": "zara",
+   "name": "Zara",
+   "url": "https://www.zara.com",
+   "platform": "zara",
+   "note": "Todo el año tiene «Special prices» de mujer; cuando abre rebajas o Black Friday el radar añade esas secciones solo. Zara no publica las tallas en el listado: compruébalas en su web.",
+   "outlet_url": "https://www.zara.com/es/es/mujer-precios-especiales-l1314.html",
+   "destacada": true,
+   "short": "Zara",
+   "items": 89,
+   "ropa": 60,
+   "avg": 42,
+   "max": 50,
+   "big": 18,
+   "alert": 89,
+   "week": 4,
    "thr": 30
   },
   {
@@ -90,21 +90,6 @@
    "thr": 40
   },
   {
-   "id": "emestudios",
-   "name": "Eme Studios",
-   "url": "https://emestudios.com/es/es",
-   "platform": "shopify",
-   "outlet_url": "https://emestudios.com/es/es/sales-ss26",
-   "items": 175,
-   "ropa": 165,
-   "avg": 42,
-   "max": 50,
-   "big": 101,
-   "alert": 106,
-   "week": 153,
-   "thr": 40
-  },
-  {
    "id": "trucco",
    "name": "Trucco",
    "url": "https://truccoshop.com",
@@ -117,6 +102,21 @@
    "big": 2,
    "alert": 104,
    "week": 110,
+   "thr": 40
+  },
+  {
+   "id": "emestudios",
+   "name": "Eme Studios",
+   "url": "https://emestudios.com/es/es",
+   "platform": "shopify",
+   "outlet_url": "https://emestudios.com/es/es/sales-ss26",
+   "items": 172,
+   "ropa": 162,
+   "avg": 41,
+   "max": 50,
+   "big": 98,
+   "alert": 103,
+   "week": 150,
    "thr": 40
   },
   {
@@ -141,13 +141,13 @@
    "url": "https://www.companiafantastica.com",
    "platform": "shopify",
    "outlet_url": "https://www.companiafantastica.com/collections/outlet",
-   "items": 68,
-   "ropa": 68,
+   "items": 65,
+   "ropa": 65,
    "avg": 59,
    "max": 70,
-   "big": 51,
-   "alert": 63,
-   "week": 68,
+   "big": 48,
+   "alert": 60,
+   "week": 65,
    "thr": 40
   },
   {
@@ -174,13 +174,13 @@
    "note": "Una de las marcas más buscadas en España. En cada revisión se leen sus ~70 rebajas de mujer más nuevas (ropa y zapatillas); no publica las tallas en el listado.",
    "outlet_url": "https://www.nike.com/es/w/mujer-ofertas-3yaepz5e1x6",
    "partial": true,
-   "items": 332,
-   "ropa": 232,
-   "avg": 27,
+   "items": 337,
+   "ropa": 237,
+   "avg": 28,
    "max": 50,
    "big": 1,
-   "alert": 45,
-   "week": 280,
+   "alert": 48,
+   "week": 285,
    "thr": 40
   },
   {
@@ -285,13 +285,13 @@
    "country": "IT",
    "outlet_url": "https://www.liujo.com/es/mujer/outlet",
    "partial": true,
-   "items": 237,
-   "ropa": 237,
+   "items": 238,
+   "ropa": 238,
    "avg": 35,
    "max": 36,
    "big": 0,
    "alert": 0,
-   "week": 29,
+   "week": 30,
    "thr": 40
   },
   {
