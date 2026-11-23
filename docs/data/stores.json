@@ -9,13 +9,13 @@
    "outlet_url": "https://www.zara.com/es/es/mujer-precios-especiales-l1314.html",
    "destacada": true,
    "short": "Zara",
-   "items": 130,
-   "ropa": 100,
+   "items": 135,
+   "ropa": 106,
    "avg": 43,
    "max": 56,
-   "big": 32,
-   "alert": 130,
-   "week": 4,
+   "big": 34,
+   "alert": 135,
+   "week": 6,
    "thr": 30
   },
   {
@@ -90,21 +90,6 @@
    "thr": 40
   },
   {
-   "id": "trucco",
-   "name": "Trucco",
-   "url": "https://truccoshop.com",
-   "platform": "shopify",
-   "outlet_url": "https://truccoshop.com/collections/rebajas",
-   "items": 276,
-   "ropa": 264,
-   "avg": 33,
-   "max": 50,
-   "big": 1,
-   "alert": 105,
-   "week": 35,
-   "thr": 40
-  },
-  {
    "id": "bimbaylola",
    "name": "Bimba y Lola",
    "url": "https://www.bimbaylola.com",
@@ -118,6 +103,21 @@
    "big": 23,
    "alert": 83,
    "week": 4,
+   "thr": 40
+  },
+  {
+   "id": "trucco",
+   "name": "Trucco",
+   "url": "https://truccoshop.com",
+   "platform": "shopify",
+   "outlet_url": "https://truccoshop.com/collections/rebajas",
+   "items": 224,
+   "ropa": 220,
+   "avg": 32,
+   "max": 40,
+   "big": 0,
+   "alert": 74,
+   "week": 28,
    "thr": 40
   },
   {
