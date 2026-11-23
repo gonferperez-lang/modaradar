@@ -1,24 +1,6 @@
 {
  "stores": [
   {
-   "id": "zara",
-   "name": "Zara",
-   "url": "https://www.zara.com",
-   "platform": "zara",
-   "note": "Todo el año tiene «Special prices» de mujer; cuando abre rebajas o Black Friday el radar añade esas secciones solo. Zara no publica las tallas en el listado: compruébalas en su web.",
-   "outlet_url": "https://www.zara.com/es/es/mujer-precios-especiales-l1314.html",
-   "destacada": true,
-   "short": "Zara",
-   "items": 95,
-   "ropa": 67,
-   "avg": 43,
-   "max": 50,
-   "big": 19,
-   "alert": 95,
-   "week": 4,
-   "thr": 30
-  },
-  {
    "id": "zadig",
    "name": "Zadig&Voltaire",
    "url": "https://zadig-et-voltaire.com/eu/es",
@@ -35,6 +17,24 @@
    "big": 0,
    "alert": 92,
    "week": 0,
+   "thr": 30
+  },
+  {
+   "id": "zara",
+   "name": "Zara",
+   "url": "https://www.zara.com",
+   "platform": "zara",
+   "note": "Todo el año tiene «Special prices» de mujer; cuando abre rebajas o Black Friday el radar añade esas secciones solo. Zara no publica las tallas en el listado: compruébalas en su web.",
+   "outlet_url": "https://www.zara.com/es/es/mujer-precios-especiales-l1314.html",
+   "destacada": true,
+   "short": "Zara",
+   "items": 91,
+   "ropa": 61,
+   "avg": 43,
+   "max": 50,
+   "big": 21,
+   "alert": 91,
+   "week": 4,
    "thr": 30
   },
   {
@@ -80,13 +80,13 @@
    "outlet_url": "https://fiftyoutlet.com/es/es/mujer",
    "short": "Fifty",
    "partial": true,
-   "items": 218,
-   "ropa": 170,
+   "items": 220,
+   "ropa": 172,
    "avg": 57,
    "max": 88,
-   "big": 174,
-   "alert": 204,
-   "week": 100,
+   "big": 175,
+   "alert": 205,
+   "week": 102,
    "thr": 40
   },
   {
@@ -301,7 +301,7 @@
    "platform": "shopify",
    "note": "Sobre todo bolsos y complementos: no te avisa de ellos salvo que añadas «bolsos» o «accesorios» en categories.",
    "outlet_url": "https://www.misako.com/collections/outlet",
-   "items": 299,
+   "items": 298,
    "ropa": 0,
    "avg": 30,
    "max": 30,
