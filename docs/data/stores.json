@@ -9,13 +9,13 @@
    "outlet_url": "https://www.zara.com/es/es/mujer-precios-especiales-l1314.html",
    "destacada": true,
    "short": "Zara",
-   "items": 120,
-   "ropa": 97,
+   "items": 131,
+   "ropa": 107,
    "avg": 43,
-   "max": 50,
-   "big": 29,
-   "alert": 120,
-   "week": 3,
+   "max": 56,
+   "big": 34,
+   "alert": 131,
+   "week": 4,
    "thr": 30
   },
   {
@@ -86,7 +86,7 @@
    "max": 88,
    "big": 163,
    "alert": 191,
-   "week": 90,
+   "week": 87,
    "thr": 40
   },
   {
@@ -110,13 +110,13 @@
    "url": "https://emestudios.com/es/es",
    "platform": "shopify",
    "outlet_url": "https://emestudios.com/es/es/sales-ss26",
-   "items": 159,
-   "ropa": 150,
+   "items": 157,
+   "ropa": 148,
    "avg": 41,
    "max": 50,
-   "big": 86,
-   "alert": 90,
-   "week": 137,
+   "big": 84,
+   "alert": 88,
+   "week": 135,
    "thr": 40
   },
   {
