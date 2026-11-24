@@ -62,13 +62,13 @@
    "platform": "sfcc",
    "outlet_url": "https://www.desigual.com/es_ES/outlet/",
    "partial": true,
-   "items": 421,
-   "ropa": 320,
+   "items": 423,
+   "ropa": 321,
    "avg": 41,
    "max": 60,
-   "big": 167,
-   "alert": 307,
-   "week": 274,
+   "big": 169,
+   "alert": 309,
+   "week": 276,
    "thr": 40
   },
   {
