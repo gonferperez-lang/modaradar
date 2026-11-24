@@ -9,12 +9,12 @@
    "outlet_url": "https://www.zara.com/es/es/mujer-precios-especiales-l1314.html",
    "destacada": true,
    "short": "Zara",
-   "items": 142,
-   "ropa": 110,
+   "items": 126,
+   "ropa": 96,
    "avg": 43,
    "max": 56,
-   "big": 33,
-   "alert": 142,
+   "big": 29,
+   "alert": 126,
    "week": 4,
    "thr": 30
   },
@@ -96,13 +96,13 @@
    "platform": "shopify",
    "note": "La mayor parte de su ropa de mujer está siempre rebajada (mucha entre un 40 y un 60 %), así que solo te avisa desde −60 %.",
    "outlet_url": "https://www.poloclub.com/collections/mujer-outlet",
-   "items": 409,
-   "ropa": 398,
+   "items": 407,
+   "ropa": 396,
    "avg": 45,
    "max": 75,
-   "big": 181,
-   "alert": 108,
-   "week": 134,
+   "big": 179,
+   "alert": 106,
+   "week": 132,
    "thr": 60
   },
   {
@@ -121,21 +121,6 @@
    "thr": 40
   },
   {
-   "id": "emestudios",
-   "name": "Eme Studios",
-   "url": "https://emestudios.com/es/es",
-   "platform": "shopify",
-   "outlet_url": "https://emestudios.com/es/es/sales-ss26",
-   "items": 150,
-   "ropa": 142,
-   "avg": 41,
-   "max": 50,
-   "big": 79,
-   "alert": 83,
-   "week": 128,
-   "thr": 40
-  },
-  {
    "id": "bimbaylola",
    "name": "Bimba y Lola",
    "url": "https://www.bimbaylola.com",
@@ -149,6 +134,21 @@
    "big": 23,
    "alert": 83,
    "week": 4,
+   "thr": 40
+  },
+  {
+   "id": "emestudios",
+   "name": "Eme Studios",
+   "url": "https://emestudios.com/es/es",
+   "platform": "shopify",
+   "outlet_url": "https://emestudios.com/es/es/sales-ss26",
+   "items": 149,
+   "ropa": 141,
+   "avg": 41,
+   "max": 50,
+   "big": 78,
+   "alert": 82,
+   "week": 127,
    "thr": 40
   },
   {
@@ -180,7 +180,7 @@
    "max": 50,
    "big": 1,
    "alert": 53,
-   "week": 284,
+   "week": 272,
    "thr": 40
   },
   {
