@@ -9,12 +9,12 @@
    "outlet_url": "https://www.zara.com/es/es/mujer-precios-especiales-l1314.html",
    "destacada": true,
    "short": "Zara",
-   "items": 99,
-   "ropa": 79,
+   "items": 95,
+   "ropa": 74,
    "avg": 43,
    "max": 50,
-   "big": 26,
-   "alert": 99,
+   "big": 23,
+   "alert": 95,
    "week": 3,
    "thr": 30
   },
@@ -86,7 +86,7 @@
    "max": 88,
    "big": 175,
    "alert": 204,
-   "week": 101,
+   "week": 100,
    "thr": 40
   },
   {
@@ -105,18 +105,34 @@
    "thr": 40
   },
   {
+   "id": "poloclub",
+   "name": "Polo Club",
+   "url": "https://www.poloclub.com",
+   "platform": "shopify",
+   "note": "La mayor parte de su ropa de mujer está siempre rebajada (mucha entre un 40 y un 60 %), así que solo te avisa desde −60 %.",
+   "outlet_url": "https://www.poloclub.com/collections/mujer-outlet",
+   "items": 400,
+   "ropa": 389,
+   "avg": 45,
+   "max": 73,
+   "big": 170,
+   "alert": 92,
+   "week": 99,
+   "thr": 60
+  },
+  {
    "id": "emestudios",
    "name": "Eme Studios",
    "url": "https://emestudios.com/es/es",
    "platform": "shopify",
    "outlet_url": "https://emestudios.com/es/es/sales-ss26",
-   "items": 157,
-   "ropa": 148,
+   "items": 156,
+   "ropa": 147,
    "avg": 41,
    "max": 50,
-   "big": 84,
-   "alert": 88,
-   "week": 135,
+   "big": 83,
+   "alert": 87,
+   "week": 134,
    "thr": 40
   },
   {
@@ -134,22 +150,6 @@
    "alert": 83,
    "week": 4,
    "thr": 40
-  },
-  {
-   "id": "poloclub",
-   "name": "Polo Club",
-   "url": "https://www.poloclub.com",
-   "platform": "shopify",
-   "note": "La mayor parte de su ropa de mujer está siempre rebajada (mucha entre un 40 y un 60 %), así que solo te avisa desde −60 %.",
-   "outlet_url": "https://www.poloclub.com/collections/mujer-outlet",
-   "items": 377,
-   "ropa": 366,
-   "avg": 44,
-   "max": 71,
-   "big": 151,
-   "alert": 81,
-   "week": 98,
-   "thr": 60
   },
   {
    "id": "companiafantastica",
@@ -180,7 +180,7 @@
    "max": 50,
    "big": 1,
    "alert": 48,
-   "week": 270,
+   "week": 269,
    "thr": 40
   },
   {
