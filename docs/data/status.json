@@ -1,32 +1,32 @@
 {
  "version": "1.0.0",
- "generated": "2026-11-24T17:38:29+00:00",
+ "generated": "2026-11-24T18:38:32+00:00",
  "stores": [
   {
    "id": "zara",
    "name": "Zara",
-   "at": "2026-11-24T17:37:42+00:00",
+   "at": "2026-11-24T18:37:50+00:00",
    "status": "ok",
-   "items": 177,
+   "items": 162,
    "sections": [
     "Special Prices"
    ],
-   "seconds": 2.8,
-   "events": 4
+   "seconds": 2.5,
+   "events": 0
   },
   {
    "id": "brownie",
    "name": "Brownie",
-   "at": "2026-11-24T17:37:42+00:00",
+   "at": "2026-11-24T18:37:50+00:00",
    "status": "ok",
    "items": 88,
-   "seconds": 8.5,
+   "seconds": 8.4,
    "events": 0
   },
   {
    "id": "zadig",
    "name": "Zadig&Voltaire",
-   "at": "2026-11-24T17:37:42+00:00",
+   "at": "2026-11-24T18:37:50+00:00",
    "status": "ok",
    "items": 92,
    "seconds": 12.4,
@@ -35,7 +35,7 @@
   {
    "id": "lolacasademunt",
    "name": "Lola Casademunt",
-   "at": "2026-11-24T17:37:42+00:00",
+   "at": "2026-11-24T18:37:50+00:00",
    "status": "ok",
    "items": 1073,
    "seconds": 12.2,
@@ -44,7 +44,7 @@
   {
    "id": "companiafantastica",
    "name": "Compañía Fantástica",
-   "at": "2026-11-24T17:37:42+00:00",
+   "at": "2026-11-24T18:37:50+00:00",
    "status": "ok",
    "items": 129,
    "seconds": 12.3,
@@ -53,34 +53,34 @@
   {
    "id": "laagam",
    "name": "Laagam",
-   "at": "2026-11-24T17:37:42+00:00",
+   "at": "2026-11-24T18:37:50+00:00",
    "status": "ok",
    "items": 124,
-   "seconds": 4.4,
+   "seconds": 4.2,
    "events": 0
   },
   {
    "id": "rouje",
    "name": "Rouje",
-   "at": "2026-11-24T17:37:45+00:00",
+   "at": "2026-11-24T18:37:52+00:00",
    "status": "ok",
    "items": 100,
-   "seconds": 6.7,
+   "seconds": 6.6,
    "events": 0
   },
   {
    "id": "pinko",
    "name": "Pinko",
-   "at": "2026-11-24T17:37:46+00:00",
+   "at": "2026-11-24T18:37:54+00:00",
    "status": "ok",
    "items": 0,
-   "seconds": 10.6,
+   "seconds": 10.5,
    "events": 0
   },
   {
    "id": "poloclub",
    "name": "Polo Club",
-   "at": "2026-11-24T17:37:50+00:00",
+   "at": "2026-11-24T18:37:58+00:00",
    "status": "ok",
    "items": 589,
    "seconds": 10.5,
@@ -89,61 +89,60 @@
   {
    "id": "scuffers",
    "name": "Scuffers",
-   "at": "2026-11-24T17:37:51+00:00",
+   "at": "2026-11-24T18:37:59+00:00",
    "status": "blocked",
-   "message": "En pausa hasta las 20:37: la tienda limita el acceso automático (bloqueo anti-bots). Se reintenta sola. Detalle: HTTP 401 en https://www.scuffers.com/products.json?limit=250&page=1",
-   "seconds": 2.2,
-   "until": "2026-11-24T19:37:42+00:00"
+   "until": "2026-11-24T19:37:42+00:00",
+   "message": "En pausa hasta las 20:37: la tienda limita el acceso automático (bloqueo anti-bots). Se reintenta sola."
   },
   {
    "id": "emestudios",
    "name": "Eme Studios",
-   "at": "2026-11-24T17:37:54+00:00",
+   "at": "2026-11-24T18:37:59+00:00",
    "status": "ok",
    "items": 174,
-   "seconds": 9.2,
+   "seconds": 8.9,
    "events": 0
   },
   {
    "id": "yuxus",
    "name": "Yuxus",
-   "at": "2026-11-24T17:37:54+00:00",
+   "at": "2026-11-24T18:38:02+00:00",
    "status": "ok",
    "items": 80,
-   "seconds": 6.4,
+   "seconds": 6.3,
    "events": 0
   },
   {
    "id": "nike",
    "name": "Nike",
-   "at": "2026-11-24T17:37:54+00:00",
+   "at": "2026-11-24T18:38:02+00:00",
    "status": "ok",
    "items": 102,
-   "seconds": 5.3,
+   "seconds": 5.6,
    "events": 0
   },
   {
    "id": "fiftyoutlet",
    "name": "Fifty Outlet",
-   "at": "2026-11-24T17:37:54+00:00",
+   "at": "2026-11-24T18:38:02+00:00",
    "status": "ok",
    "items": 163,
-   "seconds": 10.6,
+   "seconds": 11.1,
    "events": 0
   },
   {
    "id": "desigual",
    "name": "Desigual",
-   "at": "2026-11-24T17:37:57+00:00",
+   "at": "2026-11-24T18:38:05+00:00",
    "status": "ok",
    "items": 332,
-   "seconds": 17.5,
-   "events": 1
+   "seconds": 17.4,
+   "events": 0
   },
   {
    "id": "cortefiel",
    "name": "Cortefiel",
-   "at": "2026-11-24T17:38:00+00:00",
+   "at": "2026-11-24T18:38:08+00:00",
    "status": "ok",
    "items": 77,
    "seconds": 6.8,
@@ -152,63 +151,61 @@
   {
    "id": "bimbaylola",
    "name": "Bimba y Lola",
-   "at": "2026-11-24T17:38:01+00:00",
+   "at": "2026-11-24T18:38:08+00:00",
    "status": "ok",
    "items": 141,
-   "seconds": 10.2,
+   "seconds": 8.7,
    "events": 0
   },
   {
    "id": "trucco",
    "name": "Trucco",
-   "at": "2026-11-24T17:38:01+00:00",
+   "at": "2026-11-24T18:38:08+00:00",
    "status": "ok",
    "items": 352,
-   "seconds": 4.6,
+   "seconds": 4.5,
    "events": 0
   },
   {
    "id": "noon",
    "name": "Noon",
-   "at": "2026-11-24T17:38:03+00:00",
+   "at": "2026-11-24T18:38:09+00:00",
    "status": "ok",
    "items": 0,
-   "seconds": 4.5,
+   "seconds": 4.8,
    "events": 0
   },
   {
    "id": "misako",
    "name": "Misako",
-   "at": "2026-11-24T17:38:05+00:00",
+   "at": "2026-11-24T18:38:13+00:00",
    "status": "ok",
    "items": 352,
-   "seconds": 15.2,
+   "seconds": 15.1,
    "events": 0
   },
   {
    "id": "liujo",
    "name": "Liu Jo",
-   "at": "2026-11-24T17:38:06+00:00",
+   "at": "2026-11-24T18:38:13+00:00",
    "status": "ok",
    "items": 224,
-   "seconds": 23.3,
+   "seconds": 18.6,
    "events": 0
   },
   {
    "id": "superdry",
    "name": "Superdry",
-   "at": "2026-11-24T17:38:06+00:00",
+   "at": "2026-11-24T18:38:13+00:00",
    "status": "ok",
    "items": 48,
-   "seconds": 2.9,
+   "seconds": 3.9,
    "events": 0
   }
  ],
- "events_this_run": 5,
+ "events_this_run": 0,
  "notifications_sent": 0,
- "notify_errors": [
-  "No hay canal de avisos: crea el secret NTFY_TOPIC en GitHub (Settings → Secrets and variables → Actions → pestaña Secrets)."
- ],
+ "notify_errors": [],
  "watchlist": [
   "cachemir",
   "cashmere",
@@ -245,6 +242,10 @@
   }
  ],
  "history": [
+  {
+   "at": "2026-11-24T18:38:32+00:00",
+   "by": "reloj"
+  },
   {
    "at": "2026-11-24T17:38:29+00:00",
    "by": "reloj"
@@ -335,10 +336,6 @@
   },
   {
    "at": "2026-11-24T04:36:34+00:00",
-   "by": "reloj"
-  },
-  {
-   "at": "2026-11-24T03:36:16+00:00",
    "by": "reloj"
   }
  ]
