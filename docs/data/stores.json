@@ -9,12 +9,12 @@
    "outlet_url": "https://www.zara.com/es/es/mujer-precios-especiales-l1314.html",
    "destacada": true,
    "short": "Zara",
-   "items": 136,
-   "ropa": 105,
+   "items": 132,
+   "ropa": 103,
    "avg": 43,
    "max": 56,
-   "big": 35,
-   "alert": 136,
+   "big": 32,
+   "alert": 132,
    "week": 1,
    "thr": 30
   },
@@ -62,13 +62,13 @@
    "platform": "sfcc",
    "outlet_url": "https://www.desigual.com/es_ES/outlet/",
    "partial": true,
-   "items": 402,
-   "ropa": 306,
+   "items": 404,
+   "ropa": 308,
    "avg": 42,
    "max": 60,
    "big": 179,
    "alert": 292,
-   "week": 268,
+   "week": 270,
    "thr": 40
   },
   {
@@ -90,22 +90,6 @@
    "thr": 40
   },
   {
-   "id": "poloclub",
-   "name": "Polo Club",
-   "url": "https://www.poloclub.com",
-   "platform": "shopify",
-   "note": "La mayor parte de su ropa de mujer está siempre rebajada (mucha entre un 40 y un 60 %), así que solo te avisa desde −60 %.",
-   "outlet_url": "https://www.poloclub.com/collections/mujer-outlet",
-   "items": 414,
-   "ropa": 403,
-   "avg": 46,
-   "max": 75,
-   "big": 187,
-   "alert": 105,
-   "week": 112,
-   "thr": 60
-  },
-  {
    "id": "scuffers",
    "name": "Scuffers",
    "url": "https://www.scuffers.com",
@@ -122,6 +106,22 @@
    "thr": 40
   },
   {
+   "id": "poloclub",
+   "name": "Polo Club",
+   "url": "https://www.poloclub.com",
+   "platform": "shopify",
+   "note": "La mayor parte de su ropa de mujer está siempre rebajada (mucha entre un 40 y un 60 %), así que solo te avisa desde −60 %.",
+   "outlet_url": "https://www.poloclub.com/collections/mujer-outlet",
+   "items": 409,
+   "ropa": 398,
+   "avg": 45,
+   "max": 75,
+   "big": 182,
+   "alert": 102,
+   "week": 110,
+   "thr": 60
+  },
+  {
    "id": "trucco",
    "name": "Trucco",
    "url": "https://truccoshop.com",
@@ -133,7 +133,7 @@
    "max": 50,
    "big": 2,
    "alert": 101,
-   "week": 89,
+   "week": 82,
    "thr": 40
   },
   {
