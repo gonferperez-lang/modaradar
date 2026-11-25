@@ -10,10 +10,10 @@
    "destacada": true,
    "short": "Zara",
    "items": 140,
-   "ropa": 105,
+   "ropa": 103,
    "avg": 43,
    "max": 50,
-   "big": 34,
+   "big": 30,
    "alert": 140,
    "week": 1,
    "thr": 30
@@ -173,13 +173,13 @@
    "url": "https://www.companiafantastica.com",
    "platform": "shopify",
    "outlet_url": "https://www.companiafantastica.com/collections/outlet",
-   "items": 59,
-   "ropa": 59,
+   "items": 58,
+   "ropa": 58,
    "avg": 58,
    "max": 70,
-   "big": 42,
-   "alert": 54,
-   "week": 59,
+   "big": 41,
+   "alert": 53,
+   "week": 58,
    "thr": 40
   },
   {
@@ -213,7 +213,7 @@
    "max": 50,
    "big": 1,
    "alert": 38,
-   "week": 159,
+   "week": 158,
    "thr": 40
   },
   {
@@ -264,21 +264,6 @@
    "thr": 40
   },
   {
-   "id": "yuxus",
-   "name": "Yuxus",
-   "url": "https://www.yuxus.com",
-   "platform": "shopify",
-   "outlet_url": "https://www.yuxus.com/collections/archive-sale",
-   "items": 76,
-   "ropa": 68,
-   "avg": 30,
-   "max": 55,
-   "big": 3,
-   "alert": 5,
-   "week": 9,
-   "thr": 40
-  },
-  {
    "id": "laagam",
    "name": "Laagam",
    "url": "https://www.laagam.com",
@@ -324,6 +309,21 @@
    "big": 0,
    "alert": 0,
    "week": 49,
+   "thr": 40
+  },
+  {
+   "id": "yuxus",
+   "name": "Yuxus",
+   "url": "https://www.yuxus.com",
+   "platform": "shopify",
+   "outlet_url": "https://www.yuxus.com/collections/archive-sale",
+   "items": 18,
+   "ropa": 18,
+   "avg": 28,
+   "max": 36,
+   "big": 0,
+   "alert": 0,
+   "week": 6,
    "thr": 40
   },
   {
