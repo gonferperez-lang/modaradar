@@ -9,12 +9,12 @@
    "outlet_url": "https://www.browniespain.com/es-es/collections/see-all-sales",
    "destacada": true,
    "short": "Brownie",
-   "items": 216,
-   "ropa": 157,
+   "items": 217,
+   "ropa": 158,
    "avg": 36,
    "max": 60,
    "big": 21,
-   "alert": 198,
+   "alert": 199,
    "week": 132,
    "thr": 30
   },
@@ -27,12 +27,12 @@
    "outlet_url": "https://www.zara.com/es/es/mujer-precios-especiales-l1314.html",
    "destacada": true,
    "short": "Zara",
-   "items": 161,
-   "ropa": 129,
-   "avg": 43,
+   "items": 156,
+   "ropa": 127,
+   "avg": 44,
    "max": 56,
    "big": 36,
-   "alert": 161,
+   "alert": 156,
    "week": 13,
    "thr": 30
   },
@@ -84,7 +84,7 @@
    "max": 60,
    "big": 181,
    "alert": 284,
-   "week": 221,
+   "week": 220,
    "thr": 40
   },
   {
@@ -102,7 +102,7 @@
    "max": 88,
    "big": 189,
    "alert": 236,
-   "week": 131,
+   "week": 130,
    "thr": 40
   },
   {
@@ -138,6 +138,22 @@
    "thr": 40
   },
   {
+   "id": "poloclub",
+   "name": "Polo Club",
+   "url": "https://www.poloclub.com",
+   "platform": "shopify",
+   "note": "La mayor parte de su ropa de mujer está siempre rebajada (mucha entre un 40 y un 60 %), así que solo te avisa desde −60 %.",
+   "outlet_url": "https://www.poloclub.com/collections/mujer-outlet",
+   "items": 416,
+   "ropa": 401,
+   "avg": 46,
+   "max": 75,
+   "big": 188,
+   "alert": 111,
+   "week": 127,
+   "thr": 60
+  },
+  {
    "id": "scuffers",
    "name": "Scuffers",
    "url": "https://www.scuffers.com",
@@ -167,22 +183,6 @@
    "alert": 101,
    "week": 76,
    "thr": 40
-  },
-  {
-   "id": "poloclub",
-   "name": "Polo Club",
-   "url": "https://www.poloclub.com",
-   "platform": "shopify",
-   "note": "La mayor parte de su ropa de mujer está siempre rebajada (mucha entre un 40 y un 60 %), así que solo te avisa desde −60 %.",
-   "outlet_url": "https://www.poloclub.com/collections/mujer-outlet",
-   "items": 389,
-   "ropa": 378,
-   "avg": 45,
-   "max": 75,
-   "big": 163,
-   "alert": 92,
-   "week": 101,
-   "thr": 60
   },
   {
    "id": "bimbaylola",
@@ -255,13 +255,13 @@
    "note": "Una de las marcas más buscadas en España. En cada revisión se leen sus ~70 rebajas de mujer más nuevas (ropa y zapatillas); no publica las tallas en el listado.",
    "outlet_url": "https://www.nike.com/es/w/mujer-ofertas-3yaepz5e1x6",
    "partial": true,
-   "items": 210,
+   "items": 215,
    "ropa": 159,
    "avg": 27,
    "max": 50,
    "big": 1,
    "alert": 38,
-   "week": 139,
+   "week": 141,
    "thr": 40
   },
   {
@@ -317,8 +317,8 @@
    "url": "https://www.yuxus.com",
    "platform": "shopify",
    "outlet_url": "https://www.yuxus.com/collections/archive-sale",
-   "items": 18,
-   "ropa": 18,
+   "items": 19,
+   "ropa": 19,
    "avg": 28,
    "max": 36,
    "big": 0,
