@@ -46,13 +46,13 @@
    "outlet_url": "https://www.zara.com/es/es/mujer-precios-especiales-l1314.html",
    "destacada": true,
    "short": "Zara",
-   "items": 82,
-   "ropa": 60,
-   "avg": 43,
+   "items": 98,
+   "ropa": 68,
+   "avg": 42,
    "max": 54,
-   "big": 15,
-   "alert": 82,
-   "week": 10,
+   "big": 19,
+   "alert": 98,
+   "week": 11,
    "thr": 30
   },
   {
@@ -68,7 +68,7 @@
    "max": 60,
    "big": 198,
    "alert": 304,
-   "week": 233,
+   "week": 230,
    "thr": 40
   },
   {
@@ -255,7 +255,7 @@
    "note": "Marca francesa: envía a España desde la UE (sin aduanas). Revisa los gastos de envío.",
    "country": "FR",
    "outlet_url": "https://www.rouje.com/es-es/collections/archives",
-   "items": 99,
+   "items": 98,
    "ropa": 80,
    "avg": 34,
    "max": 48,
@@ -332,13 +332,13 @@
    "url": "https://noonspain.com",
    "platform": "shopify",
    "note": "Marca sevillana de moda joven. Fuera de temporada casi no rebaja (en verano llegó a −50 %): te avisamos en cuanto lo haga.",
-   "items": 105,
+   "items": 104,
    "ropa": 83,
    "avg": 28,
    "max": 30,
    "big": 0,
    "alert": 0,
-   "week": 105,
+   "week": 104,
    "thr": 40
   },
   {
