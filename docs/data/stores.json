@@ -46,12 +46,12 @@
    "outlet_url": "https://www.zara.com/es/es/mujer-precios-especiales-l1314.html",
    "destacada": true,
    "short": "Zara",
-   "items": 59,
-   "ropa": 38,
-   "avg": 42,
+   "items": 60,
+   "ropa": 39,
+   "avg": 43,
    "max": 54,
    "big": 10,
-   "alert": 59,
+   "alert": 60,
    "week": 10,
    "thr": 30
   },
@@ -68,7 +68,7 @@
    "max": 60,
    "big": 186,
    "alert": 287,
-   "week": 224,
+   "week": 216,
    "thr": 40
   },
   {
@@ -102,7 +102,7 @@
    "max": 88,
    "big": 195,
    "alert": 257,
-   "week": 164,
+   "week": 163,
    "thr": 40
   },
   {
@@ -255,7 +255,7 @@
    "note": "Marca francesa: envía a España desde la UE (sin aduanas). Revisa los gastos de envío.",
    "country": "FR",
    "outlet_url": "https://www.rouje.com/es-es/collections/archives",
-   "items": 98,
+   "items": 99,
    "ropa": 80,
    "avg": 34,
    "max": 48,
